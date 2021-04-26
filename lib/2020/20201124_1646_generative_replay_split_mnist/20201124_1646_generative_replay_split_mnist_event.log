@@ -1,0 +1,133 @@
+[INFO  16:46:54] Start training with parametrization:
+{
+    "dataset": {
+        "name": "split_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "shuffle_tasks": false
+        }
+    },
+    "criterion": "BCE",
+    "cl_method": "generative_replay",
+    "dimensions": [
+        784,
+        40,
+        40,
+        2
+    ],
+    "epochs": 10,
+    "learning_rate": 0.01,
+    "nonlinearity": "relu",
+    "n_replay": 1000,
+    "optimizer": "sgd",
+    "seed": 1,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.0001,
+    "vae_n_gaussian": 20,
+    "vae_n_hidden": 400,
+    "mult_mlp": false,
+    "log_dir": "",
+    "task": "split_mnist"
+}
+[INFO  16:46:54] Starting training of task 1
+[INFO  16:46:57] epoch 0: train_acc: 0.9644 	 test_acc: 0.9976
+[INFO  16:46:59] epoch 1: train_acc: 0.9919 	 test_acc: 0.9991
+[INFO  16:47:01] epoch 2: train_acc: 0.9923 	 test_acc: 0.9991
+[INFO  16:47:03] epoch 3: train_acc: 0.9926 	 test_acc: 0.9991
+[INFO  16:47:05] epoch 4: train_acc: 0.9927 	 test_acc: 0.9991
+[INFO  16:47:08] epoch 5: train_acc: 0.9931 	 test_acc: 0.9991
+[INFO  16:47:10] epoch 6: train_acc: 0.9932 	 test_acc: 0.9995
+[INFO  16:47:12] epoch 7: train_acc: 0.9935 	 test_acc: 0.9995
+[INFO  16:47:14] epoch 8: train_acc: 0.9937 	 test_acc: 0.9995
+[INFO  16:47:16] epoch 9: train_acc: 0.9937 	 test_acc: 0.9995
+[INFO  16:47:18] Task accuracies: {
+    "task1": 0.9995271867612293,
+    "task2": 0.48334965719882467,
+    "task3": 0.4407684098185699,
+    "task4": 0.6032225579053374,
+    "task5": 0.4205748865355522
+}
+[INFO  16:47:18] Mean task accuracy: 0.9995
+[INFO  16:47:49] Update replay buffer for generative replay.
+[INFO  16:47:49] Starting training of task 2
+[INFO  16:47:52] epoch 0: train_acc: 0.8522 	 test_acc: 0.9246
+[INFO  16:47:54] epoch 1: train_acc: 0.9336 	 test_acc: 0.9447
+[INFO  16:47:56] epoch 2: train_acc: 0.9438 	 test_acc: 0.9545
+[INFO  16:47:58] epoch 3: train_acc: 0.9474 	 test_acc: 0.9618
+[INFO  16:48:00] epoch 4: train_acc: 0.9524 	 test_acc: 0.9643
+[INFO  16:48:02] epoch 5: train_acc: 0.9551 	 test_acc: 0.9647
+[INFO  16:48:04] epoch 6: train_acc: 0.9576 	 test_acc: 0.9652
+[INFO  16:48:06] epoch 7: train_acc: 0.9587 	 test_acc: 0.9691
+[INFO  16:48:08] epoch 8: train_acc: 0.9605 	 test_acc: 0.9701
+[INFO  16:48:10] epoch 9: train_acc: 0.9629 	 test_acc: 0.9706
+[INFO  16:48:12] Task accuracies: {
+    "task1": 0.9853427895981087,
+    "task2": 0.970617042115573,
+    "task3": 0.5917822838847385,
+    "task4": 0.8192346424974823,
+    "task5": 0.5602622289460414
+}
+[INFO  16:48:12] Mean task accuracy: 0.9780
+[INFO  16:48:41] Update replay buffer for generative replay.
+[INFO  16:48:42] Starting training of task 3
+[INFO  16:48:44] epoch 0: train_acc: 0.8646 	 test_acc: 0.9434
+[INFO  16:48:46] epoch 1: train_acc: 0.9498 	 test_acc: 0.9685
+[INFO  16:48:48] epoch 2: train_acc: 0.9657 	 test_acc: 0.9797
+[INFO  16:48:50] epoch 3: train_acc: 0.9729 	 test_acc: 0.9829
+[INFO  16:48:52] epoch 4: train_acc: 0.9772 	 test_acc: 0.9872
+[INFO  16:48:54] epoch 5: train_acc: 0.9790 	 test_acc: 0.9888
+[INFO  16:48:56] epoch 6: train_acc: 0.9804 	 test_acc: 0.9888
+[INFO  16:48:58] epoch 7: train_acc: 0.9818 	 test_acc: 0.9888
+[INFO  16:49:00] epoch 8: train_acc: 0.9830 	 test_acc: 0.9899
+[INFO  16:49:02] epoch 9: train_acc: 0.9838 	 test_acc: 0.9920
+[INFO  16:49:03] Task accuracies: {
+    "task1": 0.7721040189125296,
+    "task2": 0.7948090107737512,
+    "task3": 0.9919957310565635,
+    "task4": 0.459718026183283,
+    "task5": 0.1502773575390822
+}
+[INFO  16:49:03] Mean task accuracy: 0.8530
+[INFO  16:49:30] Update replay buffer for generative replay.
+[INFO  16:49:32] Starting training of task 4
+[INFO  16:49:34] epoch 0: train_acc: 0.9439 	 test_acc: 0.9824
+[INFO  16:49:36] epoch 1: train_acc: 0.9805 	 test_acc: 0.9874
+[INFO  16:49:38] epoch 2: train_acc: 0.9837 	 test_acc: 0.9884
+[INFO  16:49:41] epoch 3: train_acc: 0.9854 	 test_acc: 0.9899
+[INFO  16:49:43] epoch 4: train_acc: 0.9860 	 test_acc: 0.9909
+[INFO  16:49:45] epoch 5: train_acc: 0.9869 	 test_acc: 0.9919
+[INFO  16:49:47] epoch 6: train_acc: 0.9876 	 test_acc: 0.9919
+[INFO  16:49:49] epoch 7: train_acc: 0.9883 	 test_acc: 0.9919
+[INFO  16:49:51] epoch 8: train_acc: 0.9888 	 test_acc: 0.9924
+[INFO  16:49:53] epoch 9: train_acc: 0.9890 	 test_acc: 0.9924
+[INFO  16:49:55] Task accuracies: {
+    "task1": 0.8865248226950354,
+    "task2": 0.8320274240940254,
+    "task3": 0.8388473852721452,
+    "task4": 0.9924471299093656,
+    "task5": 0.5572365103378719
+}
+[INFO  16:49:55] Mean task accuracy: 0.8875
+[INFO  16:50:24] Update replay buffer for generative replay.
+[INFO  16:50:26] Starting training of task 5
+[INFO  16:50:28] epoch 0: train_acc: 0.8929 	 test_acc: 0.9536
+[INFO  16:50:30] epoch 1: train_acc: 0.9592 	 test_acc: 0.9657
+[INFO  16:50:32] epoch 2: train_acc: 0.9690 	 test_acc: 0.9723
+[INFO  16:50:34] epoch 3: train_acc: 0.9754 	 test_acc: 0.9758
+[INFO  16:50:36] epoch 4: train_acc: 0.9786 	 test_acc: 0.9773
+[INFO  16:50:39] epoch 5: train_acc: 0.9809 	 test_acc: 0.9783
+[INFO  16:50:41] epoch 6: train_acc: 0.9828 	 test_acc: 0.9808
+[INFO  16:50:43] epoch 7: train_acc: 0.9837 	 test_acc: 0.9823
+[INFO  16:50:45] epoch 8: train_acc: 0.9848 	 test_acc: 0.9823
+[INFO  16:50:47] epoch 9: train_acc: 0.9864 	 test_acc: 0.9854
+[INFO  16:50:48] Task accuracies: {
+    "task1": 0.491725768321513,
+    "task2": 0.8266405484818805,
+    "task3": 0.2710779082177161,
+    "task4": 0.9355488418932527,
+    "task5": 0.9853756933938477
+}
+[INFO  16:50:48] Mean task accuracy: 0.7021
+[INFO  16:51:17] Update replay buffer for generative replay.

@@ -1,0 +1,50 @@
+[INFO  18:35:33] Start training with parametrization:
+{
+    "dataset": {
+        "name": "split_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "shuffle_tasks": false
+        }
+    },
+    "criterion": "BCE",
+    "cl_method": "simple_replay",
+    "dimensions": [
+        784,
+        40,
+        40,
+        2
+    ],
+    "epochs": 5,
+    "learning_rate": 0.01,
+    "nonlinearity": "relu",
+    "n_replay": 1000,
+    "optimizer": "sgd",
+    "seed": 1,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 5,
+    "vae_lr": 0.001,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "mult_mlp": false,
+    "log_dir": "",
+    "task": "split_mnist"
+}
+[INFO  18:35:33] Starting training of task 1
+[INFO  18:35:36] epoch 0: train_acc: 0.9644 	 test_acc: 0.9976
+[INFO  18:35:38] epoch 1: train_acc: 0.9919 	 test_acc: 0.9991
+[INFO  18:35:40] epoch 2: train_acc: 0.9923 	 test_acc: 0.9991
+[INFO  18:35:42] epoch 3: train_acc: 0.9926 	 test_acc: 0.9991
+[INFO  18:35:44] epoch 4: train_acc: 0.9927 	 test_acc: 0.9991
+[INFO  18:35:46] Task accuracies: {
+    "task1": 0.9990543735224586,
+    "task2": 0.47600391772771794,
+    "task3": 0.4226254002134472,
+    "task4": 0.5981873111782477,
+    "task5": 0.4286434694906707
+}
+[INFO  18:35:46] Mean task accuracy: 0.9991
+[INFO  18:35:46] Update replay buffer for simple replay.
+[INFO  18:35:46] size of replay buffer: 1000
+[INFO  18:35:46] Starting training of task 2

@@ -1,0 +1,113 @@
+[INFO  18:30:56] Start training with parametrization:
+{
+    "dataset": {
+        "name": "split_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "shuffle_tasks": false
+        }
+    },
+    "criterion": "BCE",
+    "cl_method": "simple_replay",
+    "dimensions": [
+        784,
+        40,
+        40,
+        2
+    ],
+    "epochs": 5,
+    "learning_rate": 0.01,
+    "nonlinearity": "relu",
+    "n_replay": 1000,
+    "optimizer": "sgd",
+    "seed": 1,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 5,
+    "vae_lr": 0.001,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "mult_mlp": false,
+    "log_dir": "",
+    "task": "split_mnist"
+}
+[INFO  18:30:56] Starting training of task 1
+[INFO  18:30:59] epoch 0: train_acc: 0.9644 	 test_acc: 0.9976
+[INFO  18:31:01] epoch 1: train_acc: 0.9919 	 test_acc: 0.9991
+[INFO  18:31:03] epoch 2: train_acc: 0.9923 	 test_acc: 0.9991
+[INFO  18:31:05] epoch 3: train_acc: 0.9926 	 test_acc: 0.9991
+[INFO  18:31:07] epoch 4: train_acc: 0.9927 	 test_acc: 0.9991
+[INFO  18:31:09] Task accuracies: {
+    "task1": 0.9990543735224586,
+    "task2": 0.47600391772771794,
+    "task3": 0.4226254002134472,
+    "task4": 0.5981873111782477,
+    "task5": 0.4286434694906707
+}
+[INFO  18:31:09] Mean task accuracy: 0.9991
+[INFO  18:31:09] Update replay buffer for simple replay.
+[INFO  18:31:09] size of replay buffer: 1000
+[INFO  18:31:09] Starting training of task 2
+[INFO  18:31:13] epoch 0: train_acc: 0.8255 	 test_acc: 0.8913
+[INFO  18:31:17] epoch 1: train_acc: 0.9165 	 test_acc: 0.9290
+[INFO  18:31:21] epoch 2: train_acc: 0.9351 	 test_acc: 0.9481
+[INFO  18:31:25] epoch 3: train_acc: 0.9424 	 test_acc: 0.9520
+[INFO  18:31:28] epoch 4: train_acc: 0.9504 	 test_acc: 0.9594
+[INFO  18:31:30] Task accuracies: {
+    "task1": 0.9952718676122931,
+    "task2": 0.9593535749265426,
+    "task3": 0.6750266808964781,
+    "task4": 0.6787512588116817,
+    "task5": 0.4604135148764498
+}
+[INFO  18:31:30] Mean task accuracy: 0.9773
+[INFO  18:31:30] Update replay buffer for simple replay.
+[INFO  18:31:30] size of replay buffer: 2000
+[INFO  18:31:30] Starting training of task 3
+[INFO  18:31:34] epoch 0: train_acc: 0.6962 	 test_acc: 0.7791
+[INFO  18:31:38] epoch 1: train_acc: 0.8088 	 test_acc: 0.8602
+[INFO  18:31:42] epoch 2: train_acc: 0.8717 	 test_acc: 0.8991
+[INFO  18:31:46] epoch 3: train_acc: 0.9131 	 test_acc: 0.9328
+[INFO  18:31:49] epoch 4: train_acc: 0.9347 	 test_acc: 0.9493
+[INFO  18:31:51] Task accuracies: {
+    "task1": 0.991016548463357,
+    "task2": 0.9696376101860921,
+    "task3": 0.9493062966915689,
+    "task4": 0.499496475327291,
+    "task5": 0.3177004538577912
+}
+[INFO  18:31:51] Mean task accuracy: 0.9700
+[INFO  18:31:51] Update replay buffer for simple replay.
+[INFO  18:31:51] size of replay buffer: 3000
+[INFO  18:31:51] Starting training of task 4
+[INFO  18:31:55] epoch 0: train_acc: 0.7391 	 test_acc: 0.8761
+[INFO  18:32:00] epoch 1: train_acc: 0.8643 	 test_acc: 0.8847
+[INFO  18:32:04] epoch 2: train_acc: 0.8990 	 test_acc: 0.9270
+[INFO  18:32:08] epoch 3: train_acc: 0.9323 	 test_acc: 0.9502
+[INFO  18:32:12] epoch 4: train_acc: 0.9505 	 test_acc: 0.9612
+[INFO  18:32:14] Task accuracies: {
+    "task1": 0.992434988179669,
+    "task2": 0.960822722820764,
+    "task3": 0.9695837780149413,
+    "task4": 0.9612286002014099,
+    "task5": 0.4568835098335855
+}
+[INFO  18:32:14] Mean task accuracy: 0.9710
+[INFO  18:32:14] Update replay buffer for simple replay.
+[INFO  18:32:14] size of replay buffer: 4000
+[INFO  18:32:14] Starting training of task 5
+[INFO  18:32:18] epoch 0: train_acc: 0.6031 	 test_acc: 0.6667
+[INFO  18:32:21] epoch 1: train_acc: 0.7678 	 test_acc: 0.8502
+[INFO  18:32:25] epoch 2: train_acc: 0.8319 	 test_acc: 0.8477
+[INFO  18:32:28] epoch 3: train_acc: 0.8617 	 test_acc: 0.8770
+[INFO  18:32:32] epoch 4: train_acc: 0.8913 	 test_acc: 0.9042
+[INFO  18:32:33] Task accuracies: {
+    "task1": 0.983451536643026,
+    "task2": 0.9588638589618022,
+    "task3": 0.9445037353255069,
+    "task4": 0.9798590130916415,
+    "task5": 0.9041855774079677
+}
+[INFO  18:32:33] Mean task accuracy: 0.9542
+[INFO  18:32:33] Update replay buffer for simple replay.
+[INFO  18:32:33] size of replay buffer: 5000

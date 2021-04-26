@@ -1,0 +1,28 @@
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs":{
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "no_replay", 
+    "criterion": "cross_entropy",
+    "dimensions": [784, 200, 200, 10],
+    "vib_mlp_dim": [100,100,10],
+    "epochs": 10,
+    "learning_rate": 0.02,
+    "mult_mlp" : false,
+    "nonlinearity": "relu",
+    "n_replay":1000,
+    "optimizer": "sgd",
+    "replay_weight": 0.5,
+    "seed": null,
+    "single_vae": false,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 1e-3,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400
+}

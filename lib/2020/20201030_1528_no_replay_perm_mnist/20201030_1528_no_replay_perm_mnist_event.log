@@ -1,0 +1,74 @@
+[INFO  15:28:02] Start training with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "no_replay",
+    "criterion": "cross_entropy",
+    "dimensions": [
+        784,
+        200,
+        200,
+        10
+    ],
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "nonlinearity": "relu",
+    "n_replay": 20,
+    "optimizer": "sgd",
+    "replay_epochs": 1,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 100,
+    "vae_epochs": 10,
+    "vae_lr": 0.001,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 100,
+    "weight_decay": 0.0,
+    "log_dir": "",
+    "task": "perm_mnist"
+}
+[INFO  15:28:02] Starting training of task 1
+[INFO  15:28:13] epoch 0: train_acc: 0.2688 	 test_acc: 0.5041
+[INFO  15:28:25] epoch 1: train_acc: 0.6231 	 test_acc: 0.6976
+[INFO  15:28:37] epoch 2: train_acc: 0.7360 	 test_acc: 0.7808
+[INFO  15:28:49] epoch 3: train_acc: 0.7980 	 test_acc: 0.8264
+[INFO  15:28:56] Start training with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "no_replay",
+    "criterion": "cross_entropy",
+    "dimensions": [
+        784,
+        200,
+        200,
+        10
+    ],
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "nonlinearity": "relu",
+    "n_replay": 20,
+    "optimizer": "sgd",
+    "replay_epochs": 1,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 100,
+    "vae_epochs": 10,
+    "vae_lr": 0.001,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 100,
+    "log_dir": "",
+    "task": "perm_mnist"
+}
+[INFO  15:28:56] Starting training of task 1
+[INFO  15:29:06] epoch 0: train_acc: 0.3297 	 test_acc: 0.5551

@@ -1,0 +1,55 @@
+[INFO  10:51:02] Start training with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "no_replay",
+    "criterion": "cross_entropy",
+    "dimensions": [
+        784,
+        200,
+        200,
+        10
+    ],
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "nonlinearity": "relu",
+    "n_replay": 100,
+    "optimizer": "sgd",
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 100,
+    "vae_epochs": 10,
+    "vae_lr": 0.001,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 100,
+    "log_dir": "",
+    "task": "perm_mnist"
+}
+[INFO  10:53:24] epoch 0: train_acc: 0.3228 	 mean_test_acc: 0.5457
+[INFO  10:55:38] epoch 1: train_acc: 0.6948 	 mean_test_acc: 0.7890
+[INFO  10:57:53] epoch 2: train_acc: 0.8113 	 mean_test_acc: 0.8418
+[INFO  11:00:08] epoch 3: train_acc: 0.8491 	 mean_test_acc: 0.8679
+[INFO  11:02:26] epoch 4: train_acc: 0.8695 	 mean_test_acc: 0.8816
+[INFO  11:04:38] epoch 5: train_acc: 0.8825 	 mean_test_acc: 0.8920
+[INFO  11:06:50] epoch 6: train_acc: 0.8919 	 mean_test_acc: 0.8997
+[INFO  11:09:02] epoch 7: train_acc: 0.8991 	 mean_test_acc: 0.9055
+[INFO  11:11:16] epoch 8: train_acc: 0.9054 	 mean_test_acc: 0.9105
+[INFO  11:13:31] epoch 9: train_acc: 0.9105 	 mean_test_acc: 0.9147
+[INFO  11:13:31] Task accuracies: {
+    "task1": 0.9109,
+    "task10": 0.9163,
+    "task2": 0.917,
+    "task3": 0.915,
+    "task4": 0.9136,
+    "task5": 0.9172,
+    "task6": 0.9107,
+    "task7": 0.9149,
+    "task8": 0.9174,
+    "task9": 0.9138
+}
+[INFO  11:13:31] Mean task accuracy: 0.9147

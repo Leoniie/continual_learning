@@ -1,0 +1,51 @@
+[INFO  17:36:37] Start training with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "simple_replay",
+    "criterion": "cross_entropy",
+    "dimensions": [
+        784,
+        200,
+        200,
+        10
+    ],
+    "epochs": 1,
+    "learning_rate": 0.001,
+    "nonlinearity": "relu",
+    "n_replay": 20,
+    "optimizer": "sgd",
+    "replay_epochs": 1,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 100,
+    "vae_epochs": 10,
+    "vae_lr": 0.001,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 100,
+    "log_dir": "",
+    "task": "perm_mnist"
+}
+[INFO  17:36:37] Starting training of task 1
+[INFO  17:36:49] epoch 0: train_acc: 0.2227 	 test_acc: 0.5155
+[INFO  17:37:08] Task accuracies: {
+    "task1": 0.5155,
+    "task10": 0.1235,
+    "task2": 0.1103,
+    "task3": 0.1074,
+    "task4": 0.1251,
+    "task5": 0.1152,
+    "task6": 0.1232,
+    "task7": 0.0956,
+    "task8": 0.0912,
+    "task9": 0.1028
+}
+[INFO  17:37:08] Mean task accuracy: 0.1510
+[INFO  17:37:08] Update replay buffer for simple replay.
+[INFO  17:37:08] size of replay buffer: 20
+[INFO  17:37:08] Starting training of task 2

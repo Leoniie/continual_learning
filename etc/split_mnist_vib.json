@@ -1,0 +1,31 @@
+{
+    "dataset": {
+        "name": "split_mnist",
+        "kwargs":{
+            "batch_size": 100,
+            "shuffle_tasks": false
+        }
+    },
+    "criterion": "BCE",
+    "beta_1": -0.0001,
+    "beta_2":0.001,
+    "cl_method": "no_replay",
+    "enc_dimensions" : [784, 200, 200],
+    "dec_class_dimensions": [2],
+    "dec_rec_dimensions": [200, 200, 784],
+    "n_bottleneck": 100,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.001,
+    "mult_mlp" : false,
+    "nonlinearity": "relu",
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.5,
+    "seed": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 20,
+    "vae_lr": 5e-3,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400
+}

@@ -1,0 +1,55 @@
+[INFO  14:31:48] Permutation for splitMNIST:tensor([5, 6, 1, 2, 0, 8, 9, 3, 7, 4])
+[INFO  14:31:48] Start training with parametrization:
+{
+    "dataset": {
+        "name": "split_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "shuffle_tasks": true
+        }
+    },
+    "criterion": "BCE",
+    "cl_method": "generative_replay",
+    "dimensions": [
+        784,
+        40,
+        40,
+        2
+    ],
+    "epochs": 10,
+    "learning_rate": 0.01,
+    "nonlinearity": "relu",
+    "n_replay": 1000,
+    "optimizer": "sgd",
+    "replay_weight": 0.5,
+    "seed": 1,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "mult_mlp": false,
+    "log_dir": "",
+    "task": "split_mnist"
+}
+[INFO  14:31:48] Starting training of task 1
+[INFO  14:31:49] epoch 0: train_acc: 0.7347 	 test_acc: 0.9747
+[INFO  14:31:51] epoch 1: train_acc: 0.9722 	 test_acc: 0.9737
+[INFO  14:31:52] epoch 2: train_acc: 0.9749 	 test_acc: 0.9777
+[INFO  14:31:53] epoch 3: train_acc: 0.9770 	 test_acc: 0.9801
+[INFO  14:31:54] epoch 4: train_acc: 0.9782 	 test_acc: 0.9796
+[INFO  14:31:56] epoch 5: train_acc: 0.9797 	 test_acc: 0.9796
+[INFO  14:31:57] epoch 6: train_acc: 0.9811 	 test_acc: 0.9796
+[INFO  14:31:59] epoch 7: train_acc: 0.9817 	 test_acc: 0.9806
+[INFO  14:32:00] epoch 8: train_acc: 0.9819 	 test_acc: 0.9806
+[INFO  14:32:01] epoch 9: train_acc: 0.9827 	 test_acc: 0.9816
+[INFO  14:32:02] Task accuracies: {
+    "task1": 0.9816285998013903,
+    "task2": 0.19823356231599606,
+    "task3": 0.8903971845148315,
+    "task4": 0.3660502607871029,
+    "task5": 0.5686486486486486
+}
+[INFO  14:32:02] Mean task accuracy: 0.9816
+[INFO  14:32:36] Update replay buffer for generative replay.

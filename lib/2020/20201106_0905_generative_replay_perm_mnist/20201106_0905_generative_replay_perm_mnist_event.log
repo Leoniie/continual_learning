@@ -1,0 +1,67 @@
+[INFO  09:05:54] Start training with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "dimensions": [
+        784,
+        200,
+        200,
+        10
+    ],
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "nonlinearity": "relu",
+    "n_replay": 100,
+    "optimizer": "sgd",
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 100,
+    "vae_epochs": 10,
+    "vae_lr": 0.001,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 100,
+    "mult_mlp": false,
+    "log_dir": "",
+    "task": "perm_mnist"
+}
+[INFO  09:05:54] Starting training of task 1
+[INFO  09:06:07] epoch 0: train_acc: 0.3432 	 test_acc: 0.5805
+[INFO  09:06:20] epoch 1: train_acc: 0.6426 	 test_acc: 0.6850
+[INFO  09:06:33] epoch 2: train_acc: 0.7165 	 test_acc: 0.7707
+[INFO  09:06:46] epoch 3: train_acc: 0.7905 	 test_acc: 0.8239
+[INFO  09:06:59] epoch 4: train_acc: 0.8303 	 test_acc: 0.8489
+[INFO  09:07:12] epoch 5: train_acc: 0.8504 	 test_acc: 0.8630
+[INFO  09:07:25] epoch 6: train_acc: 0.8638 	 test_acc: 0.8743
+[INFO  09:07:38] epoch 7: train_acc: 0.8734 	 test_acc: 0.8824
+[INFO  09:07:50] epoch 8: train_acc: 0.8802 	 test_acc: 0.8894
+[INFO  09:08:04] epoch 9: train_acc: 0.8854 	 test_acc: 0.8939
+[INFO  09:08:27] Task accuracies: {
+    "task1": 0.8939,
+    "task10": 0.1552,
+    "task2": 0.1639,
+    "task3": 0.0688,
+    "task4": 0.2251,
+    "task5": 0.0996,
+    "task6": 0.0926,
+    "task7": 0.1609,
+    "task8": 0.1218,
+    "task9": 0.1092
+}
+[INFO  09:08:27] Mean task accuracy: 0.8939
+[INFO  09:08:42] ====> VAE Epoch: 9 Average loss: -14542.3746
+[INFO  09:08:59] ====> VAE Epoch: 9 Average loss: -25947.6337
+[INFO  09:09:16] ====> VAE Epoch: 9 Average loss: -29379.3151
+[INFO  09:09:31] ====> VAE Epoch: 9 Average loss: -30731.8005
+[INFO  09:09:48] ====> VAE Epoch: 9 Average loss: -32279.9506
+[INFO  09:10:06] ====> VAE Epoch: 9 Average loss: -33439.4093
+[INFO  09:10:19] ====> VAE Epoch: 9 Average loss: -34301.3186
+[INFO  09:10:35] ====> VAE Epoch: 9 Average loss: -34842.9326
+[INFO  09:10:57] ====> VAE Epoch: 9 Average loss: -35272.5143
+[INFO  09:11:13] ====> VAE Epoch: 9 Average loss: -35652.6448

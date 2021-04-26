@@ -1,0 +1,52 @@
+[INFO  09:49:53] Start training with parametrization:
+{
+    "dataset": {
+        "name": "split_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "shuffle_tasks": false
+        }
+    },
+    "criterion": "BCE",
+    "cl_method": "no_replay",
+    "dimensions": [
+        784,
+        40,
+        40,
+        2
+    ],
+    "epochs": 10,
+    "learning_rate": 0.01,
+    "nonlinearity": "relu",
+    "n_replay": 1000,
+    "optimizer": "sgd",
+    "replay_weight": 0.5,
+    "seed": 1,
+    "single_vae": false,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 20,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "log_dir": "",
+    "task": "split_mnist"
+}
+[INFO  09:50:07] epoch 0: train_acc: 0.7530 	 mean_test_acc: 0.8504
+[INFO  09:50:19] epoch 1: train_acc: 0.8642 	 mean_test_acc: 0.8810
+[INFO  09:50:31] epoch 2: train_acc: 0.8866 	 mean_test_acc: 0.8970
+[INFO  09:50:43] epoch 3: train_acc: 0.9040 	 mean_test_acc: 0.9150
+[INFO  09:50:56] epoch 4: train_acc: 0.9217 	 mean_test_acc: 0.9301
+[INFO  09:51:09] epoch 5: train_acc: 0.9381 	 mean_test_acc: 0.9423
+[INFO  09:51:22] epoch 6: train_acc: 0.9484 	 mean_test_acc: 0.9495
+[INFO  09:51:37] epoch 7: train_acc: 0.9547 	 mean_test_acc: 0.9556
+[INFO  09:51:49] epoch 8: train_acc: 0.9596 	 mean_test_acc: 0.9598
+[INFO  09:52:01] epoch 9: train_acc: 0.9626 	 mean_test_acc: 0.9631
+[INFO  09:52:01] Task accuracies: {
+    "task1": 0.984869976359338,
+    "task2": 0.9657198824681684,
+    "task3": 0.9461045891141943,
+    "task4": 0.9818731117824774,
+    "task5": 0.9369641956631367
+}
+[INFO  09:52:01] Mean task accuracy: 0.9631

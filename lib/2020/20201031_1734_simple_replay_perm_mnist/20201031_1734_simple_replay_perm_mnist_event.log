@@ -1,0 +1,54 @@
+[INFO  17:34:16] Start training with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "simple_replay",
+    "criterion": "cross_entropy",
+    "dimensions": [
+        784,
+        200,
+        200,
+        10
+    ],
+    "epochs": 5,
+    "learning_rate": 0.001,
+    "nonlinearity": "relu",
+    "n_replay": 20,
+    "optimizer": "sgd",
+    "replay_epochs": 1,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 100,
+    "vae_epochs": 10,
+    "vae_lr": 0.001,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 100,
+    "log_dir": "",
+    "task": "perm_mnist"
+}
+[INFO  17:34:16] Starting training of task 1
+[INFO  17:34:27] epoch 0: train_acc: 0.3428 	 test_acc: 0.5202
+[INFO  17:34:38] epoch 1: train_acc: 0.6134 	 test_acc: 0.6992
+[INFO  17:34:49] epoch 2: train_acc: 0.7268 	 test_acc: 0.7727
+[INFO  17:35:01] epoch 3: train_acc: 0.7903 	 test_acc: 0.8166
+[INFO  17:35:16] epoch 4: train_acc: 0.8256 	 test_acc: 0.8456
+[INFO  17:35:35] Task accuracies: {
+    "task1": 0.8456,
+    "task10": 0.146,
+    "task2": 0.1078,
+    "task3": 0.1635,
+    "task4": 0.1661,
+    "task5": 0.1184,
+    "task6": 0.1389,
+    "task7": 0.1511,
+    "task8": 0.1587,
+    "task9": 0.1711
+}
+[INFO  17:35:35] Mean task accuracy: 0.2167
+[INFO  17:35:35] Update replay buffer for simple replay.
+[INFO  17:35:35] size of replay buffer: 20

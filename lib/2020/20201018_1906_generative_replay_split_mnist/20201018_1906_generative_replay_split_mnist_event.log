@@ -1,0 +1,1634 @@
+[INFO  19:06:10] Start training with parametrization:
+{
+    "dataset": {
+        "name": "split_mnist",
+        "kwargs": {
+            "batch_size": 128,
+            "shuffle_tasks": false
+        }
+    },
+    "criterion": "BCE",
+    "cl_method": "generative_replay",
+    "dimensions": [
+        784,
+        400,
+        400,
+        2
+    ],
+    "epochs": 100,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "n_replay": 16,
+    "optimizer": "sgd",
+    "prob_init": null,
+    "replay_epochs": 10,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 100,
+    "vae_lr": 0.0001,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 100,
+    "weight_decay": 1.0,
+    "log_dir": "",
+    "task": "split_mnist"
+}
+[INFO  19:06:10] Starting training of task 1
+[INFO  19:06:12] epoch 0: train_acc: 0.4395 	 test_acc: 0.4809
+[INFO  19:06:15] epoch 1: train_acc: 0.5199 	 test_acc: 0.5858
+[INFO  19:06:17] epoch 2: train_acc: 0.6290 	 test_acc: 0.7130
+[INFO  19:06:20] epoch 3: train_acc: 0.7566 	 test_acc: 0.8303
+[INFO  19:06:23] epoch 4: train_acc: 0.8557 	 test_acc: 0.8974
+[INFO  19:06:25] epoch 5: train_acc: 0.9087 	 test_acc: 0.9357
+[INFO  19:06:28] epoch 6: train_acc: 0.9381 	 test_acc: 0.9622
+[INFO  19:06:30] epoch 7: train_acc: 0.9562 	 test_acc: 0.9730
+[INFO  19:06:33] epoch 8: train_acc: 0.9667 	 test_acc: 0.9858
+[INFO  19:06:35] epoch 9: train_acc: 0.9731 	 test_acc: 0.9896
+[INFO  19:06:38] epoch 10: train_acc: 0.9777 	 test_acc: 0.9924
+[INFO  19:06:40] epoch 11: train_acc: 0.9808 	 test_acc: 0.9934
+[INFO  19:06:43] epoch 12: train_acc: 0.9824 	 test_acc: 0.9953
+[INFO  19:06:46] epoch 13: train_acc: 0.9841 	 test_acc: 0.9957
+[INFO  19:06:49] epoch 14: train_acc: 0.9846 	 test_acc: 0.9962
+[INFO  19:06:52] epoch 15: train_acc: 0.9851 	 test_acc: 0.9967
+[INFO  19:06:54] epoch 16: train_acc: 0.9855 	 test_acc: 0.9976
+[INFO  19:06:57] epoch 17: train_acc: 0.9856 	 test_acc: 0.9972
+[INFO  19:07:00] epoch 18: train_acc: 0.9859 	 test_acc: 0.9972
+[INFO  19:07:02] epoch 19: train_acc: 0.9859 	 test_acc: 0.9972
+[INFO  19:07:05] epoch 20: train_acc: 0.9858 	 test_acc: 0.9972
+[INFO  19:07:08] epoch 21: train_acc: 0.9859 	 test_acc: 0.9972
+[INFO  19:07:10] epoch 22: train_acc: 0.9864 	 test_acc: 0.9967
+[INFO  19:07:13] epoch 23: train_acc: 0.9867 	 test_acc: 0.9967
+[INFO  19:07:16] epoch 24: train_acc: 0.9869 	 test_acc: 0.9972
+[INFO  19:07:20] epoch 25: train_acc: 0.9869 	 test_acc: 0.9972
+[INFO  19:07:23] epoch 26: train_acc: 0.9869 	 test_acc: 0.9972
+[INFO  19:07:26] epoch 27: train_acc: 0.9868 	 test_acc: 0.9972
+[INFO  19:07:29] epoch 28: train_acc: 0.9866 	 test_acc: 0.9972
+[INFO  19:07:32] epoch 29: train_acc: 0.9868 	 test_acc: 0.9972
+[INFO  19:07:34] epoch 30: train_acc: 0.9867 	 test_acc: 0.9972
+[INFO  19:07:37] epoch 31: train_acc: 0.9866 	 test_acc: 0.9972
+[INFO  19:07:40] epoch 32: train_acc: 0.9866 	 test_acc: 0.9972
+[INFO  19:07:42] epoch 33: train_acc: 0.9867 	 test_acc: 0.9972
+[INFO  19:07:45] epoch 34: train_acc: 0.9867 	 test_acc: 0.9972
+[INFO  19:07:48] epoch 35: train_acc: 0.9867 	 test_acc: 0.9972
+[INFO  19:07:50] epoch 36: train_acc: 0.9869 	 test_acc: 0.9976
+[INFO  19:07:53] epoch 37: train_acc: 0.9871 	 test_acc: 0.9976
+[INFO  19:07:56] epoch 38: train_acc: 0.9868 	 test_acc: 0.9976
+[INFO  19:07:58] epoch 39: train_acc: 0.9869 	 test_acc: 0.9976
+[INFO  19:08:01] epoch 40: train_acc: 0.9868 	 test_acc: 0.9976
+[INFO  19:08:05] epoch 41: train_acc: 0.9869 	 test_acc: 0.9976
+[INFO  19:08:08] epoch 42: train_acc: 0.9871 	 test_acc: 0.9976
+[INFO  19:08:11] epoch 43: train_acc: 0.9871 	 test_acc: 0.9976
+[INFO  19:08:15] epoch 44: train_acc: 0.9871 	 test_acc: 0.9976
+[INFO  19:08:18] epoch 45: train_acc: 0.9871 	 test_acc: 0.9976
+[INFO  19:08:20] epoch 46: train_acc: 0.9872 	 test_acc: 0.9976
+[INFO  19:08:23] epoch 47: train_acc: 0.9871 	 test_acc: 0.9976
+[INFO  19:08:25] epoch 48: train_acc: 0.9872 	 test_acc: 0.9976
+[INFO  19:08:28] epoch 49: train_acc: 0.9874 	 test_acc: 0.9976
+[INFO  19:08:30] epoch 50: train_acc: 0.9874 	 test_acc: 0.9976
+[INFO  19:08:33] epoch 51: train_acc: 0.9873 	 test_acc: 0.9976
+[INFO  19:08:36] epoch 52: train_acc: 0.9872 	 test_acc: 0.9976
+[INFO  19:08:38] epoch 53: train_acc: 0.9874 	 test_acc: 0.9976
+[INFO  19:08:41] epoch 54: train_acc: 0.9874 	 test_acc: 0.9976
+[INFO  19:08:44] epoch 55: train_acc: 0.9872 	 test_acc: 0.9976
+[INFO  19:08:46] epoch 56: train_acc: 0.9872 	 test_acc: 0.9976
+[INFO  19:08:49] epoch 57: train_acc: 0.9873 	 test_acc: 0.9976
+[INFO  19:08:51] epoch 58: train_acc: 0.9872 	 test_acc: 0.9976
+[INFO  19:08:54] epoch 59: train_acc: 0.9872 	 test_acc: 0.9976
+[INFO  19:08:56] epoch 60: train_acc: 0.9872 	 test_acc: 0.9976
+[INFO  19:08:59] epoch 61: train_acc: 0.9871 	 test_acc: 0.9976
+[INFO  19:09:01] epoch 62: train_acc: 0.9871 	 test_acc: 0.9976
+[INFO  19:09:04] epoch 63: train_acc: 0.9871 	 test_acc: 0.9976
+[INFO  19:09:06] epoch 64: train_acc: 0.9871 	 test_acc: 0.9976
+[INFO  19:09:09] epoch 65: train_acc: 0.9871 	 test_acc: 0.9976
+[INFO  19:09:12] epoch 66: train_acc: 0.9871 	 test_acc: 0.9976
+[INFO  19:09:14] epoch 67: train_acc: 0.9873 	 test_acc: 0.9976
+[INFO  19:09:17] epoch 68: train_acc: 0.9872 	 test_acc: 0.9976
+[INFO  19:09:20] epoch 69: train_acc: 0.9871 	 test_acc: 0.9976
+[INFO  19:09:23] epoch 70: train_acc: 0.9872 	 test_acc: 0.9976
+[INFO  19:09:27] epoch 71: train_acc: 0.9871 	 test_acc: 0.9976
+[INFO  19:09:32] epoch 72: train_acc: 0.9872 	 test_acc: 0.9976
+[INFO  19:09:36] epoch 73: train_acc: 0.9871 	 test_acc: 0.9976
+[INFO  19:09:39] epoch 74: train_acc: 0.9871 	 test_acc: 0.9976
+[INFO  19:09:42] epoch 75: train_acc: 0.9872 	 test_acc: 0.9976
+[INFO  19:09:45] epoch 76: train_acc: 0.9871 	 test_acc: 0.9976
+[INFO  19:09:49] epoch 77: train_acc: 0.9872 	 test_acc: 0.9981
+[INFO  19:09:51] epoch 78: train_acc: 0.9871 	 test_acc: 0.9981
+[INFO  19:09:55] epoch 79: train_acc: 0.9871 	 test_acc: 0.9981
+[INFO  19:09:57] epoch 80: train_acc: 0.9872 	 test_acc: 0.9981
+[INFO  19:10:00] epoch 81: train_acc: 0.9871 	 test_acc: 0.9981
+[INFO  19:10:03] epoch 82: train_acc: 0.9871 	 test_acc: 0.9981
+[INFO  19:10:05] epoch 83: train_acc: 0.9873 	 test_acc: 0.9981
+[INFO  19:10:07] epoch 84: train_acc: 0.9871 	 test_acc: 0.9981
+[INFO  19:10:10] epoch 85: train_acc: 0.9871 	 test_acc: 0.9981
+[INFO  19:10:13] epoch 86: train_acc: 0.9873 	 test_acc: 0.9981
+[INFO  19:10:15] epoch 87: train_acc: 0.9872 	 test_acc: 0.9981
+[INFO  19:10:18] epoch 88: train_acc: 0.9871 	 test_acc: 0.9981
+[INFO  19:10:20] epoch 89: train_acc: 0.9871 	 test_acc: 0.9981
+[INFO  19:10:23] epoch 90: train_acc: 0.9871 	 test_acc: 0.9981
+[INFO  19:10:25] epoch 91: train_acc: 0.9870 	 test_acc: 0.9981
+[INFO  19:10:27] epoch 92: train_acc: 0.9870 	 test_acc: 0.9981
+[INFO  19:10:30] epoch 93: train_acc: 0.9870 	 test_acc: 0.9981
+[INFO  19:10:32] epoch 94: train_acc: 0.9870 	 test_acc: 0.9981
+[INFO  19:10:35] epoch 95: train_acc: 0.9871 	 test_acc: 0.9981
+[INFO  19:10:37] epoch 96: train_acc: 0.9871 	 test_acc: 0.9981
+[INFO  19:10:39] epoch 97: train_acc: 0.9870 	 test_acc: 0.9981
+[INFO  19:10:42] epoch 98: train_acc: 0.9870 	 test_acc: 0.9981
+[INFO  19:10:45] epoch 99: train_acc: 0.9871 	 test_acc: 0.9981
+[INFO  19:10:47] Task accuracies: {
+    "task1": 0.9981087470449173,
+    "task2": 0.4911851126346719,
+    "task3": 0.4386339381003202,
+    "task4": 0.6198388721047331,
+    "task5": 0.40292486132123045
+}
+[INFO  19:10:47] Mean task accuracy: 0.5901
+[INFO  19:10:47] Starting to fit generator to task 1
+[INFO  19:10:49] ====> VAE Epoch: 1 Average loss: 337.3691
+[INFO  19:10:50] ====> VAE  Test set loss: -364.1670
+[INFO  19:10:52] ====> VAE Epoch: 2 Average loss: -4173.4836
+[INFO  19:10:52] ====> VAE  Test set loss: -6706.2300
+[INFO  19:10:55] ====> VAE Epoch: 3 Average loss: -7339.3578
+[INFO  19:10:55] ====> VAE  Test set loss: -8860.9354
+[INFO  19:10:57] ====> VAE Epoch: 4 Average loss: -9829.1856
+[INFO  19:10:57] ====> VAE  Test set loss: -10937.1514
+[INFO  19:11:00] ====> VAE Epoch: 5 Average loss: -11054.5760
+[INFO  19:11:00] ====> VAE  Test set loss: -11648.7027
+[INFO  19:11:02] ====> VAE Epoch: 6 Average loss: -11608.3324
+[INFO  19:11:02] ====> VAE  Test set loss: -11961.9054
+[INFO  19:11:04] ====> VAE Epoch: 7 Average loss: -11935.0586
+[INFO  19:11:04] ====> VAE  Test set loss: -12336.9803
+[INFO  19:11:07] ====> VAE Epoch: 8 Average loss: -12227.6904
+[INFO  19:11:07] ====> VAE  Test set loss: -12681.8508
+[INFO  19:11:09] ====> VAE Epoch: 9 Average loss: -12503.8565
+[INFO  19:11:09] ====> VAE  Test set loss: -12992.1226
+[INFO  19:11:11] ====> VAE Epoch: 10 Average loss: -12830.1006
+[INFO  19:11:11] ====> VAE  Test set loss: -13316.3104
+[INFO  19:11:13] ====> VAE Epoch: 11 Average loss: -13149.8746
+[INFO  19:11:14] ====> VAE  Test set loss: -13649.5009
+[INFO  19:11:16] ====> VAE Epoch: 12 Average loss: -13532.2673
+[INFO  19:11:16] ====> VAE  Test set loss: -13897.1000
+[INFO  19:11:18] ====> VAE Epoch: 13 Average loss: -13994.8991
+[INFO  19:11:18] ====> VAE  Test set loss: -14378.4997
+[INFO  19:11:20] ====> VAE Epoch: 14 Average loss: -14598.5023
+[INFO  19:11:21] ====> VAE  Test set loss: -15250.9229
+[INFO  19:11:23] ====> VAE Epoch: 15 Average loss: -15364.3353
+[INFO  19:11:23] ====> VAE  Test set loss: -15971.9868
+[INFO  19:11:25] ====> VAE Epoch: 16 Average loss: -16068.6630
+[INFO  19:11:25] ====> VAE  Test set loss: -16577.5386
+[INFO  19:11:27] ====> VAE Epoch: 17 Average loss: -16680.9330
+[INFO  19:11:28] ====> VAE  Test set loss: -17023.2393
+[INFO  19:11:30] ====> VAE Epoch: 18 Average loss: -17139.8142
+[INFO  19:11:30] ====> VAE  Test set loss: -17720.3553
+[INFO  19:11:32] ====> VAE Epoch: 19 Average loss: -17568.9348
+[INFO  19:11:32] ====> VAE  Test set loss: -18118.9926
+[INFO  19:11:34] ====> VAE Epoch: 20 Average loss: -17901.2477
+[INFO  19:11:35] ====> VAE  Test set loss: -18334.6376
+[INFO  19:11:37] ====> VAE Epoch: 21 Average loss: -18230.0267
+[INFO  19:11:37] ====> VAE  Test set loss: -18556.1769
+[INFO  19:11:39] ====> VAE Epoch: 22 Average loss: -18520.4284
+[INFO  19:11:39] ====> VAE  Test set loss: -18917.0339
+[INFO  19:11:42] ====> VAE Epoch: 23 Average loss: -18856.6469
+[INFO  19:11:43] ====> VAE  Test set loss: -19346.3811
+[INFO  19:11:45] ====> VAE Epoch: 24 Average loss: -19173.5636
+[INFO  19:11:45] ====> VAE  Test set loss: -19714.1655
+[INFO  19:11:48] ====> VAE Epoch: 25 Average loss: -19505.4787
+[INFO  19:11:48] ====> VAE  Test set loss: -19893.1775
+[INFO  19:11:52] ====> VAE Epoch: 26 Average loss: -19805.9781
+[INFO  19:11:52] ====> VAE  Test set loss: -20265.8034
+[INFO  19:11:54] ====> VAE Epoch: 27 Average loss: -20073.8612
+[INFO  19:11:55] ====> VAE  Test set loss: -20718.6292
+[INFO  19:11:57] ====> VAE Epoch: 28 Average loss: -20357.4408
+[INFO  19:11:58] ====> VAE  Test set loss: -20797.8352
+[INFO  19:12:00] ====> VAE Epoch: 29 Average loss: -20608.4166
+[INFO  19:12:01] ====> VAE  Test set loss: -21046.5609
+[INFO  19:12:03] ====> VAE Epoch: 30 Average loss: -20871.4680
+[INFO  19:12:03] ====> VAE  Test set loss: -21197.1228
+[INFO  19:12:06] ====> VAE Epoch: 31 Average loss: -21101.6178
+[INFO  19:12:06] ====> VAE  Test set loss: -21558.9771
+[INFO  19:12:09] ====> VAE Epoch: 32 Average loss: -21352.9315
+[INFO  19:12:09] ====> VAE  Test set loss: -21741.7008
+[INFO  19:12:11] ====> VAE Epoch: 33 Average loss: -21556.6259
+[INFO  19:12:11] ====> VAE  Test set loss: -21793.2877
+[INFO  19:12:14] ====> VAE Epoch: 34 Average loss: -21765.4840
+[INFO  19:12:14] ====> VAE  Test set loss: -22135.5582
+[INFO  19:12:17] ====> VAE Epoch: 35 Average loss: -21980.3819
+[INFO  19:12:17] ====> VAE  Test set loss: -22340.7324
+[INFO  19:12:19] ====> VAE Epoch: 36 Average loss: -22164.2390
+[INFO  19:12:20] ====> VAE  Test set loss: -22563.7687
+[INFO  19:12:22] ====> VAE Epoch: 37 Average loss: -22333.8327
+[INFO  19:12:22] ====> VAE  Test set loss: -22802.0794
+[INFO  19:12:25] ====> VAE Epoch: 38 Average loss: -22512.0460
+[INFO  19:12:25] ====> VAE  Test set loss: -22906.8404
+[INFO  19:12:27] ====> VAE Epoch: 39 Average loss: -22702.2843
+[INFO  19:12:28] ====> VAE  Test set loss: -22843.3674
+[INFO  19:12:30] ====> VAE Epoch: 40 Average loss: -22881.8819
+[INFO  19:12:30] ====> VAE  Test set loss: -23390.5949
+[INFO  19:12:33] ====> VAE Epoch: 41 Average loss: -23034.2521
+[INFO  19:12:33] ====> VAE  Test set loss: -23603.7299
+[INFO  19:12:35] ====> VAE Epoch: 42 Average loss: -23210.2099
+[INFO  19:12:35] ====> VAE  Test set loss: -23630.1639
+[INFO  19:12:38] ====> VAE Epoch: 43 Average loss: -23396.8120
+[INFO  19:12:38] ====> VAE  Test set loss: -23925.5501
+[INFO  19:12:40] ====> VAE Epoch: 44 Average loss: -23571.3738
+[INFO  19:12:41] ====> VAE  Test set loss: -24122.7215
+[INFO  19:12:43] ====> VAE Epoch: 45 Average loss: -23735.2088
+[INFO  19:12:43] ====> VAE  Test set loss: -24115.0369
+[INFO  19:12:46] ====> VAE Epoch: 46 Average loss: -23866.8453
+[INFO  19:12:46] ====> VAE  Test set loss: -24366.5928
+[INFO  19:12:48] ====> VAE Epoch: 47 Average loss: -24019.7815
+[INFO  19:12:48] ====> VAE  Test set loss: -24425.2887
+[INFO  19:12:51] ====> VAE Epoch: 48 Average loss: -24186.2593
+[INFO  19:12:51] ====> VAE  Test set loss: -24684.0157
+[INFO  19:12:53] ====> VAE Epoch: 49 Average loss: -24339.8250
+[INFO  19:12:53] ====> VAE  Test set loss: -24669.4937
+[INFO  19:12:56] ====> VAE Epoch: 50 Average loss: -24473.4417
+[INFO  19:12:56] ====> VAE  Test set loss: -24373.9520
+[INFO  19:12:58] ====> VAE Epoch: 51 Average loss: -24605.0495
+[INFO  19:12:59] ====> VAE  Test set loss: -25072.1285
+[INFO  19:13:01] ====> VAE Epoch: 52 Average loss: -24744.7265
+[INFO  19:13:02] ====> VAE  Test set loss: -25169.3583
+[INFO  19:13:04] ====> VAE Epoch: 53 Average loss: -24872.8093
+[INFO  19:13:04] ====> VAE  Test set loss: -25356.8830
+[INFO  19:13:06] ====> VAE Epoch: 54 Average loss: -25021.1180
+[INFO  19:13:07] ====> VAE  Test set loss: -25483.3833
+[INFO  19:13:09] ====> VAE Epoch: 55 Average loss: -25142.3087
+[INFO  19:13:09] ====> VAE  Test set loss: -25444.4099
+[INFO  19:13:12] ====> VAE Epoch: 56 Average loss: -25261.9110
+[INFO  19:13:12] ====> VAE  Test set loss: -25785.1147
+[INFO  19:13:15] ====> VAE Epoch: 57 Average loss: -25452.5941
+[INFO  19:13:15] ====> VAE  Test set loss: -26038.0664
+[INFO  19:13:17] ====> VAE Epoch: 58 Average loss: -25554.0227
+[INFO  19:13:18] ====> VAE  Test set loss: -25781.4483
+[INFO  19:13:20] ====> VAE Epoch: 59 Average loss: -25704.3068
+[INFO  19:13:20] ====> VAE  Test set loss: -26043.4994
+[INFO  19:13:22] ====> VAE Epoch: 60 Average loss: -25810.7559
+[INFO  19:13:23] ====> VAE  Test set loss: -26275.6463
+[INFO  19:13:25] ====> VAE Epoch: 61 Average loss: -25950.4320
+[INFO  19:13:25] ====> VAE  Test set loss: -26321.4767
+[INFO  19:13:27] ====> VAE Epoch: 62 Average loss: -26036.2423
+[INFO  19:13:28] ====> VAE  Test set loss: -26546.1484
+[INFO  19:13:30] ====> VAE Epoch: 63 Average loss: -26201.6233
+[INFO  19:13:30] ====> VAE  Test set loss: -26533.2950
+[INFO  19:13:33] ====> VAE Epoch: 64 Average loss: -26311.8690
+[INFO  19:13:33] ====> VAE  Test set loss: -26773.0470
+[INFO  19:13:35] ====> VAE Epoch: 65 Average loss: -26446.1587
+[INFO  19:13:36] ====> VAE  Test set loss: -26915.2272
+[INFO  19:13:38] ====> VAE Epoch: 66 Average loss: -26541.0353
+[INFO  19:13:38] ====> VAE  Test set loss: -26758.4440
+[INFO  19:13:40] ====> VAE Epoch: 67 Average loss: -26646.6135
+[INFO  19:13:41] ====> VAE  Test set loss: -27171.6595
+[INFO  19:13:43] ====> VAE Epoch: 68 Average loss: -26806.0564
+[INFO  19:13:43] ====> VAE  Test set loss: -27184.4060
+[INFO  19:13:45] ====> VAE Epoch: 69 Average loss: -26919.6423
+[INFO  19:13:46] ====> VAE  Test set loss: -27477.4645
+[INFO  19:13:48] ====> VAE Epoch: 70 Average loss: -27039.2413
+[INFO  19:13:48] ====> VAE  Test set loss: -27338.1343
+[INFO  19:13:50] ====> VAE Epoch: 71 Average loss: -27159.2034
+[INFO  19:13:51] ====> VAE  Test set loss: -27508.6603
+[INFO  19:13:53] ====> VAE Epoch: 72 Average loss: -27300.2485
+[INFO  19:13:53] ====> VAE  Test set loss: -27639.0583
+[INFO  19:13:56] ====> VAE Epoch: 73 Average loss: -27385.6689
+[INFO  19:13:56] ====> VAE  Test set loss: -27960.7851
+[INFO  19:13:58] ====> VAE Epoch: 74 Average loss: -27561.6114
+[INFO  19:13:58] ====> VAE  Test set loss: -27967.9647
+[INFO  19:14:01] ====> VAE Epoch: 75 Average loss: -27671.4207
+[INFO  19:14:01] ====> VAE  Test set loss: -28121.7337
+[INFO  19:14:03] ====> VAE Epoch: 76 Average loss: -27807.7839
+[INFO  19:14:03] ====> VAE  Test set loss: -28152.4596
+[INFO  19:14:06] ====> VAE Epoch: 77 Average loss: -27935.0584
+[INFO  19:14:06] ====> VAE  Test set loss: -28475.2219
+[INFO  19:14:08] ====> VAE Epoch: 78 Average loss: -28087.1660
+[INFO  19:14:09] ====> VAE  Test set loss: -28476.2309
+[INFO  19:14:11] ====> VAE Epoch: 79 Average loss: -28228.9203
+[INFO  19:14:11] ====> VAE  Test set loss: -29010.1605
+[INFO  19:14:14] ====> VAE Epoch: 80 Average loss: -28408.4738
+[INFO  19:14:14] ====> VAE  Test set loss: -28880.3668
+[INFO  19:14:16] ====> VAE Epoch: 81 Average loss: -28551.1705
+[INFO  19:14:16] ====> VAE  Test set loss: -29050.3615
+[INFO  19:14:19] ====> VAE Epoch: 82 Average loss: -28711.4864
+[INFO  19:14:19] ====> VAE  Test set loss: -29309.8030
+[INFO  19:14:21] ====> VAE Epoch: 83 Average loss: -28923.6318
+[INFO  19:14:22] ====> VAE  Test set loss: -29462.3054
+[INFO  19:14:24] ====> VAE Epoch: 84 Average loss: -29065.6460
+[INFO  19:14:24] ====> VAE  Test set loss: -29523.2665
+[INFO  19:14:27] ====> VAE Epoch: 85 Average loss: -29226.8867
+[INFO  19:14:27] ====> VAE  Test set loss: -29671.5528
+[INFO  19:14:29] ====> VAE Epoch: 86 Average loss: -29337.2014
+[INFO  19:14:29] ====> VAE  Test set loss: -29763.4983
+[INFO  19:14:31] ====> VAE Epoch: 87 Average loss: -29450.3143
+[INFO  19:14:32] ====> VAE  Test set loss: -29864.2463
+[INFO  19:14:34] ====> VAE Epoch: 88 Average loss: -29656.9175
+[INFO  19:14:34] ====> VAE  Test set loss: -29939.1407
+[INFO  19:14:37] ====> VAE Epoch: 89 Average loss: -29803.9541
+[INFO  19:14:37] ====> VAE  Test set loss: -30493.6403
+[INFO  19:14:39] ====> VAE Epoch: 90 Average loss: -29976.2518
+[INFO  19:14:40] ====> VAE  Test set loss: -30446.3110
+[INFO  19:14:42] ====> VAE Epoch: 91 Average loss: -30105.4201
+[INFO  19:14:42] ====> VAE  Test set loss: -30393.2625
+[INFO  19:14:45] ====> VAE Epoch: 92 Average loss: -30246.5654
+[INFO  19:14:45] ====> VAE  Test set loss: -30651.6625
+[INFO  19:14:47] ====> VAE Epoch: 93 Average loss: -30404.0764
+[INFO  19:14:47] ====> VAE  Test set loss: -30787.9696
+[INFO  19:14:50] ====> VAE Epoch: 94 Average loss: -30500.6089
+[INFO  19:14:50] ====> VAE  Test set loss: -30943.5756
+[INFO  19:14:52] ====> VAE Epoch: 95 Average loss: -30652.8572
+[INFO  19:14:52] ====> VAE  Test set loss: -31039.4265
+[INFO  19:14:55] ====> VAE Epoch: 96 Average loss: -30744.2269
+[INFO  19:14:55] ====> VAE  Test set loss: -31111.4129
+[INFO  19:14:57] ====> VAE Epoch: 97 Average loss: -30836.0688
+[INFO  19:14:58] ====> VAE  Test set loss: -31218.7737
+[INFO  19:15:00] ====> VAE Epoch: 98 Average loss: -30913.1859
+[INFO  19:15:00] ====> VAE  Test set loss: -31218.7775
+[INFO  19:15:03] ====> VAE Epoch: 99 Average loss: -31049.6063
+[INFO  19:15:03] ====> VAE  Test set loss: -31603.9067
+[INFO  19:15:05] ====> VAE Epoch: 100 Average loss: -31156.0008
+[INFO  19:15:05] ====> VAE  Test set loss: -31599.0134
+[INFO  19:15:05] Update replay buffer for generative replay.
+[INFO  19:15:05] Starting training of task 2
+[INFO  19:15:08] epoch 0: train_acc: 0.5068 	 test_acc: 0.5069
+[INFO  19:15:10] epoch 1: train_acc: 0.5272 	 test_acc: 0.5245
+[INFO  19:15:13] epoch 2: train_acc: 0.5479 	 test_acc: 0.5460
+[INFO  19:15:15] epoch 3: train_acc: 0.5669 	 test_acc: 0.5597
+[INFO  19:15:18] epoch 4: train_acc: 0.5858 	 test_acc: 0.5808
+[INFO  19:15:20] epoch 5: train_acc: 0.6020 	 test_acc: 0.5940
+[INFO  19:15:22] epoch 6: train_acc: 0.6178 	 test_acc: 0.6087
+[INFO  19:15:24] epoch 7: train_acc: 0.6331 	 test_acc: 0.6268
+[INFO  19:15:26] epoch 8: train_acc: 0.6472 	 test_acc: 0.6420
+[INFO  19:15:29] epoch 9: train_acc: 0.6586 	 test_acc: 0.6528
+[INFO  19:15:31] epoch 10: train_acc: 0.6721 	 test_acc: 0.6655
+[INFO  19:15:33] epoch 11: train_acc: 0.6841 	 test_acc: 0.6753
+[INFO  19:15:36] epoch 12: train_acc: 0.6943 	 test_acc: 0.6895
+[INFO  19:15:38] epoch 13: train_acc: 0.7029 	 test_acc: 0.6993
+[INFO  19:15:40] epoch 14: train_acc: 0.7126 	 test_acc: 0.7067
+[INFO  19:15:42] epoch 15: train_acc: 0.7204 	 test_acc: 0.7155
+[INFO  19:15:45] epoch 16: train_acc: 0.7297 	 test_acc: 0.7214
+[INFO  19:15:47] epoch 17: train_acc: 0.7365 	 test_acc: 0.7282
+[INFO  19:15:49] epoch 18: train_acc: 0.7436 	 test_acc: 0.7341
+[INFO  19:15:51] epoch 19: train_acc: 0.7500 	 test_acc: 0.7400
+[INFO  19:15:54] epoch 20: train_acc: 0.7554 	 test_acc: 0.7449
+[INFO  19:15:56] epoch 21: train_acc: 0.7606 	 test_acc: 0.7527
+[INFO  19:15:58] epoch 22: train_acc: 0.7666 	 test_acc: 0.7605
+[INFO  19:16:00] epoch 23: train_acc: 0.7711 	 test_acc: 0.7684
+[INFO  19:16:02] epoch 24: train_acc: 0.7762 	 test_acc: 0.7738
+[INFO  19:16:05] epoch 25: train_acc: 0.7808 	 test_acc: 0.7782
+[INFO  19:16:07] epoch 26: train_acc: 0.7850 	 test_acc: 0.7816
+[INFO  19:16:09] epoch 27: train_acc: 0.7894 	 test_acc: 0.7880
+[INFO  19:16:12] epoch 28: train_acc: 0.7944 	 test_acc: 0.7933
+[INFO  19:16:14] epoch 29: train_acc: 0.7968 	 test_acc: 0.7977
+[INFO  19:16:16] epoch 30: train_acc: 0.8023 	 test_acc: 0.8012
+[INFO  19:16:18] epoch 31: train_acc: 0.8054 	 test_acc: 0.8056
+[INFO  19:16:20] epoch 32: train_acc: 0.8083 	 test_acc: 0.8066
+[INFO  19:16:23] epoch 33: train_acc: 0.8128 	 test_acc: 0.8071
+[INFO  19:16:25] epoch 34: train_acc: 0.8167 	 test_acc: 0.8100
+[INFO  19:16:27] epoch 35: train_acc: 0.8208 	 test_acc: 0.8144
+[INFO  19:16:29] epoch 36: train_acc: 0.8232 	 test_acc: 0.8154
+[INFO  19:16:31] epoch 37: train_acc: 0.8275 	 test_acc: 0.8183
+[INFO  19:16:33] epoch 38: train_acc: 0.8300 	 test_acc: 0.8222
+[INFO  19:16:36] epoch 39: train_acc: 0.8329 	 test_acc: 0.8237
+[INFO  19:16:38] epoch 40: train_acc: 0.8345 	 test_acc: 0.8242
+[INFO  19:16:40] epoch 41: train_acc: 0.8370 	 test_acc: 0.8262
+[INFO  19:16:42] epoch 42: train_acc: 0.8396 	 test_acc: 0.8281
+[INFO  19:16:44] epoch 43: train_acc: 0.8421 	 test_acc: 0.8306
+[INFO  19:16:47] epoch 44: train_acc: 0.8445 	 test_acc: 0.8315
+[INFO  19:16:49] epoch 45: train_acc: 0.8477 	 test_acc: 0.8345
+[INFO  19:16:51] epoch 46: train_acc: 0.8490 	 test_acc: 0.8384
+[INFO  19:16:53] epoch 47: train_acc: 0.8514 	 test_acc: 0.8408
+[INFO  19:16:55] epoch 48: train_acc: 0.8521 	 test_acc: 0.8433
+[INFO  19:16:57] epoch 49: train_acc: 0.8542 	 test_acc: 0.8443
+[INFO  19:17:00] epoch 50: train_acc: 0.8558 	 test_acc: 0.8452
+[INFO  19:17:02] epoch 51: train_acc: 0.8579 	 test_acc: 0.8487
+[INFO  19:17:04] epoch 52: train_acc: 0.8595 	 test_acc: 0.8497
+[INFO  19:17:06] epoch 53: train_acc: 0.8603 	 test_acc: 0.8521
+[INFO  19:17:08] epoch 54: train_acc: 0.8621 	 test_acc: 0.8536
+[INFO  19:17:11] epoch 55: train_acc: 0.8640 	 test_acc: 0.8560
+[INFO  19:17:13] epoch 56: train_acc: 0.8655 	 test_acc: 0.8590
+[INFO  19:17:15] epoch 57: train_acc: 0.8670 	 test_acc: 0.8590
+[INFO  19:17:17] epoch 58: train_acc: 0.8691 	 test_acc: 0.8609
+[INFO  19:17:19] epoch 59: train_acc: 0.8706 	 test_acc: 0.8614
+[INFO  19:17:21] epoch 60: train_acc: 0.8734 	 test_acc: 0.8624
+[INFO  19:17:24] epoch 61: train_acc: 0.8748 	 test_acc: 0.8634
+[INFO  19:17:26] epoch 62: train_acc: 0.8763 	 test_acc: 0.8658
+[INFO  19:17:28] epoch 63: train_acc: 0.8777 	 test_acc: 0.8688
+[INFO  19:17:30] epoch 64: train_acc: 0.8790 	 test_acc: 0.8707
+[INFO  19:17:32] epoch 65: train_acc: 0.8796 	 test_acc: 0.8717
+[INFO  19:17:34] epoch 66: train_acc: 0.8815 	 test_acc: 0.8741
+[INFO  19:17:37] epoch 67: train_acc: 0.8832 	 test_acc: 0.8746
+[INFO  19:17:39] epoch 68: train_acc: 0.8839 	 test_acc: 0.8761
+[INFO  19:17:41] epoch 69: train_acc: 0.8854 	 test_acc: 0.8771
+[INFO  19:17:43] epoch 70: train_acc: 0.8871 	 test_acc: 0.8771
+[INFO  19:17:45] epoch 71: train_acc: 0.8886 	 test_acc: 0.8786
+[INFO  19:17:47] epoch 72: train_acc: 0.8896 	 test_acc: 0.8790
+[INFO  19:17:50] epoch 73: train_acc: 0.8905 	 test_acc: 0.8805
+[INFO  19:17:52] epoch 74: train_acc: 0.8914 	 test_acc: 0.8815
+[INFO  19:17:54] epoch 75: train_acc: 0.8924 	 test_acc: 0.8820
+[INFO  19:17:56] epoch 76: train_acc: 0.8936 	 test_acc: 0.8820
+[INFO  19:17:58] epoch 77: train_acc: 0.8950 	 test_acc: 0.8849
+[INFO  19:18:01] epoch 78: train_acc: 0.8955 	 test_acc: 0.8854
+[INFO  19:18:03] epoch 79: train_acc: 0.8968 	 test_acc: 0.8864
+[INFO  19:18:05] epoch 80: train_acc: 0.8978 	 test_acc: 0.8879
+[INFO  19:18:07] epoch 81: train_acc: 0.8986 	 test_acc: 0.8898
+[INFO  19:18:09] epoch 82: train_acc: 0.8996 	 test_acc: 0.8908
+[INFO  19:18:11] epoch 83: train_acc: 0.9010 	 test_acc: 0.8928
+[INFO  19:18:14] epoch 84: train_acc: 0.9011 	 test_acc: 0.8937
+[INFO  19:18:16] epoch 85: train_acc: 0.9021 	 test_acc: 0.8952
+[INFO  19:18:18] epoch 86: train_acc: 0.9026 	 test_acc: 0.8962
+[INFO  19:18:20] epoch 87: train_acc: 0.9035 	 test_acc: 0.8972
+[INFO  19:18:23] epoch 88: train_acc: 0.9040 	 test_acc: 0.8976
+[INFO  19:18:25] epoch 89: train_acc: 0.9050 	 test_acc: 0.8996
+[INFO  19:18:27] epoch 90: train_acc: 0.9057 	 test_acc: 0.9001
+[INFO  19:18:30] epoch 91: train_acc: 0.9063 	 test_acc: 0.8996
+[INFO  19:18:32] epoch 92: train_acc: 0.9069 	 test_acc: 0.8996
+[INFO  19:18:34] epoch 93: train_acc: 0.9075 	 test_acc: 0.9016
+[INFO  19:18:36] epoch 94: train_acc: 0.9083 	 test_acc: 0.9021
+[INFO  19:18:38] epoch 95: train_acc: 0.9083 	 test_acc: 0.9035
+[INFO  19:18:40] epoch 96: train_acc: 0.9087 	 test_acc: 0.9040
+[INFO  19:18:43] epoch 97: train_acc: 0.9088 	 test_acc: 0.9040
+[INFO  19:18:45] epoch 98: train_acc: 0.9093 	 test_acc: 0.9055
+[INFO  19:18:47] epoch 99: train_acc: 0.9101 	 test_acc: 0.9050
+[INFO  19:18:49] Task accuracies: {
+    "task1": 0.9366430260047282,
+    "task2": 0.9049951028403526,
+    "task3": 0.7123799359658485,
+    "task4": 0.7990936555891238,
+    "task5": 0.4367120524457892
+}
+[INFO  19:18:49] Mean task accuracy: 0.7580
+[INFO  19:18:49] Starting to fit generator to task 2
+[INFO  19:18:51] ====> VAE Epoch: 1 Average loss: -16739.0284
+[INFO  19:18:51] ====> VAE  Test set loss: -19617.7330
+[INFO  19:18:53] ====> VAE Epoch: 2 Average loss: -20439.2057
+[INFO  19:18:53] ====> VAE  Test set loss: -22548.1616
+[INFO  19:18:55] ====> VAE Epoch: 3 Average loss: -22841.9584
+[INFO  19:18:55] ====> VAE  Test set loss: -24731.4804
+[INFO  19:18:57] ====> VAE Epoch: 4 Average loss: -24413.8990
+[INFO  19:18:58] ====> VAE  Test set loss: -26029.5905
+[INFO  19:19:00] ====> VAE Epoch: 5 Average loss: -25554.5841
+[INFO  19:19:00] ====> VAE  Test set loss: -26892.0918
+[INFO  19:19:02] ====> VAE Epoch: 6 Average loss: -26366.3262
+[INFO  19:19:02] ====> VAE  Test set loss: -27829.1736
+[INFO  19:19:04] ====> VAE Epoch: 7 Average loss: -27027.7965
+[INFO  19:19:04] ====> VAE  Test set loss: -28432.6516
+[INFO  19:19:06] ====> VAE Epoch: 8 Average loss: -27555.5547
+[INFO  19:19:06] ====> VAE  Test set loss: -28679.3677
+[INFO  19:19:08] ====> VAE Epoch: 9 Average loss: -27987.8894
+[INFO  19:19:09] ====> VAE  Test set loss: -28988.9565
+[INFO  19:19:11] ====> VAE Epoch: 10 Average loss: -28309.4925
+[INFO  19:19:11] ====> VAE  Test set loss: -29414.2981
+[INFO  19:19:13] ====> VAE Epoch: 11 Average loss: -28653.1092
+[INFO  19:19:13] ====> VAE  Test set loss: -29551.9869
+[INFO  19:19:15] ====> VAE Epoch: 12 Average loss: -28878.5630
+[INFO  19:19:15] ====> VAE  Test set loss: -29956.6099
+[INFO  19:19:17] ====> VAE Epoch: 13 Average loss: -29103.4780
+[INFO  19:19:18] ====> VAE  Test set loss: -30015.8614
+[INFO  19:19:20] ====> VAE Epoch: 14 Average loss: -29320.8710
+[INFO  19:19:20] ====> VAE  Test set loss: -30310.4045
+[INFO  19:19:22] ====> VAE Epoch: 15 Average loss: -29512.2116
+[INFO  19:19:22] ====> VAE  Test set loss: -30410.6467
+[INFO  19:19:24] ====> VAE Epoch: 16 Average loss: -29688.8980
+[INFO  19:19:24] ====> VAE  Test set loss: -30657.4993
+[INFO  19:19:26] ====> VAE Epoch: 17 Average loss: -29878.1620
+[INFO  19:19:26] ====> VAE  Test set loss: -30806.6011
+[INFO  19:19:28] ====> VAE Epoch: 18 Average loss: -30057.9738
+[INFO  19:19:29] ====> VAE  Test set loss: -30982.8629
+[INFO  19:19:31] ====> VAE Epoch: 19 Average loss: -30204.9949
+[INFO  19:19:31] ====> VAE  Test set loss: -31164.4373
+[INFO  19:19:33] ====> VAE Epoch: 20 Average loss: -30364.8375
+[INFO  19:19:33] ====> VAE  Test set loss: -31184.7693
+[INFO  19:19:35] ====> VAE Epoch: 21 Average loss: -30520.2385
+[INFO  19:19:35] ====> VAE  Test set loss: -31411.2469
+[INFO  19:19:37] ====> VAE Epoch: 22 Average loss: -30642.6812
+[INFO  19:19:37] ====> VAE  Test set loss: -31648.8530
+[INFO  19:19:39] ====> VAE Epoch: 23 Average loss: -30765.4261
+[INFO  19:19:40] ====> VAE  Test set loss: -31626.0474
+[INFO  19:19:42] ====> VAE Epoch: 24 Average loss: -30896.9566
+[INFO  19:19:42] ====> VAE  Test set loss: -31812.8484
+[INFO  19:19:44] ====> VAE Epoch: 25 Average loss: -31002.3507
+[INFO  19:19:44] ====> VAE  Test set loss: -31966.6301
+[INFO  19:19:46] ====> VAE Epoch: 26 Average loss: -31127.0125
+[INFO  19:19:46] ====> VAE  Test set loss: -31952.2665
+[INFO  19:19:48] ====> VAE Epoch: 27 Average loss: -31217.4593
+[INFO  19:19:48] ====> VAE  Test set loss: -32034.8211
+[INFO  19:19:50] ====> VAE Epoch: 28 Average loss: -31328.4171
+[INFO  19:19:51] ====> VAE  Test set loss: -32090.3029
+[INFO  19:19:53] ====> VAE Epoch: 29 Average loss: -31409.5054
+[INFO  19:19:53] ====> VAE  Test set loss: -32241.2823
+[INFO  19:19:55] ====> VAE Epoch: 30 Average loss: -31511.4172
+[INFO  19:19:55] ====> VAE  Test set loss: -32341.2751
+[INFO  19:19:57] ====> VAE Epoch: 31 Average loss: -31593.1432
+[INFO  19:19:57] ====> VAE  Test set loss: -32453.3299
+[INFO  19:19:59] ====> VAE Epoch: 32 Average loss: -31677.2353
+[INFO  19:19:59] ====> VAE  Test set loss: -32517.0977
+[INFO  19:20:01] ====> VAE Epoch: 33 Average loss: -31764.0262
+[INFO  19:20:02] ====> VAE  Test set loss: -32582.7966
+[INFO  19:20:04] ====> VAE Epoch: 34 Average loss: -31850.5174
+[INFO  19:20:04] ====> VAE  Test set loss: -32676.6699
+[INFO  19:20:06] ====> VAE Epoch: 35 Average loss: -31936.3675
+[INFO  19:20:06] ====> VAE  Test set loss: -32813.0905
+[INFO  19:20:08] ====> VAE Epoch: 36 Average loss: -32029.2434
+[INFO  19:20:08] ====> VAE  Test set loss: -32842.7798
+[INFO  19:20:10] ====> VAE Epoch: 37 Average loss: -32109.0829
+[INFO  19:20:10] ====> VAE  Test set loss: -32959.1625
+[INFO  19:20:12] ====> VAE Epoch: 38 Average loss: -32189.7940
+[INFO  19:20:13] ====> VAE  Test set loss: -32862.0766
+[INFO  19:20:15] ====> VAE Epoch: 39 Average loss: -32268.9882
+[INFO  19:20:15] ====> VAE  Test set loss: -33045.2791
+[INFO  19:20:17] ====> VAE Epoch: 40 Average loss: -32356.4426
+[INFO  19:20:17] ====> VAE  Test set loss: -33177.4166
+[INFO  19:20:19] ====> VAE Epoch: 41 Average loss: -32445.6893
+[INFO  19:20:19] ====> VAE  Test set loss: -33182.0444
+[INFO  19:20:21] ====> VAE Epoch: 42 Average loss: -32519.5104
+[INFO  19:20:21] ====> VAE  Test set loss: -33332.5594
+[INFO  19:20:23] ====> VAE Epoch: 43 Average loss: -32594.3532
+[INFO  19:20:24] ====> VAE  Test set loss: -33346.9824
+[INFO  19:20:25] ====> VAE Epoch: 44 Average loss: -32665.3938
+[INFO  19:20:26] ====> VAE  Test set loss: -33356.1232
+[INFO  19:20:28] ====> VAE Epoch: 45 Average loss: -32730.4613
+[INFO  19:20:28] ====> VAE  Test set loss: -33465.8563
+[INFO  19:20:30] ====> VAE Epoch: 46 Average loss: -32819.1045
+[INFO  19:20:30] ====> VAE  Test set loss: -33540.7884
+[INFO  19:20:32] ====> VAE Epoch: 47 Average loss: -32868.8214
+[INFO  19:20:32] ====> VAE  Test set loss: -33581.2113
+[INFO  19:20:34] ====> VAE Epoch: 48 Average loss: -32924.1505
+[INFO  19:20:35] ====> VAE  Test set loss: -33606.5310
+[INFO  19:20:37] ====> VAE Epoch: 49 Average loss: -32990.4887
+[INFO  19:20:37] ====> VAE  Test set loss: -33678.2922
+[INFO  19:20:39] ====> VAE Epoch: 50 Average loss: -33053.7689
+[INFO  19:20:39] ====> VAE  Test set loss: -33721.1270
+[INFO  19:20:41] ====> VAE Epoch: 51 Average loss: -33099.0834
+[INFO  19:20:41] ====> VAE  Test set loss: -33764.7940
+[INFO  19:20:43] ====> VAE Epoch: 52 Average loss: -33152.7541
+[INFO  19:20:43] ====> VAE  Test set loss: -33843.0321
+[INFO  19:20:45] ====> VAE Epoch: 53 Average loss: -33203.1574
+[INFO  19:20:46] ====> VAE  Test set loss: -33923.1314
+[INFO  19:20:48] ====> VAE Epoch: 54 Average loss: -33249.2835
+[INFO  19:20:48] ====> VAE  Test set loss: -33934.1499
+[INFO  19:20:50] ====> VAE Epoch: 55 Average loss: -33288.3338
+[INFO  19:20:50] ====> VAE  Test set loss: -33948.1262
+[INFO  19:20:52] ====> VAE Epoch: 56 Average loss: -33345.8535
+[INFO  19:20:52] ====> VAE  Test set loss: -34034.9694
+[INFO  19:20:54] ====> VAE Epoch: 57 Average loss: -33377.1376
+[INFO  19:20:54] ====> VAE  Test set loss: -34109.3328
+[INFO  19:20:56] ====> VAE Epoch: 58 Average loss: -33434.6689
+[INFO  19:20:57] ====> VAE  Test set loss: -34140.7041
+[INFO  19:20:58] ====> VAE Epoch: 59 Average loss: -33470.7330
+[INFO  19:20:59] ====> VAE  Test set loss: -34199.5283
+[INFO  19:21:01] ====> VAE Epoch: 60 Average loss: -33506.0090
+[INFO  19:21:01] ====> VAE  Test set loss: -34195.5151
+[INFO  19:21:03] ====> VAE Epoch: 61 Average loss: -33547.5859
+[INFO  19:21:03] ====> VAE  Test set loss: -34288.2941
+[INFO  19:21:05] ====> VAE Epoch: 62 Average loss: -33581.6314
+[INFO  19:21:05] ====> VAE  Test set loss: -34314.8171
+[INFO  19:21:07] ====> VAE Epoch: 63 Average loss: -33620.2056
+[INFO  19:21:08] ====> VAE  Test set loss: -34312.8464
+[INFO  19:21:09] ====> VAE Epoch: 64 Average loss: -33670.6060
+[INFO  19:21:10] ====> VAE  Test set loss: -34402.9631
+[INFO  19:21:12] ====> VAE Epoch: 65 Average loss: -33703.9049
+[INFO  19:21:12] ====> VAE  Test set loss: -34329.6124
+[INFO  19:21:14] ====> VAE Epoch: 66 Average loss: -33716.2621
+[INFO  19:21:14] ====> VAE  Test set loss: -34446.2927
+[INFO  19:21:16] ====> VAE Epoch: 67 Average loss: -33769.9531
+[INFO  19:21:16] ====> VAE  Test set loss: -34444.5070
+[INFO  19:21:18] ====> VAE Epoch: 68 Average loss: -33786.7560
+[INFO  19:21:19] ====> VAE  Test set loss: -34528.4321
+[INFO  19:21:20] ====> VAE Epoch: 69 Average loss: -33839.6202
+[INFO  19:21:21] ====> VAE  Test set loss: -34533.6118
+[INFO  19:21:23] ====> VAE Epoch: 70 Average loss: -33854.6062
+[INFO  19:21:23] ====> VAE  Test set loss: -34533.7384
+[INFO  19:21:25] ====> VAE Epoch: 71 Average loss: -33898.8577
+[INFO  19:21:25] ====> VAE  Test set loss: -34582.8194
+[INFO  19:21:27] ====> VAE Epoch: 72 Average loss: -33923.0623
+[INFO  19:21:27] ====> VAE  Test set loss: -34645.9267
+[INFO  19:21:29] ====> VAE Epoch: 73 Average loss: -33962.5750
+[INFO  19:21:29] ====> VAE  Test set loss: -34668.2310
+[INFO  19:21:31] ====> VAE Epoch: 74 Average loss: -33992.9385
+[INFO  19:21:32] ====> VAE  Test set loss: -34647.5286
+[INFO  19:21:34] ====> VAE Epoch: 75 Average loss: -34015.9602
+[INFO  19:21:34] ====> VAE  Test set loss: -34756.5613
+[INFO  19:21:36] ====> VAE Epoch: 76 Average loss: -34047.8186
+[INFO  19:21:36] ====> VAE  Test set loss: -34662.1916
+[INFO  19:21:38] ====> VAE Epoch: 77 Average loss: -34076.8437
+[INFO  19:21:38] ====> VAE  Test set loss: -34766.8967
+[INFO  19:21:40] ====> VAE Epoch: 78 Average loss: -34109.5299
+[INFO  19:21:40] ====> VAE  Test set loss: -34791.9437
+[INFO  19:21:42] ====> VAE Epoch: 79 Average loss: -34132.9619
+[INFO  19:21:43] ====> VAE  Test set loss: -34800.9625
+[INFO  19:21:45] ====> VAE Epoch: 80 Average loss: -34170.2887
+[INFO  19:21:45] ====> VAE  Test set loss: -34845.8874
+[INFO  19:21:47] ====> VAE Epoch: 81 Average loss: -34210.2948
+[INFO  19:21:47] ====> VAE  Test set loss: -34870.9180
+[INFO  19:21:49] ====> VAE Epoch: 82 Average loss: -34230.1345
+[INFO  19:21:49] ====> VAE  Test set loss: -34893.3238
+[INFO  19:21:51] ====> VAE Epoch: 83 Average loss: -34271.7338
+[INFO  19:21:51] ====> VAE  Test set loss: -34899.0812
+[INFO  19:21:53] ====> VAE Epoch: 84 Average loss: -34305.0540
+[INFO  19:21:54] ====> VAE  Test set loss: -34988.7883
+[INFO  19:21:56] ====> VAE Epoch: 85 Average loss: -34324.4557
+[INFO  19:21:56] ====> VAE  Test set loss: -34974.7538
+[INFO  19:21:58] ====> VAE Epoch: 86 Average loss: -34371.9058
+[INFO  19:21:58] ====> VAE  Test set loss: -34991.4902
+[INFO  19:22:00] ====> VAE Epoch: 87 Average loss: -34401.6143
+[INFO  19:22:00] ====> VAE  Test set loss: -35083.4022
+[INFO  19:22:02] ====> VAE Epoch: 88 Average loss: -34444.7962
+[INFO  19:22:03] ====> VAE  Test set loss: -35097.4689
+[INFO  19:22:04] ====> VAE Epoch: 89 Average loss: -34488.4309
+[INFO  19:22:05] ====> VAE  Test set loss: -35137.9478
+[INFO  19:22:07] ====> VAE Epoch: 90 Average loss: -34512.6020
+[INFO  19:22:07] ====> VAE  Test set loss: -35159.8604
+[INFO  19:22:09] ====> VAE Epoch: 91 Average loss: -34561.4622
+[INFO  19:22:09] ====> VAE  Test set loss: -35187.9248
+[INFO  19:22:11] ====> VAE Epoch: 92 Average loss: -34599.8941
+[INFO  19:22:11] ====> VAE  Test set loss: -35271.2676
+[INFO  19:22:13] ====> VAE Epoch: 93 Average loss: -34637.8606
+[INFO  19:22:14] ====> VAE  Test set loss: -35318.9760
+[INFO  19:22:16] ====> VAE Epoch: 94 Average loss: -34676.7456
+[INFO  19:22:16] ====> VAE  Test set loss: -35320.8281
+[INFO  19:22:18] ====> VAE Epoch: 95 Average loss: -34719.3726
+[INFO  19:22:18] ====> VAE  Test set loss: -35352.3692
+[INFO  19:22:20] ====> VAE Epoch: 96 Average loss: -34742.3992
+[INFO  19:22:20] ====> VAE  Test set loss: -35389.6609
+[INFO  19:22:22] ====> VAE Epoch: 97 Average loss: -34782.5594
+[INFO  19:22:22] ====> VAE  Test set loss: -35413.8923
+[INFO  19:22:24] ====> VAE Epoch: 98 Average loss: -34822.8563
+[INFO  19:22:25] ====> VAE  Test set loss: -35449.5676
+[INFO  19:22:26] ====> VAE Epoch: 99 Average loss: -34847.1015
+[INFO  19:22:27] ====> VAE  Test set loss: -35513.1513
+[INFO  19:22:29] ====> VAE Epoch: 100 Average loss: -34878.4427
+[INFO  19:22:29] ====> VAE  Test set loss: -35545.8386
+[INFO  19:22:29] Starting replay of task 1
+[INFO  19:22:29] Replay epoch 0: Replay_train_acc: 0.7500 	 Replay_test_acc: 0.8125
+[INFO  19:22:29] Replay epoch 1: Replay_train_acc: 0.7500 	 Replay_test_acc: 0.8125
+[INFO  19:22:29] Replay epoch 2: Replay_train_acc: 0.7500 	 Replay_test_acc: 0.8125
+[INFO  19:22:29] Replay epoch 3: Replay_train_acc: 0.7500 	 Replay_test_acc: 0.8125
+[INFO  19:22:29] Replay epoch 4: Replay_train_acc: 0.7500 	 Replay_test_acc: 0.8125
+[INFO  19:22:29] Replay epoch 5: Replay_train_acc: 0.7500 	 Replay_test_acc: 0.8125
+[INFO  19:22:29] Replay epoch 6: Replay_train_acc: 0.7500 	 Replay_test_acc: 0.8125
+[INFO  19:22:29] Replay epoch 7: Replay_train_acc: 0.7500 	 Replay_test_acc: 0.8125
+[INFO  19:22:29] Replay epoch 8: Replay_train_acc: 0.7500 	 Replay_test_acc: 0.8125
+[INFO  19:22:29] Replay epoch 9: Replay_train_acc: 0.7500 	 Replay_test_acc: 0.8125
+[INFO  19:22:29] Update replay buffer for generative replay.
+[INFO  19:22:29] Starting training of task 3
+[INFO  19:22:31] epoch 0: train_acc: 0.7146 	 test_acc: 0.7166
+[INFO  19:22:33] epoch 1: train_acc: 0.7210 	 test_acc: 0.7279
+[INFO  19:22:35] epoch 2: train_acc: 0.7263 	 test_acc: 0.7321
+[INFO  19:22:37] epoch 3: train_acc: 0.7318 	 test_acc: 0.7380
+[INFO  19:22:39] epoch 4: train_acc: 0.7383 	 test_acc: 0.7449
+[INFO  19:22:41] epoch 5: train_acc: 0.7423 	 test_acc: 0.7476
+[INFO  19:22:43] epoch 6: train_acc: 0.7485 	 test_acc: 0.7524
+[INFO  19:22:45] epoch 7: train_acc: 0.7534 	 test_acc: 0.7577
+[INFO  19:22:47] epoch 8: train_acc: 0.7585 	 test_acc: 0.7652
+[INFO  19:22:49] epoch 9: train_acc: 0.7621 	 test_acc: 0.7695
+[INFO  19:22:51] epoch 10: train_acc: 0.7663 	 test_acc: 0.7753
+[INFO  19:22:53] epoch 11: train_acc: 0.7723 	 test_acc: 0.7796
+[INFO  19:22:55] epoch 12: train_acc: 0.7757 	 test_acc: 0.7839
+[INFO  19:22:57] epoch 13: train_acc: 0.7806 	 test_acc: 0.7903
+[INFO  19:22:59] epoch 14: train_acc: 0.7838 	 test_acc: 0.7946
+[INFO  19:23:01] epoch 15: train_acc: 0.7880 	 test_acc: 0.7983
+[INFO  19:23:03] epoch 16: train_acc: 0.7896 	 test_acc: 0.8015
+[INFO  19:23:06] epoch 17: train_acc: 0.7924 	 test_acc: 0.8058
+[INFO  19:23:08] epoch 18: train_acc: 0.7947 	 test_acc: 0.8084
+[INFO  19:23:10] epoch 19: train_acc: 0.7994 	 test_acc: 0.8106
+[INFO  19:23:12] epoch 20: train_acc: 0.8018 	 test_acc: 0.8143
+[INFO  19:23:14] epoch 21: train_acc: 0.8058 	 test_acc: 0.8170
+[INFO  19:23:16] epoch 22: train_acc: 0.8082 	 test_acc: 0.8202
+[INFO  19:23:18] epoch 23: train_acc: 0.8120 	 test_acc: 0.8218
+[INFO  19:23:20] epoch 24: train_acc: 0.8151 	 test_acc: 0.8244
+[INFO  19:23:22] epoch 25: train_acc: 0.8177 	 test_acc: 0.8287
+[INFO  19:23:24] epoch 26: train_acc: 0.8197 	 test_acc: 0.8303
+[INFO  19:23:26] epoch 27: train_acc: 0.8231 	 test_acc: 0.8319
+[INFO  19:23:28] epoch 28: train_acc: 0.8246 	 test_acc: 0.8362
+[INFO  19:23:30] epoch 29: train_acc: 0.8276 	 test_acc: 0.8394
+[INFO  19:23:32] epoch 30: train_acc: 0.8304 	 test_acc: 0.8410
+[INFO  19:23:34] epoch 31: train_acc: 0.8333 	 test_acc: 0.8420
+[INFO  19:23:36] epoch 32: train_acc: 0.8347 	 test_acc: 0.8447
+[INFO  19:23:38] epoch 33: train_acc: 0.8371 	 test_acc: 0.8479
+[INFO  19:23:40] epoch 34: train_acc: 0.8379 	 test_acc: 0.8495
+[INFO  19:23:42] epoch 35: train_acc: 0.8400 	 test_acc: 0.8511
+[INFO  19:23:44] epoch 36: train_acc: 0.8412 	 test_acc: 0.8538
+[INFO  19:23:46] epoch 37: train_acc: 0.8421 	 test_acc: 0.8554
+[INFO  19:23:48] epoch 38: train_acc: 0.8444 	 test_acc: 0.8575
+[INFO  19:23:50] epoch 39: train_acc: 0.8455 	 test_acc: 0.8581
+[INFO  19:23:52] epoch 40: train_acc: 0.8461 	 test_acc: 0.8623
+[INFO  19:23:54] epoch 41: train_acc: 0.8472 	 test_acc: 0.8623
+[INFO  19:23:56] epoch 42: train_acc: 0.8499 	 test_acc: 0.8623
+[INFO  19:23:58] epoch 43: train_acc: 0.8520 	 test_acc: 0.8639
+[INFO  19:24:00] epoch 44: train_acc: 0.8530 	 test_acc: 0.8650
+[INFO  19:24:02] epoch 45: train_acc: 0.8547 	 test_acc: 0.8666
+[INFO  19:24:04] epoch 46: train_acc: 0.8567 	 test_acc: 0.8693
+[INFO  19:24:06] epoch 47: train_acc: 0.8586 	 test_acc: 0.8687
+[INFO  19:24:08] epoch 48: train_acc: 0.8594 	 test_acc: 0.8719
+[INFO  19:24:10] epoch 49: train_acc: 0.8600 	 test_acc: 0.8725
+[INFO  19:24:12] epoch 50: train_acc: 0.8607 	 test_acc: 0.8741
+[INFO  19:24:14] epoch 51: train_acc: 0.8623 	 test_acc: 0.8757
+[INFO  19:24:16] epoch 52: train_acc: 0.8634 	 test_acc: 0.8773
+[INFO  19:24:18] epoch 53: train_acc: 0.8650 	 test_acc: 0.8783
+[INFO  19:24:20] epoch 54: train_acc: 0.8660 	 test_acc: 0.8789
+[INFO  19:24:22] epoch 55: train_acc: 0.8676 	 test_acc: 0.8778
+[INFO  19:24:24] epoch 56: train_acc: 0.8682 	 test_acc: 0.8789
+[INFO  19:24:26] epoch 57: train_acc: 0.8695 	 test_acc: 0.8799
+[INFO  19:24:28] epoch 58: train_acc: 0.8703 	 test_acc: 0.8805
+[INFO  19:24:30] epoch 59: train_acc: 0.8718 	 test_acc: 0.8810
+[INFO  19:24:32] epoch 60: train_acc: 0.8728 	 test_acc: 0.8810
+[INFO  19:24:34] epoch 61: train_acc: 0.8737 	 test_acc: 0.8815
+[INFO  19:24:36] epoch 62: train_acc: 0.8737 	 test_acc: 0.8826
+[INFO  19:24:38] epoch 63: train_acc: 0.8738 	 test_acc: 0.8826
+[INFO  19:24:40] epoch 64: train_acc: 0.8754 	 test_acc: 0.8837
+[INFO  19:24:42] epoch 65: train_acc: 0.8754 	 test_acc: 0.8837
+[INFO  19:24:44] epoch 66: train_acc: 0.8761 	 test_acc: 0.8853
+[INFO  19:24:46] epoch 67: train_acc: 0.8769 	 test_acc: 0.8869
+[INFO  19:24:48] epoch 68: train_acc: 0.8781 	 test_acc: 0.8874
+[INFO  19:24:50] epoch 69: train_acc: 0.8788 	 test_acc: 0.8885
+[INFO  19:24:52] epoch 70: train_acc: 0.8785 	 test_acc: 0.8901
+[INFO  19:24:54] epoch 71: train_acc: 0.8797 	 test_acc: 0.8906
+[INFO  19:24:56] epoch 72: train_acc: 0.8792 	 test_acc: 0.8922
+[INFO  19:24:58] epoch 73: train_acc: 0.8796 	 test_acc: 0.8943
+[INFO  19:25:00] epoch 74: train_acc: 0.8805 	 test_acc: 0.8943
+[INFO  19:25:02] epoch 75: train_acc: 0.8807 	 test_acc: 0.8954
+[INFO  19:25:04] epoch 76: train_acc: 0.8809 	 test_acc: 0.8954
+[INFO  19:25:06] epoch 77: train_acc: 0.8813 	 test_acc: 0.8965
+[INFO  19:25:08] epoch 78: train_acc: 0.8816 	 test_acc: 0.8954
+[INFO  19:25:10] epoch 79: train_acc: 0.8825 	 test_acc: 0.8954
+[INFO  19:25:12] epoch 80: train_acc: 0.8825 	 test_acc: 0.8959
+[INFO  19:25:14] epoch 81: train_acc: 0.8832 	 test_acc: 0.8970
+[INFO  19:25:16] epoch 82: train_acc: 0.8832 	 test_acc: 0.8981
+[INFO  19:25:18] epoch 83: train_acc: 0.8834 	 test_acc: 0.8981
+[INFO  19:25:20] epoch 84: train_acc: 0.8842 	 test_acc: 0.8991
+[INFO  19:25:22] epoch 85: train_acc: 0.8839 	 test_acc: 0.9002
+[INFO  19:25:24] epoch 86: train_acc: 0.8848 	 test_acc: 0.9018
+[INFO  19:25:26] epoch 87: train_acc: 0.8846 	 test_acc: 0.9013
+[INFO  19:25:28] epoch 88: train_acc: 0.8842 	 test_acc: 0.9013
+[INFO  19:25:30] epoch 89: train_acc: 0.8854 	 test_acc: 0.9013
+[INFO  19:25:32] epoch 90: train_acc: 0.8858 	 test_acc: 0.9018
+[INFO  19:25:34] epoch 91: train_acc: 0.8855 	 test_acc: 0.9018
+[INFO  19:25:36] epoch 92: train_acc: 0.8853 	 test_acc: 0.9013
+[INFO  19:25:38] epoch 93: train_acc: 0.8856 	 test_acc: 0.9023
+[INFO  19:25:40] epoch 94: train_acc: 0.8851 	 test_acc: 0.9029
+[INFO  19:25:42] epoch 95: train_acc: 0.8847 	 test_acc: 0.9029
+[INFO  19:25:44] epoch 96: train_acc: 0.8848 	 test_acc: 0.9023
+[INFO  19:25:46] epoch 97: train_acc: 0.8851 	 test_acc: 0.9023
+[INFO  19:25:48] epoch 98: train_acc: 0.8845 	 test_acc: 0.9029
+[INFO  19:25:50] epoch 99: train_acc: 0.8850 	 test_acc: 0.9013
+[INFO  19:25:52] Task accuracies: {
+    "task1": 0.6855791962174941,
+    "task2": 0.8721841332027425,
+    "task3": 0.9012806830309499,
+    "task4": 0.4622356495468278,
+    "task5": 0.25970751386787694
+}
+[INFO  19:25:52] Mean task accuracy: 0.6362
+[INFO  19:25:52] Starting to fit generator to task 3
+[INFO  19:25:54] ====> VAE Epoch: 1 Average loss: -27028.4086
+[INFO  19:25:54] ====> VAE  Test set loss: -29461.0407
+[INFO  19:25:56] ====> VAE Epoch: 2 Average loss: -29148.9679
+[INFO  19:25:56] ====> VAE  Test set loss: -30415.7224
+[INFO  19:25:58] ====> VAE Epoch: 3 Average loss: -29939.7107
+[INFO  19:25:58] ====> VAE  Test set loss: -31065.3328
+[INFO  19:26:00] ====> VAE Epoch: 4 Average loss: -30416.1478
+[INFO  19:26:01] ====> VAE  Test set loss: -31481.5474
+[INFO  19:26:02] ====> VAE Epoch: 5 Average loss: -30732.0331
+[INFO  19:26:03] ====> VAE  Test set loss: -31712.9573
+[INFO  19:26:04] ====> VAE Epoch: 6 Average loss: -30956.5114
+[INFO  19:26:05] ====> VAE  Test set loss: -31903.2058
+[INFO  19:26:06] ====> VAE Epoch: 7 Average loss: -31157.3544
+[INFO  19:26:07] ====> VAE  Test set loss: -32093.9771
+[INFO  19:26:08] ====> VAE Epoch: 8 Average loss: -31319.6363
+[INFO  19:26:09] ====> VAE  Test set loss: -32259.3877
+[INFO  19:26:10] ====> VAE Epoch: 9 Average loss: -31468.4089
+[INFO  19:26:11] ====> VAE  Test set loss: -32390.2336
+[INFO  19:26:12] ====> VAE Epoch: 10 Average loss: -31592.0214
+[INFO  19:26:13] ====> VAE  Test set loss: -32519.8595
+[INFO  19:26:14] ====> VAE Epoch: 11 Average loss: -31708.7362
+[INFO  19:26:15] ====> VAE  Test set loss: -32637.8154
+[INFO  19:26:16] ====> VAE Epoch: 12 Average loss: -31802.3836
+[INFO  19:26:17] ====> VAE  Test set loss: -32736.1363
+[INFO  19:26:19] ====> VAE Epoch: 13 Average loss: -31906.5073
+[INFO  19:26:19] ====> VAE  Test set loss: -32860.8267
+[INFO  19:26:21] ====> VAE Epoch: 14 Average loss: -31992.0312
+[INFO  19:26:21] ====> VAE  Test set loss: -32906.9092
+[INFO  19:26:23] ====> VAE Epoch: 15 Average loss: -32081.9697
+[INFO  19:26:23] ====> VAE  Test set loss: -32932.6438
+[INFO  19:26:25] ====> VAE Epoch: 16 Average loss: -32160.9753
+[INFO  19:26:25] ====> VAE  Test set loss: -33057.0896
+[INFO  19:26:27] ====> VAE Epoch: 17 Average loss: -32228.5849
+[INFO  19:26:27] ====> VAE  Test set loss: -33140.7441
+[INFO  19:26:29] ====> VAE Epoch: 18 Average loss: -32309.0175
+[INFO  19:26:29] ====> VAE  Test set loss: -33232.2082
+[INFO  19:26:31] ====> VAE Epoch: 19 Average loss: -32365.6665
+[INFO  19:26:31] ====> VAE  Test set loss: -33308.2157
+[INFO  19:26:33] ====> VAE Epoch: 20 Average loss: -32436.8588
+[INFO  19:26:33] ====> VAE  Test set loss: -33339.2870
+[INFO  19:26:35] ====> VAE Epoch: 21 Average loss: -32498.9782
+[INFO  19:26:35] ====> VAE  Test set loss: -33384.8470
+[INFO  19:26:37] ====> VAE Epoch: 22 Average loss: -32561.2125
+[INFO  19:26:37] ====> VAE  Test set loss: -33496.6227
+[INFO  19:26:39] ====> VAE Epoch: 23 Average loss: -32618.6472
+[INFO  19:26:39] ====> VAE  Test set loss: -33513.3092
+[INFO  19:26:41] ====> VAE Epoch: 24 Average loss: -32665.6445
+[INFO  19:26:41] ====> VAE  Test set loss: -33585.8420
+[INFO  19:26:43] ====> VAE Epoch: 25 Average loss: -32715.2857
+[INFO  19:26:43] ====> VAE  Test set loss: -33625.4711
+[INFO  19:26:45] ====> VAE Epoch: 26 Average loss: -32771.9547
+[INFO  19:26:45] ====> VAE  Test set loss: -33680.0424
+[INFO  19:26:47] ====> VAE Epoch: 27 Average loss: -32816.2783
+[INFO  19:26:47] ====> VAE  Test set loss: -33712.3797
+[INFO  19:26:49] ====> VAE Epoch: 28 Average loss: -32856.0967
+[INFO  19:26:49] ====> VAE  Test set loss: -33723.1507
+[INFO  19:26:51] ====> VAE Epoch: 29 Average loss: -32901.4236
+[INFO  19:26:51] ====> VAE  Test set loss: -33810.9366
+[INFO  19:26:53] ====> VAE Epoch: 30 Average loss: -32943.6218
+[INFO  19:26:53] ====> VAE  Test set loss: -33793.1509
+[INFO  19:26:55] ====> VAE Epoch: 31 Average loss: -32980.8717
+[INFO  19:26:55] ====> VAE  Test set loss: -33852.6730
+[INFO  19:26:57] ====> VAE Epoch: 32 Average loss: -33028.8581
+[INFO  19:26:57] ====> VAE  Test set loss: -33929.7513
+[INFO  19:26:59] ====> VAE Epoch: 33 Average loss: -33066.4255
+[INFO  19:26:59] ====> VAE  Test set loss: -33946.6741
+[INFO  19:27:01] ====> VAE Epoch: 34 Average loss: -33103.6174
+[INFO  19:27:02] ====> VAE  Test set loss: -33990.3276
+[INFO  19:27:03] ====> VAE Epoch: 35 Average loss: -33137.2165
+[INFO  19:27:04] ====> VAE  Test set loss: -34018.9893
+[INFO  19:27:05] ====> VAE Epoch: 36 Average loss: -33185.3482
+[INFO  19:27:06] ====> VAE  Test set loss: -34080.1363
+[INFO  19:27:07] ====> VAE Epoch: 37 Average loss: -33200.9086
+[INFO  19:27:08] ====> VAE  Test set loss: -34111.8707
+[INFO  19:27:09] ====> VAE Epoch: 38 Average loss: -33237.4792
+[INFO  19:27:10] ====> VAE  Test set loss: -34131.2783
+[INFO  19:27:11] ====> VAE Epoch: 39 Average loss: -33284.7886
+[INFO  19:27:12] ====> VAE  Test set loss: -34146.8367
+[INFO  19:27:13] ====> VAE Epoch: 40 Average loss: -33312.2643
+[INFO  19:27:14] ====> VAE  Test set loss: -34146.0842
+[INFO  19:27:16] ====> VAE Epoch: 41 Average loss: -33341.7592
+[INFO  19:27:16] ====> VAE  Test set loss: -34212.5692
+[INFO  19:27:18] ====> VAE Epoch: 42 Average loss: -33367.7344
+[INFO  19:27:18] ====> VAE  Test set loss: -34282.1334
+[INFO  19:27:20] ====> VAE Epoch: 43 Average loss: -33403.4566
+[INFO  19:27:20] ====> VAE  Test set loss: -34287.9991
+[INFO  19:27:22] ====> VAE Epoch: 44 Average loss: -33431.7176
+[INFO  19:27:22] ====> VAE  Test set loss: -34320.7339
+[INFO  19:27:24] ====> VAE Epoch: 45 Average loss: -33467.5997
+[INFO  19:27:24] ====> VAE  Test set loss: -34353.1042
+[INFO  19:27:26] ====> VAE Epoch: 46 Average loss: -33494.8502
+[INFO  19:27:26] ====> VAE  Test set loss: -34355.9573
+[INFO  19:27:28] ====> VAE Epoch: 47 Average loss: -33519.8804
+[INFO  19:27:28] ====> VAE  Test set loss: -34383.5894
+[INFO  19:27:30] ====> VAE Epoch: 48 Average loss: -33553.1215
+[INFO  19:27:30] ====> VAE  Test set loss: -34455.7064
+[INFO  19:27:32] ====> VAE Epoch: 49 Average loss: -33575.2997
+[INFO  19:27:32] ====> VAE  Test set loss: -34423.4353
+[INFO  19:27:34] ====> VAE Epoch: 50 Average loss: -33597.0161
+[INFO  19:27:34] ====> VAE  Test set loss: -34470.1310
+[INFO  19:27:36] ====> VAE Epoch: 51 Average loss: -33624.8817
+[INFO  19:27:36] ====> VAE  Test set loss: -34522.1916
+[INFO  19:27:38] ====> VAE Epoch: 52 Average loss: -33646.9788
+[INFO  19:27:38] ====> VAE  Test set loss: -34549.3521
+[INFO  19:27:40] ====> VAE Epoch: 53 Average loss: -33685.9592
+[INFO  19:27:40] ====> VAE  Test set loss: -34555.2460
+[INFO  19:27:42] ====> VAE Epoch: 54 Average loss: -33694.5810
+[INFO  19:27:42] ====> VAE  Test set loss: -34554.4824
+[INFO  19:27:44] ====> VAE Epoch: 55 Average loss: -33721.3853
+[INFO  19:27:44] ====> VAE  Test set loss: -34561.7651
+[INFO  19:27:46] ====> VAE Epoch: 56 Average loss: -33757.8279
+[INFO  19:27:46] ====> VAE  Test set loss: -34616.9964
+[INFO  19:27:48] ====> VAE Epoch: 57 Average loss: -33775.4925
+[INFO  19:27:48] ====> VAE  Test set loss: -34688.9161
+[INFO  19:27:50] ====> VAE Epoch: 58 Average loss: -33801.3568
+[INFO  19:27:50] ====> VAE  Test set loss: -34674.3825
+[INFO  19:27:52] ====> VAE Epoch: 59 Average loss: -33814.4018
+[INFO  19:27:52] ====> VAE  Test set loss: -34712.6010
+[INFO  19:27:54] ====> VAE Epoch: 60 Average loss: -33850.4572
+[INFO  19:27:54] ====> VAE  Test set loss: -34725.4871
+[INFO  19:27:56] ====> VAE Epoch: 61 Average loss: -33871.7049
+[INFO  19:27:56] ====> VAE  Test set loss: -34752.1493
+[INFO  19:27:58] ====> VAE Epoch: 62 Average loss: -33901.4017
+[INFO  19:27:58] ====> VAE  Test set loss: -34780.7104
+[INFO  19:28:00] ====> VAE Epoch: 63 Average loss: -33909.6440
+[INFO  19:28:00] ====> VAE  Test set loss: -34808.8208
+[INFO  19:28:02] ====> VAE Epoch: 64 Average loss: -33952.0580
+[INFO  19:28:02] ====> VAE  Test set loss: -34805.1977
+[INFO  19:28:04] ====> VAE Epoch: 65 Average loss: -33958.9207
+[INFO  19:28:04] ====> VAE  Test set loss: -34842.9773
+[INFO  19:28:06] ====> VAE Epoch: 66 Average loss: -33989.6412
+[INFO  19:28:06] ====> VAE  Test set loss: -34823.4165
+[INFO  19:28:08] ====> VAE Epoch: 67 Average loss: -34018.5667
+[INFO  19:28:08] ====> VAE  Test set loss: -34905.3635
+[INFO  19:28:10] ====> VAE Epoch: 68 Average loss: -34032.1298
+[INFO  19:28:10] ====> VAE  Test set loss: -34882.2588
+[INFO  19:28:12] ====> VAE Epoch: 69 Average loss: -34052.4821
+[INFO  19:28:12] ====> VAE  Test set loss: -34910.0414
+[INFO  19:28:14] ====> VAE Epoch: 70 Average loss: -34070.5843
+[INFO  19:28:14] ====> VAE  Test set loss: -34927.2613
+[INFO  19:28:16] ====> VAE Epoch: 71 Average loss: -34095.7864
+[INFO  19:28:16] ====> VAE  Test set loss: -34914.4550
+[INFO  19:28:18] ====> VAE Epoch: 72 Average loss: -34101.6978
+[INFO  19:28:18] ====> VAE  Test set loss: -34976.0183
+[INFO  19:28:20] ====> VAE Epoch: 73 Average loss: -34123.7697
+[INFO  19:28:21] ====> VAE  Test set loss: -35014.2197
+[INFO  19:28:22] ====> VAE Epoch: 74 Average loss: -34142.3496
+[INFO  19:28:23] ====> VAE  Test set loss: -35019.9997
+[INFO  19:28:25] ====> VAE Epoch: 75 Average loss: -34171.6003
+[INFO  19:28:25] ====> VAE  Test set loss: -35024.1970
+[INFO  19:28:27] ====> VAE Epoch: 76 Average loss: -34188.6771
+[INFO  19:28:27] ====> VAE  Test set loss: -35055.9941
+[INFO  19:28:29] ====> VAE Epoch: 77 Average loss: -34206.5268
+[INFO  19:28:29] ====> VAE  Test set loss: -35056.9712
+[INFO  19:28:31] ====> VAE Epoch: 78 Average loss: -34212.9923
+[INFO  19:28:31] ====> VAE  Test set loss: -35086.2648
+[INFO  19:28:33] ====> VAE Epoch: 79 Average loss: -34234.7812
+[INFO  19:28:33] ====> VAE  Test set loss: -35089.9452
+[INFO  19:28:35] ====> VAE Epoch: 80 Average loss: -34251.7037
+[INFO  19:28:35] ====> VAE  Test set loss: -35139.5175
+[INFO  19:28:37] ====> VAE Epoch: 81 Average loss: -34266.6741
+[INFO  19:28:37] ====> VAE  Test set loss: -35126.2756
+[INFO  19:28:39] ====> VAE Epoch: 82 Average loss: -34292.3108
+[INFO  19:28:39] ====> VAE  Test set loss: -35149.1499
+[INFO  19:28:41] ====> VAE Epoch: 83 Average loss: -34298.5527
+[INFO  19:28:41] ====> VAE  Test set loss: -35150.7357
+[INFO  19:28:43] ====> VAE Epoch: 84 Average loss: -34318.8184
+[INFO  19:28:43] ====> VAE  Test set loss: -35146.8911
+[INFO  19:28:45] ====> VAE Epoch: 85 Average loss: -34339.6766
+[INFO  19:28:45] ====> VAE  Test set loss: -35170.7288
+[INFO  19:28:47] ====> VAE Epoch: 86 Average loss: -34353.0059
+[INFO  19:28:47] ====> VAE  Test set loss: -35201.8274
+[INFO  19:28:49] ====> VAE Epoch: 87 Average loss: -34364.7718
+[INFO  19:28:49] ====> VAE  Test set loss: -35233.5091
+[INFO  19:28:51] ====> VAE Epoch: 88 Average loss: -34392.1714
+[INFO  19:28:51] ====> VAE  Test set loss: -35259.6305
+[INFO  19:28:53] ====> VAE Epoch: 89 Average loss: -34402.6141
+[INFO  19:28:53] ====> VAE  Test set loss: -35281.4037
+[INFO  19:28:55] ====> VAE Epoch: 90 Average loss: -34427.7406
+[INFO  19:28:55] ====> VAE  Test set loss: -35277.7157
+[INFO  19:28:57] ====> VAE Epoch: 91 Average loss: -34436.9054
+[INFO  19:28:57] ====> VAE  Test set loss: -35284.0104
+[INFO  19:28:59] ====> VAE Epoch: 92 Average loss: -34454.2240
+[INFO  19:28:59] ====> VAE  Test set loss: -35312.3270
+[INFO  19:29:01] ====> VAE Epoch: 93 Average loss: -34467.3072
+[INFO  19:29:01] ====> VAE  Test set loss: -35327.0312
+[INFO  19:29:03] ====> VAE Epoch: 94 Average loss: -34489.9610
+[INFO  19:29:03] ====> VAE  Test set loss: -35354.2703
+[INFO  19:29:05] ====> VAE Epoch: 95 Average loss: -34511.2999
+[INFO  19:29:06] ====> VAE  Test set loss: -35373.5748
+[INFO  19:29:07] ====> VAE Epoch: 96 Average loss: -34516.7617
+[INFO  19:29:08] ====> VAE  Test set loss: -35381.7888
+[INFO  19:29:09] ====> VAE Epoch: 97 Average loss: -34543.2662
+[INFO  19:29:10] ====> VAE  Test set loss: -35399.1457
+[INFO  19:29:12] ====> VAE Epoch: 98 Average loss: -34559.8245
+[INFO  19:29:12] ====> VAE  Test set loss: -35419.4184
+[INFO  19:29:14] ====> VAE Epoch: 99 Average loss: -34573.0056
+[INFO  19:29:14] ====> VAE  Test set loss: -35446.1053
+[INFO  19:29:16] ====> VAE Epoch: 100 Average loss: -34591.9866
+[INFO  19:29:16] ====> VAE  Test set loss: -35424.2681
+[INFO  19:29:16] Starting replay of task 1
+[INFO  19:29:16] Replay epoch 0: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6875
+[INFO  19:29:16] Replay epoch 1: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6875
+[INFO  19:29:16] Replay epoch 2: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6875
+[INFO  19:29:16] Replay epoch 3: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6875
+[INFO  19:29:16] Replay epoch 4: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6875
+[INFO  19:29:16] Replay epoch 5: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6875
+[INFO  19:29:16] Replay epoch 6: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6875
+[INFO  19:29:16] Replay epoch 7: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6875
+[INFO  19:29:16] Replay epoch 8: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6875
+[INFO  19:29:16] Replay epoch 9: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.7500
+[INFO  19:29:16] Update replay buffer for generative replay.
+[INFO  19:29:16] Starting training of task 4
+[INFO  19:29:18] epoch 0: train_acc: 0.4546 	 test_acc: 0.4703
+[INFO  19:29:21] epoch 1: train_acc: 0.4595 	 test_acc: 0.4738
+[INFO  19:29:23] epoch 2: train_acc: 0.4671 	 test_acc: 0.4809
+[INFO  19:29:25] epoch 3: train_acc: 0.4748 	 test_acc: 0.4864
+[INFO  19:29:27] epoch 4: train_acc: 0.4872 	 test_acc: 0.4955
+[INFO  19:29:29] epoch 5: train_acc: 0.4954 	 test_acc: 0.5050
+[INFO  19:29:32] epoch 6: train_acc: 0.5058 	 test_acc: 0.5131
+[INFO  19:29:34] epoch 7: train_acc: 0.5180 	 test_acc: 0.5252
+[INFO  19:29:36] epoch 8: train_acc: 0.5303 	 test_acc: 0.5378
+[INFO  19:29:38] epoch 9: train_acc: 0.5455 	 test_acc: 0.5529
+[INFO  19:29:40] epoch 10: train_acc: 0.5632 	 test_acc: 0.5720
+[INFO  19:29:43] epoch 11: train_acc: 0.5825 	 test_acc: 0.5896
+[INFO  19:29:45] epoch 12: train_acc: 0.6031 	 test_acc: 0.6088
+[INFO  19:29:47] epoch 13: train_acc: 0.6244 	 test_acc: 0.6339
+[INFO  19:29:49] epoch 14: train_acc: 0.6479 	 test_acc: 0.6641
+[INFO  19:29:51] epoch 15: train_acc: 0.6731 	 test_acc: 0.6883
+[INFO  19:29:54] epoch 16: train_acc: 0.6967 	 test_acc: 0.7110
+[INFO  19:29:56] epoch 17: train_acc: 0.7170 	 test_acc: 0.7356
+[INFO  19:29:58] epoch 18: train_acc: 0.7401 	 test_acc: 0.7593
+[INFO  19:30:00] epoch 19: train_acc: 0.7601 	 test_acc: 0.7795
+[INFO  19:30:03] epoch 20: train_acc: 0.7786 	 test_acc: 0.7981
+[INFO  19:30:05] epoch 21: train_acc: 0.7958 	 test_acc: 0.8132
+[INFO  19:30:07] epoch 22: train_acc: 0.8102 	 test_acc: 0.8268
+[INFO  19:30:09] epoch 23: train_acc: 0.8226 	 test_acc: 0.8424
+[INFO  19:30:11] epoch 24: train_acc: 0.8356 	 test_acc: 0.8489
+[INFO  19:30:13] epoch 25: train_acc: 0.8472 	 test_acc: 0.8580
+[INFO  19:30:16] epoch 26: train_acc: 0.8559 	 test_acc: 0.8671
+[INFO  19:30:18] epoch 27: train_acc: 0.8645 	 test_acc: 0.8726
+[INFO  19:30:20] epoch 28: train_acc: 0.8723 	 test_acc: 0.8781
+[INFO  19:30:22] epoch 29: train_acc: 0.8782 	 test_acc: 0.8842
+[INFO  19:30:24] epoch 30: train_acc: 0.8836 	 test_acc: 0.8902
+[INFO  19:30:27] epoch 31: train_acc: 0.8893 	 test_acc: 0.8933
+[INFO  19:30:29] epoch 32: train_acc: 0.8931 	 test_acc: 0.8973
+[INFO  19:30:31] epoch 33: train_acc: 0.8994 	 test_acc: 0.9018
+[INFO  19:30:33] epoch 34: train_acc: 0.9035 	 test_acc: 0.9053
+[INFO  19:30:35] epoch 35: train_acc: 0.9069 	 test_acc: 0.9109
+[INFO  19:30:37] epoch 36: train_acc: 0.9088 	 test_acc: 0.9109
+[INFO  19:30:40] epoch 37: train_acc: 0.9132 	 test_acc: 0.9134
+[INFO  19:30:42] epoch 38: train_acc: 0.9162 	 test_acc: 0.9164
+[INFO  19:30:44] epoch 39: train_acc: 0.9181 	 test_acc: 0.9189
+[INFO  19:30:46] epoch 40: train_acc: 0.9198 	 test_acc: 0.9204
+[INFO  19:30:49] epoch 41: train_acc: 0.9224 	 test_acc: 0.9245
+[INFO  19:30:51] epoch 42: train_acc: 0.9242 	 test_acc: 0.9255
+[INFO  19:30:53] epoch 43: train_acc: 0.9261 	 test_acc: 0.9260
+[INFO  19:30:55] epoch 44: train_acc: 0.9276 	 test_acc: 0.9280
+[INFO  19:30:57] epoch 45: train_acc: 0.9303 	 test_acc: 0.9320
+[INFO  19:30:59] epoch 46: train_acc: 0.9315 	 test_acc: 0.9345
+[INFO  19:31:02] epoch 47: train_acc: 0.9321 	 test_acc: 0.9355
+[INFO  19:31:04] epoch 48: train_acc: 0.9329 	 test_acc: 0.9366
+[INFO  19:31:06] epoch 49: train_acc: 0.9340 	 test_acc: 0.9391
+[INFO  19:31:08] epoch 50: train_acc: 0.9344 	 test_acc: 0.9406
+[INFO  19:31:10] epoch 51: train_acc: 0.9350 	 test_acc: 0.9411
+[INFO  19:31:13] epoch 52: train_acc: 0.9363 	 test_acc: 0.9406
+[INFO  19:31:15] epoch 53: train_acc: 0.9363 	 test_acc: 0.9401
+[INFO  19:31:17] epoch 54: train_acc: 0.9373 	 test_acc: 0.9391
+[INFO  19:31:19] epoch 55: train_acc: 0.9371 	 test_acc: 0.9401
+[INFO  19:31:21] epoch 56: train_acc: 0.9375 	 test_acc: 0.9401
+[INFO  19:31:24] epoch 57: train_acc: 0.9373 	 test_acc: 0.9406
+[INFO  19:31:26] epoch 58: train_acc: 0.9366 	 test_acc: 0.9416
+[INFO  19:31:28] epoch 59: train_acc: 0.9362 	 test_acc: 0.9421
+[INFO  19:31:30] epoch 60: train_acc: 0.9361 	 test_acc: 0.9421
+[INFO  19:31:32] epoch 61: train_acc: 0.9363 	 test_acc: 0.9426
+[INFO  19:31:35] epoch 62: train_acc: 0.9358 	 test_acc: 0.9431
+[INFO  19:31:37] epoch 63: train_acc: 0.9353 	 test_acc: 0.9406
+[INFO  19:31:39] epoch 64: train_acc: 0.9349 	 test_acc: 0.9406
+[INFO  19:31:41] epoch 65: train_acc: 0.9344 	 test_acc: 0.9396
+[INFO  19:31:43] epoch 66: train_acc: 0.9333 	 test_acc: 0.9396
+[INFO  19:31:46] epoch 67: train_acc: 0.9324 	 test_acc: 0.9401
+[INFO  19:31:48] epoch 68: train_acc: 0.9310 	 test_acc: 0.9396
+[INFO  19:31:50] epoch 69: train_acc: 0.9297 	 test_acc: 0.9396
+[INFO  19:31:52] epoch 70: train_acc: 0.9283 	 test_acc: 0.9386
+[INFO  19:31:54] epoch 71: train_acc: 0.9269 	 test_acc: 0.9386
+[INFO  19:31:57] epoch 72: train_acc: 0.9240 	 test_acc: 0.9381
+[INFO  19:31:59] epoch 73: train_acc: 0.9233 	 test_acc: 0.9345
+[INFO  19:32:01] epoch 74: train_acc: 0.9209 	 test_acc: 0.9330
+[INFO  19:32:03] epoch 75: train_acc: 0.9187 	 test_acc: 0.9325
+[INFO  19:32:05] epoch 76: train_acc: 0.9167 	 test_acc: 0.9320
+[INFO  19:32:08] epoch 77: train_acc: 0.9141 	 test_acc: 0.9295
+[INFO  19:32:10] epoch 78: train_acc: 0.9129 	 test_acc: 0.9250
+[INFO  19:32:12] epoch 79: train_acc: 0.9097 	 test_acc: 0.9225
+[INFO  19:32:14] epoch 80: train_acc: 0.9066 	 test_acc: 0.9204
+[INFO  19:32:16] epoch 81: train_acc: 0.9035 	 test_acc: 0.9194
+[INFO  19:32:18] epoch 82: train_acc: 0.9006 	 test_acc: 0.9164
+[INFO  19:32:21] epoch 83: train_acc: 0.8974 	 test_acc: 0.9119
+[INFO  19:32:23] epoch 84: train_acc: 0.8924 	 test_acc: 0.9094
+[INFO  19:32:25] epoch 85: train_acc: 0.8863 	 test_acc: 0.9048
+[INFO  19:32:27] epoch 86: train_acc: 0.8812 	 test_acc: 0.9023
+[INFO  19:32:29] epoch 87: train_acc: 0.8766 	 test_acc: 0.8993
+[INFO  19:32:31] epoch 88: train_acc: 0.8712 	 test_acc: 0.8963
+[INFO  19:32:34] epoch 89: train_acc: 0.8670 	 test_acc: 0.8927
+[INFO  19:32:36] epoch 90: train_acc: 0.8624 	 test_acc: 0.8852
+[INFO  19:32:38] epoch 91: train_acc: 0.8554 	 test_acc: 0.8781
+[INFO  19:32:40] epoch 92: train_acc: 0.8492 	 test_acc: 0.8741
+[INFO  19:32:42] epoch 93: train_acc: 0.8423 	 test_acc: 0.8681
+[INFO  19:32:45] epoch 94: train_acc: 0.8370 	 test_acc: 0.8630
+[INFO  19:32:47] epoch 95: train_acc: 0.8281 	 test_acc: 0.8580
+[INFO  19:32:49] epoch 96: train_acc: 0.8208 	 test_acc: 0.8510
+[INFO  19:32:51] epoch 97: train_acc: 0.8112 	 test_acc: 0.8439
+[INFO  19:32:54] epoch 98: train_acc: 0.8025 	 test_acc: 0.8399
+[INFO  19:32:56] epoch 99: train_acc: 0.7935 	 test_acc: 0.8298
+[INFO  19:32:58] Task accuracies: {
+    "task1": 0.5451536643026005,
+    "task2": 0.6234084231145935,
+    "task3": 0.516008537886873,
+    "task4": 0.8298086606243706,
+    "task5": 0.507816439737771
+}
+[INFO  19:32:58] Mean task accuracy: 0.6044
+[INFO  19:32:58] Starting to fit generator to task 4
+[INFO  19:33:00] ====> VAE Epoch: 1 Average loss: -33594.8327
+[INFO  19:33:00] ====> VAE  Test set loss: -34398.6263
+[INFO  19:33:02] ====> VAE Epoch: 2 Average loss: -34078.5160
+[INFO  19:33:02] ====> VAE  Test set loss: -34670.0585
+[INFO  19:33:04] ====> VAE Epoch: 3 Average loss: -34297.4378
+[INFO  19:33:04] ====> VAE  Test set loss: -34846.5512
+[INFO  19:33:06] ====> VAE Epoch: 4 Average loss: -34472.7906
+[INFO  19:33:07] ====> VAE  Test set loss: -34953.4542
+[INFO  19:33:08] ====> VAE Epoch: 5 Average loss: -34591.5789
+[INFO  19:33:09] ====> VAE  Test set loss: -35081.2111
+[INFO  19:33:11] ====> VAE Epoch: 6 Average loss: -34708.3233
+[INFO  19:33:11] ====> VAE  Test set loss: -35187.1357
+[INFO  19:33:13] ====> VAE Epoch: 7 Average loss: -34799.5016
+[INFO  19:33:13] ====> VAE  Test set loss: -35256.3887
+[INFO  19:33:15] ====> VAE Epoch: 8 Average loss: -34877.6069
+[INFO  19:33:15] ====> VAE  Test set loss: -35363.4315
+[INFO  19:33:17] ====> VAE Epoch: 9 Average loss: -34957.2955
+[INFO  19:33:18] ====> VAE  Test set loss: -35391.7695
+[INFO  19:33:19] ====> VAE Epoch: 10 Average loss: -35019.4118
+[INFO  19:33:20] ====> VAE  Test set loss: -35463.9051
+[INFO  19:33:22] ====> VAE Epoch: 11 Average loss: -35079.6052
+[INFO  19:33:22] ====> VAE  Test set loss: -35490.3493
+[INFO  19:33:24] ====> VAE Epoch: 12 Average loss: -35133.8726
+[INFO  19:33:24] ====> VAE  Test set loss: -35561.5379
+[INFO  19:33:26] ====> VAE Epoch: 13 Average loss: -35180.1564
+[INFO  19:33:26] ====> VAE  Test set loss: -35574.8979
+[INFO  19:33:28] ====> VAE Epoch: 14 Average loss: -35232.3823
+[INFO  19:33:28] ====> VAE  Test set loss: -35660.2344
+[INFO  19:33:30] ====> VAE Epoch: 15 Average loss: -35277.3408
+[INFO  19:33:31] ====> VAE  Test set loss: -35692.5070
+[INFO  19:33:33] ====> VAE Epoch: 16 Average loss: -35319.9283
+[INFO  19:33:33] ====> VAE  Test set loss: -35705.8922
+[INFO  19:33:35] ====> VAE Epoch: 17 Average loss: -35366.1504
+[INFO  19:33:35] ====> VAE  Test set loss: -35775.4851
+[INFO  19:33:37] ====> VAE Epoch: 18 Average loss: -35393.8510
+[INFO  19:33:38] ====> VAE  Test set loss: -35823.5535
+[INFO  19:33:39] ====> VAE Epoch: 19 Average loss: -35431.1188
+[INFO  19:33:40] ====> VAE  Test set loss: -35835.2282
+[INFO  19:33:42] ====> VAE Epoch: 20 Average loss: -35464.3100
+[INFO  19:33:42] ====> VAE  Test set loss: -35838.7188
+[INFO  19:33:44] ====> VAE Epoch: 21 Average loss: -35499.6945
+[INFO  19:33:44] ====> VAE  Test set loss: -35894.6026
+[INFO  19:33:46] ====> VAE Epoch: 22 Average loss: -35528.2169
+[INFO  19:33:46] ====> VAE  Test set loss: -35923.5394
+[INFO  19:33:48] ====> VAE Epoch: 23 Average loss: -35554.9983
+[INFO  19:33:49] ====> VAE  Test set loss: -35957.7859
+[INFO  19:33:51] ====> VAE Epoch: 24 Average loss: -35592.8215
+[INFO  19:33:51] ====> VAE  Test set loss: -35998.9189
+[INFO  19:33:53] ====> VAE Epoch: 25 Average loss: -35615.4557
+[INFO  19:33:53] ====> VAE  Test set loss: -36011.4464
+[INFO  19:33:55] ====> VAE Epoch: 26 Average loss: -35640.2999
+[INFO  19:33:55] ====> VAE  Test set loss: -36041.2521
+[INFO  19:33:57] ====> VAE Epoch: 27 Average loss: -35663.0900
+[INFO  19:33:57] ====> VAE  Test set loss: -36017.5230
+[INFO  19:33:59] ====> VAE Epoch: 28 Average loss: -35686.0859
+[INFO  19:34:00] ====> VAE  Test set loss: -36056.3434
+[INFO  19:34:02] ====> VAE Epoch: 29 Average loss: -35709.7593
+[INFO  19:34:02] ====> VAE  Test set loss: -36107.0999
+[INFO  19:34:04] ====> VAE Epoch: 30 Average loss: -35740.9501
+[INFO  19:34:04] ====> VAE  Test set loss: -36098.6983
+[INFO  19:34:06] ====> VAE Epoch: 31 Average loss: -35758.6214
+[INFO  19:34:06] ====> VAE  Test set loss: -36134.9561
+[INFO  19:34:08] ====> VAE Epoch: 32 Average loss: -35776.8492
+[INFO  19:34:08] ====> VAE  Test set loss: -36166.6669
+[INFO  19:34:10] ====> VAE Epoch: 33 Average loss: -35800.4429
+[INFO  19:34:11] ====> VAE  Test set loss: -36192.5220
+[INFO  19:34:13] ====> VAE Epoch: 34 Average loss: -35820.0211
+[INFO  19:34:13] ====> VAE  Test set loss: -36177.3050
+[INFO  19:34:15] ====> VAE Epoch: 35 Average loss: -35839.9260
+[INFO  19:34:15] ====> VAE  Test set loss: -36206.1718
+[INFO  19:34:17] ====> VAE Epoch: 36 Average loss: -35855.1852
+[INFO  19:34:17] ====> VAE  Test set loss: -36205.7904
+[INFO  19:34:19] ====> VAE Epoch: 37 Average loss: -35874.0989
+[INFO  19:34:20] ====> VAE  Test set loss: -36250.8425
+[INFO  19:34:22] ====> VAE Epoch: 38 Average loss: -35896.0053
+[INFO  19:34:22] ====> VAE  Test set loss: -36281.3365
+[INFO  19:34:24] ====> VAE Epoch: 39 Average loss: -35912.9743
+[INFO  19:34:24] ====> VAE  Test set loss: -36266.6691
+[INFO  19:34:26] ====> VAE Epoch: 40 Average loss: -35934.3331
+[INFO  19:34:26] ====> VAE  Test set loss: -36272.4183
+[INFO  19:34:28] ====> VAE Epoch: 41 Average loss: -35952.7362
+[INFO  19:34:28] ====> VAE  Test set loss: -36298.2314
+[INFO  19:34:30] ====> VAE Epoch: 42 Average loss: -35965.0866
+[INFO  19:34:31] ====> VAE  Test set loss: -36319.3906
+[INFO  19:34:33] ====> VAE Epoch: 43 Average loss: -35982.5223
+[INFO  19:34:33] ====> VAE  Test set loss: -36359.2774
+[INFO  19:34:35] ====> VAE Epoch: 44 Average loss: -35997.4127
+[INFO  19:34:35] ====> VAE  Test set loss: -36372.8949
+[INFO  19:34:37] ====> VAE Epoch: 45 Average loss: -36015.3139
+[INFO  19:34:37] ====> VAE  Test set loss: -36348.4768
+[INFO  19:34:39] ====> VAE Epoch: 46 Average loss: -36026.6780
+[INFO  19:34:40] ====> VAE  Test set loss: -36369.7635
+[INFO  19:34:41] ====> VAE Epoch: 47 Average loss: -36036.3288
+[INFO  19:34:42] ====> VAE  Test set loss: -36417.7859
+[INFO  19:34:44] ====> VAE Epoch: 48 Average loss: -36061.4217
+[INFO  19:34:44] ====> VAE  Test set loss: -36420.9642
+[INFO  19:34:46] ====> VAE Epoch: 49 Average loss: -36074.7628
+[INFO  19:34:46] ====> VAE  Test set loss: -36427.8927
+[INFO  19:34:48] ====> VAE Epoch: 50 Average loss: -36091.5122
+[INFO  19:34:48] ====> VAE  Test set loss: -36462.1088
+[INFO  19:34:50] ====> VAE Epoch: 51 Average loss: -36098.0184
+[INFO  19:34:51] ====> VAE  Test set loss: -36444.7685
+[INFO  19:34:53] ====> VAE Epoch: 52 Average loss: -36118.0490
+[INFO  19:34:53] ====> VAE  Test set loss: -36480.4384
+[INFO  19:34:55] ====> VAE Epoch: 53 Average loss: -36138.8583
+[INFO  19:34:55] ====> VAE  Test set loss: -36509.6804
+[INFO  19:34:57] ====> VAE Epoch: 54 Average loss: -36148.2908
+[INFO  19:34:57] ====> VAE  Test set loss: -36493.8566
+[INFO  19:34:59] ====> VAE Epoch: 55 Average loss: -36159.4033
+[INFO  19:34:59] ====> VAE  Test set loss: -36497.2888
+[INFO  19:35:01] ====> VAE Epoch: 56 Average loss: -36171.3621
+[INFO  19:35:02] ====> VAE  Test set loss: -36518.7922
+[INFO  19:35:04] ====> VAE Epoch: 57 Average loss: -36184.0625
+[INFO  19:35:04] ====> VAE  Test set loss: -36553.5481
+[INFO  19:35:06] ====> VAE Epoch: 58 Average loss: -36204.3150
+[INFO  19:35:06] ====> VAE  Test set loss: -36560.9767
+[INFO  19:35:08] ====> VAE Epoch: 59 Average loss: -36217.1257
+[INFO  19:35:08] ====> VAE  Test set loss: -36578.2783
+[INFO  19:35:10] ====> VAE Epoch: 60 Average loss: -36227.0943
+[INFO  19:35:11] ====> VAE  Test set loss: -36594.9233
+[INFO  19:35:12] ====> VAE Epoch: 61 Average loss: -36244.8500
+[INFO  19:35:13] ====> VAE  Test set loss: -36582.1156
+[INFO  19:35:15] ====> VAE Epoch: 62 Average loss: -36253.2772
+[INFO  19:35:15] ====> VAE  Test set loss: -36621.6224
+[INFO  19:35:17] ====> VAE Epoch: 63 Average loss: -36265.5627
+[INFO  19:35:17] ====> VAE  Test set loss: -36601.6157
+[INFO  19:35:19] ====> VAE Epoch: 64 Average loss: -36280.6322
+[INFO  19:35:19] ====> VAE  Test set loss: -36633.2314
+[INFO  19:35:21] ====> VAE Epoch: 65 Average loss: -36288.7950
+[INFO  19:35:22] ====> VAE  Test set loss: -36647.3667
+[INFO  19:35:24] ====> VAE Epoch: 66 Average loss: -36298.6776
+[INFO  19:35:24] ====> VAE  Test set loss: -36667.9470
+[INFO  19:35:26] ====> VAE Epoch: 67 Average loss: -36309.8776
+[INFO  19:35:26] ====> VAE  Test set loss: -36645.8560
+[INFO  19:35:28] ====> VAE Epoch: 68 Average loss: -36323.3730
+[INFO  19:35:28] ====> VAE  Test set loss: -36666.2597
+[INFO  19:35:30] ====> VAE Epoch: 69 Average loss: -36329.0227
+[INFO  19:35:30] ====> VAE  Test set loss: -36689.7781
+[INFO  19:35:32] ====> VAE Epoch: 70 Average loss: -36350.3470
+[INFO  19:35:33] ====> VAE  Test set loss: -36681.9756
+[INFO  19:35:35] ====> VAE Epoch: 71 Average loss: -36358.8953
+[INFO  19:35:35] ====> VAE  Test set loss: -36711.5865
+[INFO  19:35:37] ====> VAE Epoch: 72 Average loss: -36367.5062
+[INFO  19:35:37] ====> VAE  Test set loss: -36713.6833
+[INFO  19:35:39] ====> VAE Epoch: 73 Average loss: -36373.8029
+[INFO  19:35:39] ====> VAE  Test set loss: -36710.3822
+[INFO  19:35:41] ====> VAE Epoch: 74 Average loss: -36386.5994
+[INFO  19:35:42] ====> VAE  Test set loss: -36731.7946
+[INFO  19:35:43] ====> VAE Epoch: 75 Average loss: -36403.2156
+[INFO  19:35:44] ====> VAE  Test set loss: -36745.0488
+[INFO  19:35:46] ====> VAE Epoch: 76 Average loss: -36407.2627
+[INFO  19:35:46] ====> VAE  Test set loss: -36752.8510
+[INFO  19:35:48] ====> VAE Epoch: 77 Average loss: -36416.4759
+[INFO  19:35:48] ====> VAE  Test set loss: -36768.8235
+[INFO  19:35:50] ====> VAE Epoch: 78 Average loss: -36423.4500
+[INFO  19:35:50] ====> VAE  Test set loss: -36785.1027
+[INFO  19:35:52] ====> VAE Epoch: 79 Average loss: -36434.2992
+[INFO  19:35:53] ====> VAE  Test set loss: -36754.8051
+[INFO  19:35:55] ====> VAE Epoch: 80 Average loss: -36442.1562
+[INFO  19:35:55] ====> VAE  Test set loss: -36783.6420
+[INFO  19:35:57] ====> VAE Epoch: 81 Average loss: -36459.7695
+[INFO  19:35:57] ====> VAE  Test set loss: -36821.9649
+[INFO  19:35:59] ====> VAE Epoch: 82 Average loss: -36468.2238
+[INFO  19:35:59] ====> VAE  Test set loss: -36785.7063
+[INFO  19:36:01] ====> VAE Epoch: 83 Average loss: -36470.6149
+[INFO  19:36:01] ====> VAE  Test set loss: -36790.8367
+[INFO  19:36:03] ====> VAE Epoch: 84 Average loss: -36482.6106
+[INFO  19:36:04] ====> VAE  Test set loss: -36834.1508
+[INFO  19:36:06] ====> VAE Epoch: 85 Average loss: -36493.6005
+[INFO  19:36:06] ====> VAE  Test set loss: -36841.1026
+[INFO  19:36:08] ====> VAE Epoch: 86 Average loss: -36500.8081
+[INFO  19:36:08] ====> VAE  Test set loss: -36848.6237
+[INFO  19:36:10] ====> VAE Epoch: 87 Average loss: -36514.2722
+[INFO  19:36:10] ====> VAE  Test set loss: -36836.6215
+[INFO  19:36:12] ====> VAE Epoch: 88 Average loss: -36522.2485
+[INFO  19:36:13] ====> VAE  Test set loss: -36877.0403
+[INFO  19:36:15] ====> VAE Epoch: 89 Average loss: -36532.0199
+[INFO  19:36:15] ====> VAE  Test set loss: -36873.3977
+[INFO  19:36:17] ====> VAE Epoch: 90 Average loss: -36535.7178
+[INFO  19:36:17] ====> VAE  Test set loss: -36881.5588
+[INFO  19:36:19] ====> VAE Epoch: 91 Average loss: -36547.2140
+[INFO  19:36:19] ====> VAE  Test set loss: -36874.4992
+[INFO  19:36:21] ====> VAE Epoch: 92 Average loss: -36551.6003
+[INFO  19:36:22] ====> VAE  Test set loss: -36863.8749
+[INFO  19:36:23] ====> VAE Epoch: 93 Average loss: -36559.1977
+[INFO  19:36:24] ====> VAE  Test set loss: -36890.6366
+[INFO  19:36:26] ====> VAE Epoch: 94 Average loss: -36569.6226
+[INFO  19:36:26] ====> VAE  Test set loss: -36918.8138
+[INFO  19:36:28] ====> VAE Epoch: 95 Average loss: -36574.3526
+[INFO  19:36:28] ====> VAE  Test set loss: -36906.8989
+[INFO  19:36:30] ====> VAE Epoch: 96 Average loss: -36584.8508
+[INFO  19:36:30] ====> VAE  Test set loss: -36924.3073
+[INFO  19:36:32] ====> VAE Epoch: 97 Average loss: -36589.0064
+[INFO  19:36:33] ====> VAE  Test set loss: -36904.2418
+[INFO  19:36:35] ====> VAE Epoch: 98 Average loss: -36600.9341
+[INFO  19:36:35] ====> VAE  Test set loss: -36949.6580
+[INFO  19:36:37] ====> VAE Epoch: 99 Average loss: -36610.0625
+[INFO  19:36:37] ====> VAE  Test set loss: -36939.3920
+[INFO  19:36:39] ====> VAE Epoch: 100 Average loss: -36615.9235
+[INFO  19:36:39] ====> VAE  Test set loss: -36941.5388
+[INFO  19:36:39] Starting replay of task 1
+[INFO  19:36:39] Replay epoch 0: Replay_train_acc: 0.0000 	 Replay_test_acc: 0.3125
+[INFO  19:36:39] Replay epoch 1: Replay_train_acc: 0.0000 	 Replay_test_acc: 0.3125
+[INFO  19:36:39] Replay epoch 2: Replay_train_acc: 0.0000 	 Replay_test_acc: 0.3125
+[INFO  19:36:39] Replay epoch 3: Replay_train_acc: 0.0000 	 Replay_test_acc: 0.3125
+[INFO  19:36:39] Replay epoch 4: Replay_train_acc: 0.0000 	 Replay_test_acc: 0.3125
+[INFO  19:36:39] Replay epoch 5: Replay_train_acc: 0.0000 	 Replay_test_acc: 0.3125
+[INFO  19:36:39] Replay epoch 6: Replay_train_acc: 0.0000 	 Replay_test_acc: 0.3125
+[INFO  19:36:39] Replay epoch 7: Replay_train_acc: 0.0000 	 Replay_test_acc: 0.3125
+[INFO  19:36:39] Replay epoch 8: Replay_train_acc: 0.0000 	 Replay_test_acc: 0.3125
+[INFO  19:36:39] Replay epoch 9: Replay_train_acc: 0.0000 	 Replay_test_acc: 0.3125
+[INFO  19:36:39] Update replay buffer for generative replay.
+[INFO  19:36:39] Starting training of task 5
+[INFO  19:36:41] epoch 0: train_acc: 0.5018 	 test_acc: 0.5068
+[INFO  19:36:44] epoch 1: train_acc: 0.5021 	 test_acc: 0.5063
+[INFO  19:36:46] epoch 2: train_acc: 0.5022 	 test_acc: 0.5073
+[INFO  19:36:48] epoch 3: train_acc: 0.5029 	 test_acc: 0.5078
+[INFO  19:36:50] epoch 4: train_acc: 0.5024 	 test_acc: 0.5078
+[INFO  19:36:52] epoch 5: train_acc: 0.5029 	 test_acc: 0.5078
+[INFO  19:36:54] epoch 6: train_acc: 0.5029 	 test_acc: 0.5078
+[INFO  19:36:56] epoch 7: train_acc: 0.5031 	 test_acc: 0.5078
+[INFO  19:36:59] epoch 8: train_acc: 0.5034 	 test_acc: 0.5078
+[INFO  19:37:01] epoch 9: train_acc: 0.5026 	 test_acc: 0.5083
+[INFO  19:37:03] epoch 10: train_acc: 0.5032 	 test_acc: 0.5088
+[INFO  19:37:05] epoch 11: train_acc: 0.5028 	 test_acc: 0.5093
+[INFO  19:37:07] epoch 12: train_acc: 0.5032 	 test_acc: 0.5093
+[INFO  19:37:09] epoch 13: train_acc: 0.5033 	 test_acc: 0.5093
+[INFO  19:37:11] epoch 14: train_acc: 0.5031 	 test_acc: 0.5093
+[INFO  19:37:14] epoch 15: train_acc: 0.5030 	 test_acc: 0.5088
+[INFO  19:37:16] epoch 16: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:37:18] epoch 17: train_acc: 0.5033 	 test_acc: 0.5088
+[INFO  19:37:20] epoch 18: train_acc: 0.5032 	 test_acc: 0.5088
+[INFO  19:37:22] epoch 19: train_acc: 0.5027 	 test_acc: 0.5088
+[INFO  19:37:24] epoch 20: train_acc: 0.5036 	 test_acc: 0.5088
+[INFO  19:37:26] epoch 21: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:37:28] epoch 22: train_acc: 0.5036 	 test_acc: 0.5088
+[INFO  19:37:31] epoch 23: train_acc: 0.5030 	 test_acc: 0.5088
+[INFO  19:37:33] epoch 24: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:37:35] epoch 25: train_acc: 0.5032 	 test_acc: 0.5093
+[INFO  19:37:37] epoch 26: train_acc: 0.5034 	 test_acc: 0.5088
+[INFO  19:37:39] epoch 27: train_acc: 0.5034 	 test_acc: 0.5088
+[INFO  19:37:41] epoch 28: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:37:43] epoch 29: train_acc: 0.5033 	 test_acc: 0.5088
+[INFO  19:37:46] epoch 30: train_acc: 0.5032 	 test_acc: 0.5088
+[INFO  19:37:48] epoch 31: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:37:50] epoch 32: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:37:52] epoch 33: train_acc: 0.5035 	 test_acc: 0.5088
+[INFO  19:37:54] epoch 34: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:37:56] epoch 35: train_acc: 0.5029 	 test_acc: 0.5088
+[INFO  19:37:59] epoch 36: train_acc: 0.5028 	 test_acc: 0.5088
+[INFO  19:38:01] epoch 37: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:38:03] epoch 38: train_acc: 0.5032 	 test_acc: 0.5088
+[INFO  19:38:05] epoch 39: train_acc: 0.5030 	 test_acc: 0.5088
+[INFO  19:38:07] epoch 40: train_acc: 0.5030 	 test_acc: 0.5088
+[INFO  19:38:09] epoch 41: train_acc: 0.5033 	 test_acc: 0.5088
+[INFO  19:38:11] epoch 42: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:38:13] epoch 43: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:38:16] epoch 44: train_acc: 0.5028 	 test_acc: 0.5088
+[INFO  19:38:18] epoch 45: train_acc: 0.5025 	 test_acc: 0.5088
+[INFO  19:38:20] epoch 46: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:38:22] epoch 47: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:38:24] epoch 48: train_acc: 0.5029 	 test_acc: 0.5088
+[INFO  19:38:26] epoch 49: train_acc: 0.5033 	 test_acc: 0.5088
+[INFO  19:38:28] epoch 50: train_acc: 0.5029 	 test_acc: 0.5088
+[INFO  19:38:30] epoch 51: train_acc: 0.5033 	 test_acc: 0.5088
+[INFO  19:38:32] epoch 52: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:38:35] epoch 53: train_acc: 0.5034 	 test_acc: 0.5088
+[INFO  19:38:37] epoch 54: train_acc: 0.5029 	 test_acc: 0.5088
+[INFO  19:38:39] epoch 55: train_acc: 0.5034 	 test_acc: 0.5088
+[INFO  19:38:41] epoch 56: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:38:43] epoch 57: train_acc: 0.5032 	 test_acc: 0.5088
+[INFO  19:38:45] epoch 58: train_acc: 0.5033 	 test_acc: 0.5088
+[INFO  19:38:47] epoch 59: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:38:50] epoch 60: train_acc: 0.5035 	 test_acc: 0.5088
+[INFO  19:38:52] epoch 61: train_acc: 0.5033 	 test_acc: 0.5088
+[INFO  19:38:54] epoch 62: train_acc: 0.5036 	 test_acc: 0.5088
+[INFO  19:38:56] epoch 63: train_acc: 0.5029 	 test_acc: 0.5088
+[INFO  19:38:58] epoch 64: train_acc: 0.5032 	 test_acc: 0.5088
+[INFO  19:39:00] epoch 65: train_acc: 0.5032 	 test_acc: 0.5088
+[INFO  19:39:02] epoch 66: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:39:04] epoch 67: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:39:07] epoch 68: train_acc: 0.5030 	 test_acc: 0.5088
+[INFO  19:39:09] epoch 69: train_acc: 0.5036 	 test_acc: 0.5088
+[INFO  19:39:11] epoch 70: train_acc: 0.5034 	 test_acc: 0.5088
+[INFO  19:39:13] epoch 71: train_acc: 0.5030 	 test_acc: 0.5088
+[INFO  19:39:15] epoch 72: train_acc: 0.5033 	 test_acc: 0.5088
+[INFO  19:39:17] epoch 73: train_acc: 0.5030 	 test_acc: 0.5088
+[INFO  19:39:19] epoch 74: train_acc: 0.5026 	 test_acc: 0.5088
+[INFO  19:39:21] epoch 75: train_acc: 0.5033 	 test_acc: 0.5088
+[INFO  19:39:24] epoch 76: train_acc: 0.5034 	 test_acc: 0.5088
+[INFO  19:39:26] epoch 77: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:39:28] epoch 78: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:39:30] epoch 79: train_acc: 0.5032 	 test_acc: 0.5088
+[INFO  19:39:32] epoch 80: train_acc: 0.5035 	 test_acc: 0.5088
+[INFO  19:39:34] epoch 81: train_acc: 0.5033 	 test_acc: 0.5088
+[INFO  19:39:36] epoch 82: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:39:38] epoch 83: train_acc: 0.5032 	 test_acc: 0.5088
+[INFO  19:39:41] epoch 84: train_acc: 0.5030 	 test_acc: 0.5088
+[INFO  19:39:43] epoch 85: train_acc: 0.5032 	 test_acc: 0.5088
+[INFO  19:39:45] epoch 86: train_acc: 0.5030 	 test_acc: 0.5088
+[INFO  19:39:47] epoch 87: train_acc: 0.5030 	 test_acc: 0.5088
+[INFO  19:39:49] epoch 88: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:39:51] epoch 89: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:39:53] epoch 90: train_acc: 0.5033 	 test_acc: 0.5088
+[INFO  19:39:55] epoch 91: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:39:57] epoch 92: train_acc: 0.5027 	 test_acc: 0.5088
+[INFO  19:40:00] epoch 93: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:40:02] epoch 94: train_acc: 0.5033 	 test_acc: 0.5088
+[INFO  19:40:04] epoch 95: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:40:06] epoch 96: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  19:40:08] epoch 97: train_acc: 0.5027 	 test_acc: 0.5088
+[INFO  19:40:10] epoch 98: train_acc: 0.5032 	 test_acc: 0.5088
+[INFO  19:40:12] epoch 99: train_acc: 0.5036 	 test_acc: 0.5088
+[INFO  19:40:14] Task accuracies: {
+    "task1": 0.5366430260047281,
+    "task2": 0.49461312438785504,
+    "task3": 0.4759871931696905,
+    "task4": 0.5176233635448136,
+    "task5": 0.5088250126071608
+}
+[INFO  19:40:14] Mean task accuracy: 0.5067
+[INFO  19:40:14] Starting to fit generator to task 5
+[INFO  19:40:16] ====> VAE Epoch: 1 Average loss: -35070.3679
+[INFO  19:40:17] ====> VAE  Test set loss: -36120.9830
+[INFO  19:40:19] ====> VAE Epoch: 2 Average loss: -35656.9986
+[INFO  19:40:19] ====> VAE  Test set loss: -36437.5942
+[INFO  19:40:21] ====> VAE Epoch: 3 Average loss: -35855.4917
+[INFO  19:40:21] ====> VAE  Test set loss: -36568.0440
+[INFO  19:40:23] ====> VAE Epoch: 4 Average loss: -35988.0437
+[INFO  19:40:23] ====> VAE  Test set loss: -36671.5227
+[INFO  19:40:25] ====> VAE Epoch: 5 Average loss: -36079.6339
+[INFO  19:40:25] ====> VAE  Test set loss: -36742.9284
+[INFO  19:40:27] ====> VAE Epoch: 6 Average loss: -36157.8484
+[INFO  19:40:28] ====> VAE  Test set loss: -36837.8922
+[INFO  19:40:30] ====> VAE Epoch: 7 Average loss: -36223.6530
+[INFO  19:40:30] ====> VAE  Test set loss: -36883.7485
+[INFO  19:40:32] ====> VAE Epoch: 8 Average loss: -36288.3546
+[INFO  19:40:32] ====> VAE  Test set loss: -36934.0190
+[INFO  19:40:34] ====> VAE Epoch: 9 Average loss: -36338.5667
+[INFO  19:40:34] ====> VAE  Test set loss: -36947.2955
+[INFO  19:40:36] ====> VAE Epoch: 10 Average loss: -36393.7075
+[INFO  19:40:36] ====> VAE  Test set loss: -36989.1067
+[INFO  19:40:38] ====> VAE Epoch: 11 Average loss: -36438.4967
+[INFO  19:40:39] ====> VAE  Test set loss: -37054.5763
+[INFO  19:40:40] ====> VAE Epoch: 12 Average loss: -36466.6937
+[INFO  19:40:41] ====> VAE  Test set loss: -37111.5437
+[INFO  19:40:43] ====> VAE Epoch: 13 Average loss: -36501.8347
+[INFO  19:40:43] ====> VAE  Test set loss: -37108.2112
+[INFO  19:40:45] ====> VAE Epoch: 14 Average loss: -36539.5696
+[INFO  19:40:45] ====> VAE  Test set loss: -37123.7919
+[INFO  19:40:47] ====> VAE Epoch: 15 Average loss: -36560.5989
+[INFO  19:40:47] ====> VAE  Test set loss: -37166.3824
+[INFO  19:40:49] ====> VAE Epoch: 16 Average loss: -36595.6553
+[INFO  19:40:49] ====> VAE  Test set loss: -37196.8251
+[INFO  19:40:51] ====> VAE Epoch: 17 Average loss: -36620.7375
+[INFO  19:40:51] ====> VAE  Test set loss: -37234.7376
+[INFO  19:40:53] ====> VAE Epoch: 18 Average loss: -36647.7439
+[INFO  19:40:53] ====> VAE  Test set loss: -37236.6520
+[INFO  19:40:55] ====> VAE Epoch: 19 Average loss: -36670.4046
+[INFO  19:40:56] ====> VAE  Test set loss: -37307.2422
+[INFO  19:40:57] ====> VAE Epoch: 20 Average loss: -36699.7421
+[INFO  19:40:58] ====> VAE  Test set loss: -37285.4979
+[INFO  19:41:00] ====> VAE Epoch: 21 Average loss: -36723.2107
+[INFO  19:41:00] ====> VAE  Test set loss: -37324.1706
+[INFO  19:41:02] ====> VAE Epoch: 22 Average loss: -36744.9484
+[INFO  19:41:02] ====> VAE  Test set loss: -37328.8931
+[INFO  19:41:04] ====> VAE Epoch: 23 Average loss: -36765.1968
+[INFO  19:41:04] ====> VAE  Test set loss: -37349.0057
+[INFO  19:41:06] ====> VAE Epoch: 24 Average loss: -36787.4058
+[INFO  19:41:06] ====> VAE  Test set loss: -37355.7955
+[INFO  19:41:08] ====> VAE Epoch: 25 Average loss: -36801.6426
+[INFO  19:41:08] ====> VAE  Test set loss: -37417.3782
+[INFO  19:41:10] ====> VAE Epoch: 26 Average loss: -36833.0139
+[INFO  19:41:11] ====> VAE  Test set loss: -37419.6219
+[INFO  19:41:12] ====> VAE Epoch: 27 Average loss: -36842.0558
+[INFO  19:41:13] ====> VAE  Test set loss: -37459.9970
+[INFO  19:41:15] ====> VAE Epoch: 28 Average loss: -36863.9608
+[INFO  19:41:15] ====> VAE  Test set loss: -37431.9996
+[INFO  19:41:17] ====> VAE Epoch: 29 Average loss: -36885.5889
+[INFO  19:41:17] ====> VAE  Test set loss: -37453.7414
+[INFO  19:41:19] ====> VAE Epoch: 30 Average loss: -36896.1886
+[INFO  19:41:19] ====> VAE  Test set loss: -37501.1765
+[INFO  19:41:21] ====> VAE Epoch: 31 Average loss: -36915.1137
+[INFO  19:41:21] ====> VAE  Test set loss: -37487.7224
+[INFO  19:41:23] ====> VAE Epoch: 32 Average loss: -36933.2811
+[INFO  19:41:23] ====> VAE  Test set loss: -37491.9404
+[INFO  19:41:25] ====> VAE Epoch: 33 Average loss: -36953.4239
+[INFO  19:41:26] ====> VAE  Test set loss: -37528.1315
+[INFO  19:41:28] ====> VAE Epoch: 34 Average loss: -36963.2265
+[INFO  19:41:28] ====> VAE  Test set loss: -37527.2423
+[INFO  19:41:30] ====> VAE Epoch: 35 Average loss: -36978.3954
+[INFO  19:41:30] ====> VAE  Test set loss: -37549.9273
+[INFO  19:41:32] ====> VAE Epoch: 36 Average loss: -36993.9220
+[INFO  19:41:32] ====> VAE  Test set loss: -37548.5458
+[INFO  19:41:34] ====> VAE Epoch: 37 Average loss: -37006.4692
+[INFO  19:41:34] ====> VAE  Test set loss: -37573.0891
+[INFO  19:41:36] ====> VAE Epoch: 38 Average loss: -37018.8659
+[INFO  19:41:36] ====> VAE  Test set loss: -37532.6913
+[INFO  19:41:38] ====> VAE Epoch: 39 Average loss: -37030.4272
+[INFO  19:41:38] ====> VAE  Test set loss: -37615.0807
+[INFO  19:41:40] ====> VAE Epoch: 40 Average loss: -37053.3740
+[INFO  19:41:41] ====> VAE  Test set loss: -37602.4320
+[INFO  19:41:43] ====> VAE Epoch: 41 Average loss: -37059.9576
+[INFO  19:41:43] ====> VAE  Test set loss: -37596.2176
+[INFO  19:41:45] ====> VAE Epoch: 42 Average loss: -37063.8670
+[INFO  19:41:45] ====> VAE  Test set loss: -37626.0325
+[INFO  19:41:47] ====> VAE Epoch: 43 Average loss: -37083.4533
+[INFO  19:41:47] ====> VAE  Test set loss: -37648.3176
+[INFO  19:41:49] ====> VAE Epoch: 44 Average loss: -37089.2559
+[INFO  19:41:49] ====> VAE  Test set loss: -37661.4989
+[INFO  19:41:51] ====> VAE Epoch: 45 Average loss: -37104.2294
+[INFO  19:41:51] ====> VAE  Test set loss: -37663.1875
+[INFO  19:41:53] ====> VAE Epoch: 46 Average loss: -37120.3532
+[INFO  19:41:54] ====> VAE  Test set loss: -37653.2412
+[INFO  19:41:55] ====> VAE Epoch: 47 Average loss: -37126.6987
+[INFO  19:41:56] ====> VAE  Test set loss: -37705.8167
+[INFO  19:41:58] ====> VAE Epoch: 48 Average loss: -37138.2014
+[INFO  19:41:58] ====> VAE  Test set loss: -37685.9488
+[INFO  19:42:00] ====> VAE Epoch: 49 Average loss: -37151.5037
+[INFO  19:42:00] ====> VAE  Test set loss: -37690.0158
+[INFO  19:42:02] ====> VAE Epoch: 50 Average loss: -37157.1444
+[INFO  19:42:02] ====> VAE  Test set loss: -37697.2202
+[INFO  19:42:04] ====> VAE Epoch: 51 Average loss: -37165.4033
+[INFO  19:42:04] ====> VAE  Test set loss: -37699.2824
+[INFO  19:42:06] ====> VAE Epoch: 52 Average loss: -37179.2613
+[INFO  19:42:07] ====> VAE  Test set loss: -37725.7235
+[INFO  19:42:08] ====> VAE Epoch: 53 Average loss: -37188.9919
+[INFO  19:42:09] ====> VAE  Test set loss: -37719.8148
+[INFO  19:42:11] ====> VAE Epoch: 54 Average loss: -37200.4693
+[INFO  19:42:11] ====> VAE  Test set loss: -37727.6525
+[INFO  19:42:13] ====> VAE Epoch: 55 Average loss: -37202.4646
+[INFO  19:42:13] ====> VAE  Test set loss: -37724.5177
+[INFO  19:42:15] ====> VAE Epoch: 56 Average loss: -37216.8322
+[INFO  19:42:15] ====> VAE  Test set loss: -37758.4007
+[INFO  19:42:17] ====> VAE Epoch: 57 Average loss: -37223.9306
+[INFO  19:42:17] ====> VAE  Test set loss: -37738.7471
+[INFO  19:42:19] ====> VAE Epoch: 58 Average loss: -37230.1612
+[INFO  19:42:19] ====> VAE  Test set loss: -37758.5531
+[INFO  19:42:21] ====> VAE Epoch: 59 Average loss: -37240.1518
+[INFO  19:42:22] ====> VAE  Test set loss: -37812.7794
+[INFO  19:42:23] ====> VAE Epoch: 60 Average loss: -37254.1300
+[INFO  19:42:24] ====> VAE  Test set loss: -37785.6974
+[INFO  19:42:26] ====> VAE Epoch: 61 Average loss: -37263.3120
+[INFO  19:42:26] ====> VAE  Test set loss: -37801.3829
+[INFO  19:42:28] ====> VAE Epoch: 62 Average loss: -37266.9865
+[INFO  19:42:28] ====> VAE  Test set loss: -37847.8467
+[INFO  19:42:30] ====> VAE Epoch: 63 Average loss: -37284.6270
+[INFO  19:42:30] ====> VAE  Test set loss: -37796.2792
+[INFO  19:42:32] ====> VAE Epoch: 64 Average loss: -37287.2468
+[INFO  19:42:32] ====> VAE  Test set loss: -37826.6338
+[INFO  19:42:34] ====> VAE Epoch: 65 Average loss: -37291.8980
+[INFO  19:42:34] ====> VAE  Test set loss: -37828.9880
+[INFO  19:42:36] ====> VAE Epoch: 66 Average loss: -37303.3232
+[INFO  19:42:37] ====> VAE  Test set loss: -37818.1907
+[INFO  19:42:38] ====> VAE Epoch: 67 Average loss: -37316.6899
+[INFO  19:42:39] ====> VAE  Test set loss: -37835.0903
+[INFO  19:42:41] ====> VAE Epoch: 68 Average loss: -37321.3302
+[INFO  19:42:41] ====> VAE  Test set loss: -37866.3609
+[INFO  19:42:43] ====> VAE Epoch: 69 Average loss: -37330.2657
+[INFO  19:42:43] ====> VAE  Test set loss: -37841.8180
+[INFO  19:42:45] ====> VAE Epoch: 70 Average loss: -37336.3265
+[INFO  19:42:45] ====> VAE  Test set loss: -37877.6895
+[INFO  19:42:47] ====> VAE Epoch: 71 Average loss: -37347.8092
+[INFO  19:42:47] ====> VAE  Test set loss: -37872.5359
+[INFO  19:42:49] ====> VAE Epoch: 72 Average loss: -37354.8531
+[INFO  19:42:50] ====> VAE  Test set loss: -37876.1198
+[INFO  19:42:51] ====> VAE Epoch: 73 Average loss: -37362.6078
+[INFO  19:42:52] ====> VAE  Test set loss: -37909.2835
+[INFO  19:42:54] ====> VAE Epoch: 74 Average loss: -37364.0789
+[INFO  19:42:54] ====> VAE  Test set loss: -37900.7808
+[INFO  19:42:56] ====> VAE Epoch: 75 Average loss: -37380.6004
+[INFO  19:42:56] ====> VAE  Test set loss: -37894.8999
+[INFO  19:42:58] ====> VAE Epoch: 76 Average loss: -37381.6407
+[INFO  19:42:58] ====> VAE  Test set loss: -37903.7925
+[INFO  19:43:00] ====> VAE Epoch: 77 Average loss: -37389.6794
+[INFO  19:43:00] ====> VAE  Test set loss: -37906.9893
+[INFO  19:43:02] ====> VAE Epoch: 78 Average loss: -37404.9809
+[INFO  19:43:02] ====> VAE  Test set loss: -37925.9695
+[INFO  19:43:04] ====> VAE Epoch: 79 Average loss: -37408.9921
+[INFO  19:43:04] ====> VAE  Test set loss: -37932.3908
+[INFO  19:43:06] ====> VAE Epoch: 80 Average loss: -37413.9781
+[INFO  19:43:07] ====> VAE  Test set loss: -37972.6502
+[INFO  19:43:08] ====> VAE Epoch: 81 Average loss: -37421.9445
+[INFO  19:43:09] ====> VAE  Test set loss: -37949.0963
+[INFO  19:43:11] ====> VAE Epoch: 82 Average loss: -37435.2344
+[INFO  19:43:11] ====> VAE  Test set loss: -37925.6722
+[INFO  19:43:13] ====> VAE Epoch: 83 Average loss: -37440.6569
+[INFO  19:43:13] ====> VAE  Test set loss: -37946.4444
+[INFO  19:43:15] ====> VAE Epoch: 84 Average loss: -37450.6729
+[INFO  19:43:16] ====> VAE  Test set loss: -37977.3154
+[INFO  19:43:18] ====> VAE Epoch: 85 Average loss: -37448.7985
+[INFO  19:43:18] ====> VAE  Test set loss: -37970.6183
+[INFO  19:43:20] ====> VAE Epoch: 86 Average loss: -37462.7904
+[INFO  19:43:20] ====> VAE  Test set loss: -37972.5976
+[INFO  19:43:22] ====> VAE Epoch: 87 Average loss: -37464.9335
+[INFO  19:43:22] ====> VAE  Test set loss: -37995.2458
+[INFO  19:43:24] ====> VAE Epoch: 88 Average loss: -37482.6908
+[INFO  19:43:24] ====> VAE  Test set loss: -37988.8612
+[INFO  19:43:26] ====> VAE Epoch: 89 Average loss: -37489.0886
+[INFO  19:43:26] ====> VAE  Test set loss: -38015.4604
+[INFO  19:43:28] ====> VAE Epoch: 90 Average loss: -37495.4978
+[INFO  19:43:29] ====> VAE  Test set loss: -37999.5725
+[INFO  19:43:30] ====> VAE Epoch: 91 Average loss: -37497.6150
+[INFO  19:43:31] ====> VAE  Test set loss: -38025.3200
+[INFO  19:43:33] ====> VAE Epoch: 92 Average loss: -37506.2029
+[INFO  19:43:33] ====> VAE  Test set loss: -38051.6494
+[INFO  19:43:35] ====> VAE Epoch: 93 Average loss: -37516.7092
+[INFO  19:43:35] ====> VAE  Test set loss: -38034.5045
+[INFO  19:43:37] ====> VAE Epoch: 94 Average loss: -37522.5347
+[INFO  19:43:37] ====> VAE  Test set loss: -38034.3236
+[INFO  19:43:39] ====> VAE Epoch: 95 Average loss: -37529.5618
+[INFO  19:43:39] ====> VAE  Test set loss: -38047.7279
+[INFO  19:43:41] ====> VAE Epoch: 96 Average loss: -37536.0071
+[INFO  19:43:42] ====> VAE  Test set loss: -38047.2426
+[INFO  19:43:43] ====> VAE Epoch: 97 Average loss: -37543.5523
+[INFO  19:43:44] ====> VAE  Test set loss: -38048.3468
+[INFO  19:43:46] ====> VAE Epoch: 98 Average loss: -37551.3676
+[INFO  19:43:46] ====> VAE  Test set loss: -38052.3790
+[INFO  19:43:48] ====> VAE Epoch: 99 Average loss: -37554.7082
+[INFO  19:43:48] ====> VAE  Test set loss: -38044.5702
+[INFO  19:43:50] ====> VAE Epoch: 100 Average loss: -37567.2490
+[INFO  19:43:50] ====> VAE  Test set loss: -38053.5304
+[INFO  19:43:50] Starting replay of task 1
+[INFO  19:43:50] Replay epoch 0: Replay_train_acc: 1.0000 	 Replay_test_acc: 1.0000
+[INFO  19:43:50] Replay epoch 1: Replay_train_acc: 1.0000 	 Replay_test_acc: 1.0000
+[INFO  19:43:50] Replay epoch 2: Replay_train_acc: 1.0000 	 Replay_test_acc: 1.0000
+[INFO  19:43:50] Replay epoch 3: Replay_train_acc: 1.0000 	 Replay_test_acc: 1.0000
+[INFO  19:43:50] Replay epoch 4: Replay_train_acc: 1.0000 	 Replay_test_acc: 1.0000
+[INFO  19:43:50] Replay epoch 5: Replay_train_acc: 1.0000 	 Replay_test_acc: 1.0000
+[INFO  19:43:50] Replay epoch 6: Replay_train_acc: 1.0000 	 Replay_test_acc: 1.0000
+[INFO  19:43:50] Replay epoch 7: Replay_train_acc: 1.0000 	 Replay_test_acc: 1.0000
+[INFO  19:43:50] Replay epoch 8: Replay_train_acc: 1.0000 	 Replay_test_acc: 1.0000
+[INFO  19:43:50] Replay epoch 9: Replay_train_acc: 1.0000 	 Replay_test_acc: 1.0000
+[INFO  19:43:50] Update replay buffer for generative replay.

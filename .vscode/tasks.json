@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Synchronize Code",
+            "type": "shell",
+            "command": "rsync -axv --exclude-from=.vscode/rsync-exclude.lst  --max-size=5MB \"${workspaceFolder}\" joao@grewe:~/leonie/",
+            "problemMatcher": [],
+            "isBackground": true,
+            "presentation": {
+                "echo": false,
+                "reveal": "silent",
+                "focus": true,
+                "panel": "shared",
+                "clear": false
+            }
+        },
+        {
+            "label": "Remote Execute",
+            "type": "shell",
+            "command": "ssh -n joao@grewe \"cd ~/leonie/${workspaceFolderBasename} && source .myenv/bin/activate && CUDA_VISIBLE_DEVICES=7 python ${relativeFile}\"",
+            "dependsOn": [
+                "Synchronize Code"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

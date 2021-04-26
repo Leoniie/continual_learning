@@ -1,0 +1,250 @@
+[INFO  13:11:23] Start training with parametrization:
+{
+    "dataset": {
+        "name": "split_mnist",
+        "kwargs": {
+            "batch_size": 128,
+            "shuffle_tasks": false
+        }
+    },
+    "criterion": "BCE",
+    "cl_method": "simple_replay",
+    "dimensions": [
+        784,
+        400,
+        400,
+        2
+    ],
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "nonlinearity": "relu",
+    "n_replay": 16,
+    "optimizer": "sgd",
+    "prob_init": null,
+    "replay_epochs": 10,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 5,
+    "vae_lr": 0.001,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 100,
+    "weight_decay": 1.0,
+    "log_dir": "",
+    "task": "split_mnist"
+}
+[INFO  13:11:23] Starting training of task 1
+[INFO  13:11:26] epoch 0: train_acc: 0.8668 	 test_acc: 0.9863
+[INFO  13:11:29] epoch 1: train_acc: 0.9765 	 test_acc: 0.9943
+[INFO  13:11:32] epoch 2: train_acc: 0.9834 	 test_acc: 0.9962
+[INFO  13:11:34] epoch 3: train_acc: 0.9844 	 test_acc: 0.9962
+[INFO  13:11:37] epoch 4: train_acc: 0.9848 	 test_acc: 0.9962
+[INFO  13:11:39] epoch 5: train_acc: 0.9856 	 test_acc: 0.9962
+[INFO  13:11:42] epoch 6: train_acc: 0.9861 	 test_acc: 0.9967
+[INFO  13:11:45] epoch 7: train_acc: 0.9862 	 test_acc: 0.9967
+[INFO  13:11:47] epoch 8: train_acc: 0.9864 	 test_acc: 0.9967
+[INFO  13:11:50] epoch 9: train_acc: 0.9863 	 test_acc: 0.9972
+[INFO  13:11:52] Task accuracies: {
+    "task1": 0.9971631205673759,
+    "task2": 0.4691478942213516,
+    "task3": 0.41622198505869795,
+    "task4": 0.6515609264853978,
+    "task5": 0.4558749369641957
+}
+[INFO  13:11:52] Mean task accuracy: 0.5980
+[INFO  13:11:52] Update replay buffer for simple replay.
+[INFO  13:11:52] Length of replay buffer: 1
+[INFO  13:11:52] Starting training of task 2
+[INFO  13:11:54] epoch 0: train_acc: 0.5674 	 test_acc: 0.6278
+[INFO  13:11:57] epoch 1: train_acc: 0.6948 	 test_acc: 0.7228
+[INFO  13:12:00] epoch 2: train_acc: 0.7638 	 test_acc: 0.7840
+[INFO  13:12:02] epoch 3: train_acc: 0.8089 	 test_acc: 0.8217
+[INFO  13:12:05] epoch 4: train_acc: 0.8389 	 test_acc: 0.8472
+[INFO  13:12:08] epoch 5: train_acc: 0.8606 	 test_acc: 0.8634
+[INFO  13:12:11] epoch 6: train_acc: 0.8762 	 test_acc: 0.8776
+[INFO  13:12:13] epoch 7: train_acc: 0.8906 	 test_acc: 0.8893
+[INFO  13:12:16] epoch 8: train_acc: 0.9013 	 test_acc: 0.8996
+[INFO  13:12:18] epoch 9: train_acc: 0.9079 	 test_acc: 0.9070
+[INFO  13:12:21] Task accuracies: {
+    "task1": 0.9494089834515367,
+    "task2": 0.9069539666993144,
+    "task3": 0.708110992529349,
+    "task4": 0.8136958710976838,
+    "task5": 0.46243066061522947
+}
+[INFO  13:12:21] Mean task accuracy: 0.7681
+[INFO  13:12:21] Starting replay of task 1
+[INFO  13:12:21] Replay epoch 0: Replay_train_acc: 1.0000 	 Replay_test_acc: 0.8750
+[INFO  13:12:21] Replay epoch 1: Replay_train_acc: 1.0000 	 Replay_test_acc: 0.8750
+[INFO  13:12:21] Replay epoch 2: Replay_train_acc: 1.0000 	 Replay_test_acc: 0.8750
+[INFO  13:12:21] Replay epoch 3: Replay_train_acc: 1.0000 	 Replay_test_acc: 0.8750
+[INFO  13:12:21] Replay epoch 4: Replay_train_acc: 1.0000 	 Replay_test_acc: 0.8750
+[INFO  13:12:21] Replay epoch 5: Replay_train_acc: 1.0000 	 Replay_test_acc: 0.8750
+[INFO  13:12:21] Replay epoch 6: Replay_train_acc: 1.0000 	 Replay_test_acc: 0.8750
+[INFO  13:12:21] Replay epoch 7: Replay_train_acc: 1.0000 	 Replay_test_acc: 0.8750
+[INFO  13:12:21] Replay epoch 8: Replay_train_acc: 1.0000 	 Replay_test_acc: 0.8750
+[INFO  13:12:21] Replay epoch 9: Replay_train_acc: 1.0000 	 Replay_test_acc: 0.8750
+[INFO  13:12:21] Update replay buffer for simple replay.
+[INFO  13:12:21] Length of replay buffer: 2
+[INFO  13:12:21] Starting training of task 3
+[INFO  13:12:23] epoch 0: train_acc: 0.7314 	 test_acc: 0.7572
+[INFO  13:12:26] epoch 1: train_acc: 0.7757 	 test_acc: 0.8026
+[INFO  13:12:28] epoch 2: train_acc: 0.8088 	 test_acc: 0.8308
+[INFO  13:12:31] epoch 3: train_acc: 0.8337 	 test_acc: 0.8517
+[INFO  13:12:33] epoch 4: train_acc: 0.8503 	 test_acc: 0.8655
+[INFO  13:12:36] epoch 5: train_acc: 0.8626 	 test_acc: 0.8778
+[INFO  13:12:38] epoch 6: train_acc: 0.8693 	 test_acc: 0.8842
+[INFO  13:12:40] epoch 7: train_acc: 0.8750 	 test_acc: 0.8906
+[INFO  13:12:43] epoch 8: train_acc: 0.8780 	 test_acc: 0.8965
+[INFO  13:12:45] epoch 9: train_acc: 0.8783 	 test_acc: 0.8975
+[INFO  13:12:47] Task accuracies: {
+    "task1": 0.7309692671394799,
+    "task2": 0.8765915768854065,
+    "task3": 0.8975453575240128,
+    "task4": 0.47129909365558914,
+    "task5": 0.291981845688351
+}
+[INFO  13:12:47] Mean task accuracy: 0.6537
+[INFO  13:12:47] Starting replay of task 1
+[INFO  13:12:47] Replay epoch 0: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.7500
+[INFO  13:12:47] Replay epoch 1: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.7500
+[INFO  13:12:47] Replay epoch 2: Replay_train_acc: 0.9375 	 Replay_test_acc: 0.7500
+[INFO  13:12:47] Replay epoch 3: Replay_train_acc: 0.9375 	 Replay_test_acc: 0.7500
+[INFO  13:12:47] Replay epoch 4: Replay_train_acc: 0.9375 	 Replay_test_acc: 0.7500
+[INFO  13:12:47] Replay epoch 5: Replay_train_acc: 0.9375 	 Replay_test_acc: 0.7500
+[INFO  13:12:47] Replay epoch 6: Replay_train_acc: 0.9375 	 Replay_test_acc: 0.7500
+[INFO  13:12:47] Replay epoch 7: Replay_train_acc: 0.9375 	 Replay_test_acc: 0.7500
+[INFO  13:12:47] Replay epoch 8: Replay_train_acc: 0.9375 	 Replay_test_acc: 0.7500
+[INFO  13:12:47] Replay epoch 9: Replay_train_acc: 0.9375 	 Replay_test_acc: 0.7500
+[INFO  13:12:47] Starting replay of task 2
+[INFO  13:12:47] Replay epoch 0: Replay_train_acc: 0.7500 	 Replay_test_acc: 0.9375
+[INFO  13:12:47] Replay epoch 1: Replay_train_acc: 0.7500 	 Replay_test_acc: 0.9375
+[INFO  13:12:47] Replay epoch 2: Replay_train_acc: 0.7500 	 Replay_test_acc: 0.8750
+[INFO  13:12:47] Replay epoch 3: Replay_train_acc: 0.7500 	 Replay_test_acc: 0.8750
+[INFO  13:12:47] Replay epoch 4: Replay_train_acc: 0.7500 	 Replay_test_acc: 0.8750
+[INFO  13:12:47] Replay epoch 5: Replay_train_acc: 0.7500 	 Replay_test_acc: 0.8750
+[INFO  13:12:47] Replay epoch 6: Replay_train_acc: 0.7500 	 Replay_test_acc: 0.8750
+[INFO  13:12:47] Replay epoch 7: Replay_train_acc: 0.7500 	 Replay_test_acc: 0.8750
+[INFO  13:12:47] Replay epoch 8: Replay_train_acc: 0.7500 	 Replay_test_acc: 0.8750
+[INFO  13:12:47] Replay epoch 9: Replay_train_acc: 0.7500 	 Replay_test_acc: 0.8750
+[INFO  13:12:47] Update replay buffer for simple replay.
+[INFO  13:12:47] Length of replay buffer: 3
+[INFO  13:12:47] Starting training of task 4
+[INFO  13:12:50] epoch 0: train_acc: 0.5046 	 test_acc: 0.5745
+[INFO  13:12:52] epoch 1: train_acc: 0.6848 	 test_acc: 0.7910
+[INFO  13:12:55] epoch 2: train_acc: 0.8411 	 test_acc: 0.8887
+[INFO  13:12:57] epoch 3: train_acc: 0.9013 	 test_acc: 0.9184
+[INFO  13:13:00] epoch 4: train_acc: 0.9171 	 test_acc: 0.9310
+[INFO  13:13:03] epoch 5: train_acc: 0.9191 	 test_acc: 0.9275
+[INFO  13:13:06] epoch 6: train_acc: 0.9101 	 test_acc: 0.9149
+[INFO  13:13:08] epoch 7: train_acc: 0.8774 	 test_acc: 0.8837
+[INFO  13:13:11] epoch 8: train_acc: 0.8019 	 test_acc: 0.8313
+[INFO  13:13:14] epoch 9: train_acc: 0.7259 	 test_acc: 0.7019
+[INFO  13:13:16] Task accuracies: {
+    "task1": 0.5404255319148936,
+    "task2": 0.5528893241919687,
+    "task3": 0.48826040554962646,
+    "task4": 0.701913393756294,
+    "task5": 0.5088250126071608
+}
+[INFO  13:13:16] Mean task accuracy: 0.5585
+[INFO  13:13:16] Starting replay of task 1
+[INFO  13:13:16] Replay epoch 0: Replay_train_acc: 0.5000 	 Replay_test_acc: 0.5625
+[INFO  13:13:16] Replay epoch 1: Replay_train_acc: 0.5000 	 Replay_test_acc: 0.5625
+[INFO  13:13:16] Replay epoch 2: Replay_train_acc: 0.5000 	 Replay_test_acc: 0.5625
+[INFO  13:13:16] Replay epoch 3: Replay_train_acc: 0.5000 	 Replay_test_acc: 0.5625
+[INFO  13:13:16] Replay epoch 4: Replay_train_acc: 0.5000 	 Replay_test_acc: 0.5625
+[INFO  13:13:16] Replay epoch 5: Replay_train_acc: 0.5000 	 Replay_test_acc: 0.5625
+[INFO  13:13:16] Replay epoch 6: Replay_train_acc: 0.5000 	 Replay_test_acc: 0.5625
+[INFO  13:13:16] Replay epoch 7: Replay_train_acc: 0.5000 	 Replay_test_acc: 0.5625
+[INFO  13:13:16] Replay epoch 8: Replay_train_acc: 0.5000 	 Replay_test_acc: 0.5625
+[INFO  13:13:16] Replay epoch 9: Replay_train_acc: 0.5000 	 Replay_test_acc: 0.5625
+[INFO  13:13:16] Starting replay of task 2
+[INFO  13:13:16] Replay epoch 0: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.5625
+[INFO  13:13:16] Replay epoch 1: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.5625
+[INFO  13:13:16] Replay epoch 2: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.5625
+[INFO  13:13:16] Replay epoch 3: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.5625
+[INFO  13:13:16] Replay epoch 4: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.5625
+[INFO  13:13:16] Replay epoch 5: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.5000
+[INFO  13:13:16] Replay epoch 6: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.5000
+[INFO  13:13:16] Replay epoch 7: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.5000
+[INFO  13:13:16] Replay epoch 8: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.5000
+[INFO  13:13:16] Replay epoch 9: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.5000
+[INFO  13:13:16] Starting replay of task 3
+[INFO  13:13:16] Replay epoch 0: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6250
+[INFO  13:13:16] Replay epoch 1: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6250
+[INFO  13:13:16] Replay epoch 2: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6250
+[INFO  13:13:16] Replay epoch 3: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6250
+[INFO  13:13:16] Replay epoch 4: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6250
+[INFO  13:13:16] Replay epoch 5: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6250
+[INFO  13:13:16] Replay epoch 6: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6250
+[INFO  13:13:16] Replay epoch 7: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6250
+[INFO  13:13:16] Replay epoch 8: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6250
+[INFO  13:13:16] Replay epoch 9: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6250
+[INFO  13:13:16] Update replay buffer for simple replay.
+[INFO  13:13:16] Length of replay buffer: 4
+[INFO  13:13:16] Starting training of task 5
+[INFO  13:13:19] epoch 0: train_acc: 0.5033 	 test_acc: 0.5088
+[INFO  13:13:21] epoch 1: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  13:13:24] epoch 2: train_acc: 0.5032 	 test_acc: 0.5088
+[INFO  13:13:27] epoch 3: train_acc: 0.5030 	 test_acc: 0.5088
+[INFO  13:13:29] epoch 4: train_acc: 0.5035 	 test_acc: 0.5088
+[INFO  13:13:32] epoch 5: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  13:13:34] epoch 6: train_acc: 0.5033 	 test_acc: 0.5088
+[INFO  13:13:37] epoch 7: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  13:13:39] epoch 8: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  13:13:42] epoch 9: train_acc: 0.5034 	 test_acc: 0.5088
+[INFO  13:13:45] Task accuracies: {
+    "task1": 0.5366430260047281,
+    "task2": 0.49461312438785504,
+    "task3": 0.4759871931696905,
+    "task4": 0.5176233635448136,
+    "task5": 0.5088250126071608
+}
+[INFO  13:13:45] Mean task accuracy: 0.5067
+[INFO  13:13:45] Starting replay of task 1
+[INFO  13:13:45] Replay epoch 0: Replay_train_acc: 0.5000 	 Replay_test_acc: 0.5625
+[INFO  13:13:45] Replay epoch 1: Replay_train_acc: 0.5000 	 Replay_test_acc: 0.5625
+[INFO  13:13:45] Replay epoch 2: Replay_train_acc: 0.5000 	 Replay_test_acc: 0.5625
+[INFO  13:13:45] Replay epoch 3: Replay_train_acc: 0.5000 	 Replay_test_acc: 0.5625
+[INFO  13:13:45] Replay epoch 4: Replay_train_acc: 0.5000 	 Replay_test_acc: 0.5625
+[INFO  13:13:45] Replay epoch 5: Replay_train_acc: 0.5000 	 Replay_test_acc: 0.5625
+[INFO  13:13:45] Replay epoch 6: Replay_train_acc: 0.5000 	 Replay_test_acc: 0.5625
+[INFO  13:13:45] Replay epoch 7: Replay_train_acc: 0.5000 	 Replay_test_acc: 0.5625
+[INFO  13:13:45] Replay epoch 8: Replay_train_acc: 0.5000 	 Replay_test_acc: 0.5625
+[INFO  13:13:45] Replay epoch 9: Replay_train_acc: 0.5000 	 Replay_test_acc: 0.5625
+[INFO  13:13:45] Starting replay of task 2
+[INFO  13:13:45] Replay epoch 0: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.5000
+[INFO  13:13:45] Replay epoch 1: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.5000
+[INFO  13:13:45] Replay epoch 2: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.5000
+[INFO  13:13:45] Replay epoch 3: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.5000
+[INFO  13:13:45] Replay epoch 4: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.5000
+[INFO  13:13:45] Replay epoch 5: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.5000
+[INFO  13:13:45] Replay epoch 6: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.5000
+[INFO  13:13:45] Replay epoch 7: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.5000
+[INFO  13:13:45] Replay epoch 8: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.5000
+[INFO  13:13:45] Replay epoch 9: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.5000
+[INFO  13:13:45] Starting replay of task 3
+[INFO  13:13:45] Replay epoch 0: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6250
+[INFO  13:13:45] Replay epoch 1: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6250
+[INFO  13:13:45] Replay epoch 2: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6250
+[INFO  13:13:45] Replay epoch 3: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6250
+[INFO  13:13:45] Replay epoch 4: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6250
+[INFO  13:13:45] Replay epoch 5: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6250
+[INFO  13:13:45] Replay epoch 6: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6250
+[INFO  13:13:45] Replay epoch 7: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6250
+[INFO  13:13:45] Replay epoch 8: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6250
+[INFO  13:13:45] Replay epoch 9: Replay_train_acc: 0.5625 	 Replay_test_acc: 0.6250
+[INFO  13:13:45] Starting replay of task 4
+[INFO  13:13:45] Replay epoch 0: Replay_train_acc: 0.3125 	 Replay_test_acc: 0.3750
+[INFO  13:13:45] Replay epoch 1: Replay_train_acc: 0.3125 	 Replay_test_acc: 0.3750
+[INFO  13:13:45] Replay epoch 2: Replay_train_acc: 0.3125 	 Replay_test_acc: 0.3750
+[INFO  13:13:45] Replay epoch 3: Replay_train_acc: 0.3125 	 Replay_test_acc: 0.3750
+[INFO  13:13:45] Replay epoch 4: Replay_train_acc: 0.3125 	 Replay_test_acc: 0.3750
+[INFO  13:13:45] Replay epoch 5: Replay_train_acc: 0.3125 	 Replay_test_acc: 0.3750
+[INFO  13:13:45] Replay epoch 6: Replay_train_acc: 0.3125 	 Replay_test_acc: 0.3750
+[INFO  13:13:45] Replay epoch 7: Replay_train_acc: 0.3125 	 Replay_test_acc: 0.3750
+[INFO  13:13:45] Replay epoch 8: Replay_train_acc: 0.3125 	 Replay_test_acc: 0.3750
+[INFO  13:13:45] Replay epoch 9: Replay_train_acc: 0.3125 	 Replay_test_acc: 0.3750
+[INFO  13:13:45] Update replay buffer for simple replay.
+[INFO  13:13:45] Length of replay buffer: 5

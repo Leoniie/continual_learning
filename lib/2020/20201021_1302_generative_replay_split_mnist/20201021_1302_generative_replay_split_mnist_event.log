@@ -1,0 +1,278 @@
+[INFO  13:02:33] Start training with parametrization:
+{
+    "dataset": {
+        "name": "split_mnist",
+        "kwargs": {
+            "batch_size": 128,
+            "shuffle_tasks": false
+        }
+    },
+    "criterion": "BCE",
+    "cl_method": "generative_replay",
+    "dimensions": [
+        784,
+        400,
+        400,
+        2
+    ],
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "nonlinearity": "relu",
+    "n_replay": 16,
+    "optimizer": "sgd",
+    "prob_init": null,
+    "replay_epochs": 10,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 5,
+    "vae_lr": 0.001,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 100,
+    "weight_decay": 1.0,
+    "log_dir": "",
+    "task": "split_mnist"
+}
+[INFO  13:02:33] Starting training of task 1
+[INFO  13:02:36] epoch 0: train_acc: 0.6951 	 test_acc: 0.9660
+[INFO  13:02:38] epoch 1: train_acc: 0.9757 	 test_acc: 0.9967
+[INFO  13:02:41] epoch 2: train_acc: 0.9843 	 test_acc: 0.9972
+[INFO  13:02:44] epoch 3: train_acc: 0.9856 	 test_acc: 0.9972
+[INFO  13:02:46] epoch 4: train_acc: 0.9861 	 test_acc: 0.9972
+[INFO  13:02:49] epoch 5: train_acc: 0.9864 	 test_acc: 0.9967
+[INFO  13:02:51] epoch 6: train_acc: 0.9867 	 test_acc: 0.9967
+[INFO  13:02:54] epoch 7: train_acc: 0.9868 	 test_acc: 0.9967
+[INFO  13:02:57] epoch 8: train_acc: 0.9869 	 test_acc: 0.9967
+[INFO  13:03:00] epoch 9: train_acc: 0.9870 	 test_acc: 0.9981
+[INFO  13:03:02] Task accuracies: {
+    "task1": 0.9981087470449173,
+    "task2": 0.4583741429970617,
+    "task3": 0.4183564567769477,
+    "task4": 0.6027190332326284,
+    "task5": 0.4503277861825517
+}
+[INFO  13:03:02] Mean task accuracy: 0.5856
+[INFO  13:03:02] Starting to fit generator to task 1
+[INFO  13:03:05] ====> VAE Epoch: 1 Average loss: -8160.4327
+[INFO  13:03:05] ====> VAE  Test set loss: -13088.8453
+[INFO  13:03:08] ====> VAE Epoch: 2 Average loss: -14569.9698
+[INFO  13:03:09] ====> VAE  Test set loss: -16664.6217
+[INFO  13:03:11] ====> VAE Epoch: 3 Average loss: -17948.1845
+[INFO  13:03:11] ====> VAE  Test set loss: -19895.9632
+[INFO  13:03:13] ====> VAE Epoch: 4 Average loss: -20648.3965
+[INFO  13:03:13] ====> VAE  Test set loss: -21846.9502
+[INFO  13:03:16] ====> VAE Epoch: 5 Average loss: -22518.3442
+[INFO  13:03:16] ====> VAE  Test set loss: -23462.8892
+[INFO  13:03:16] Update replay buffer for generative replay.
+[INFO  13:03:16] Starting training of task 2
+[INFO  13:03:19] epoch 0: train_acc: 0.5636 	 test_acc: 0.6268
+[INFO  13:03:21] epoch 1: train_acc: 0.6973 	 test_acc: 0.7272
+[INFO  13:03:24] epoch 2: train_acc: 0.7659 	 test_acc: 0.7884
+[INFO  13:03:26] epoch 3: train_acc: 0.8087 	 test_acc: 0.8213
+[INFO  13:03:29] epoch 4: train_acc: 0.8418 	 test_acc: 0.8428
+[INFO  13:03:32] epoch 5: train_acc: 0.8595 	 test_acc: 0.8614
+[INFO  13:03:35] epoch 6: train_acc: 0.8749 	 test_acc: 0.8776
+[INFO  13:03:37] epoch 7: train_acc: 0.8889 	 test_acc: 0.8888
+[INFO  13:03:39] epoch 8: train_acc: 0.8998 	 test_acc: 0.8996
+[INFO  13:03:42] epoch 9: train_acc: 0.9060 	 test_acc: 0.9060
+[INFO  13:03:45] Task accuracies: {
+    "task1": 0.9479905437352246,
+    "task2": 0.9059745347698335,
+    "task3": 0.7097118463180363,
+    "task4": 0.7910372608257804,
+    "task5": 0.45738779626828036
+}
+[INFO  13:03:45] Mean task accuracy: 0.7624
+[INFO  13:03:45] Starting to fit generator to task 2
+[INFO  13:03:47] ====> VAE Epoch: 1 Average loss: -16197.6850
+[INFO  13:03:47] ====> VAE  Test set loss: -21094.9301
+[INFO  13:03:49] ====> VAE Epoch: 2 Average loss: -21158.0872
+[INFO  13:03:50] ====> VAE  Test set loss: -22958.5338
+[INFO  13:03:52] ====> VAE Epoch: 3 Average loss: -23145.5067
+[INFO  13:03:52] ====> VAE  Test set loss: -25287.9778
+[INFO  13:03:55] ====> VAE Epoch: 4 Average loss: -24804.5836
+[INFO  13:03:55] ====> VAE  Test set loss: -26369.1437
+[INFO  13:03:57] ====> VAE Epoch: 5 Average loss: -26460.8259
+[INFO  13:03:57] ====> VAE  Test set loss: -28169.4270
+[INFO  13:03:57] Starting replay on vae of task 1
+[INFO  13:03:57] VAE Replay epoch 0: VAE Replay_train_loss: 15395.7207 	 VAE Replay_test_loss: 1046.0044
+[INFO  13:03:57] VAE Replay epoch 1: VAE Replay_train_loss: 17138.0703 	 VAE Replay_test_loss: 951.3112
+[INFO  13:03:57] VAE Replay epoch 2: VAE Replay_train_loss: 13184.1123 	 VAE Replay_test_loss: 515.7435
+[INFO  13:03:57] VAE Replay epoch 3: VAE Replay_train_loss: 9201.3877 	 VAE Replay_test_loss: 447.9538
+[INFO  13:03:57] VAE Replay epoch 4: VAE Replay_train_loss: 7760.0737 	 VAE Replay_test_loss: 412.2367
+[INFO  13:03:57] VAE Replay epoch 5: VAE Replay_train_loss: 7373.3340 	 VAE Replay_test_loss: 466.1100
+[INFO  13:03:57] VAE Replay epoch 6: VAE Replay_train_loss: 7342.2588 	 VAE Replay_test_loss: 457.9642
+[INFO  13:03:57] VAE Replay epoch 7: VAE Replay_train_loss: 7397.2510 	 VAE Replay_test_loss: 439.6467
+[INFO  13:03:57] VAE Replay epoch 8: VAE Replay_train_loss: 7052.7812 	 VAE Replay_test_loss: 459.5789
+[INFO  13:03:57] VAE Replay epoch 9: VAE Replay_train_loss: 7059.4917 	 VAE Replay_test_loss: 385.9194
+[INFO  13:03:57] Starting replay of task 1
+[INFO  13:03:57] Replay epoch 0: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.8125
+[INFO  13:03:57] Replay epoch 1: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.8125
+[INFO  13:03:57] Replay epoch 2: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.8125
+[INFO  13:03:57] Replay epoch 3: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.8125
+[INFO  13:03:57] Replay epoch 4: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.8125
+[INFO  13:03:57] Replay epoch 5: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.8125
+[INFO  13:03:58] Replay epoch 6: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.8125
+[INFO  13:03:58] Replay epoch 7: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.8125
+[INFO  13:03:58] Replay epoch 8: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.8125
+[INFO  13:03:58] Replay epoch 9: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.8125
+[INFO  13:03:58] Update replay buffer for generative replay.
+[INFO  13:03:58] Starting training of task 3
+[INFO  13:04:00] epoch 0: train_acc: 0.7288 	 test_acc: 0.7652
+[INFO  13:04:02] epoch 1: train_acc: 0.7747 	 test_acc: 0.8036
+[INFO  13:04:05] epoch 2: train_acc: 0.8096 	 test_acc: 0.8346
+[INFO  13:04:07] epoch 3: train_acc: 0.8341 	 test_acc: 0.8543
+[INFO  13:04:09] epoch 4: train_acc: 0.8502 	 test_acc: 0.8671
+[INFO  13:04:11] epoch 5: train_acc: 0.8610 	 test_acc: 0.8757
+[INFO  13:04:14] epoch 6: train_acc: 0.8699 	 test_acc: 0.8831
+[INFO  13:04:16] epoch 7: train_acc: 0.8742 	 test_acc: 0.8933
+[INFO  13:04:18] epoch 8: train_acc: 0.8756 	 test_acc: 0.8949
+[INFO  13:04:20] epoch 9: train_acc: 0.8762 	 test_acc: 0.8922
+[INFO  13:04:22] Task accuracies: {
+    "task1": 0.7550827423167848,
+    "task2": 0.8883447600391773,
+    "task3": 0.8922091782283885,
+    "task4": 0.46576032225579056,
+    "task5": 0.32123045890065555
+}
+[INFO  13:04:22] Mean task accuracy: 0.6645
+[INFO  13:04:22] Starting to fit generator to task 3
+[INFO  13:04:24] ====> VAE Epoch: 1 Average loss: -19851.7616
+[INFO  13:04:24] ====> VAE  Test set loss: -25085.8850
+[INFO  13:04:27] ====> VAE Epoch: 2 Average loss: -25103.2898
+[INFO  13:04:27] ====> VAE  Test set loss: -27126.5759
+[INFO  13:04:29] ====> VAE Epoch: 3 Average loss: -26869.4277
+[INFO  13:04:29] ====> VAE  Test set loss: -28495.8650
+[INFO  13:04:31] ====> VAE Epoch: 4 Average loss: -27703.7322
+[INFO  13:04:31] ====> VAE  Test set loss: -29040.3106
+[INFO  13:04:33] ====> VAE Epoch: 5 Average loss: -28306.3892
+[INFO  13:04:33] ====> VAE  Test set loss: -29721.4945
+[INFO  13:04:33] Starting replay on vae of task 1
+[INFO  13:04:33] VAE Replay epoch 0: VAE Replay_train_loss: 37788.9023 	 VAE Replay_test_loss: 897.8563
+[INFO  13:04:33] VAE Replay epoch 1: VAE Replay_train_loss: 29251.9258 	 VAE Replay_test_loss: 681.3563
+[INFO  13:04:33] VAE Replay epoch 2: VAE Replay_train_loss: 13849.8506 	 VAE Replay_test_loss: 695.1235
+[INFO  13:04:33] VAE Replay epoch 3: VAE Replay_train_loss: 10176.9785 	 VAE Replay_test_loss: 447.8531
+[INFO  13:04:33] VAE Replay epoch 4: VAE Replay_train_loss: 8487.8340 	 VAE Replay_test_loss: 447.3504
+[INFO  13:04:33] VAE Replay epoch 5: VAE Replay_train_loss: 8938.1465 	 VAE Replay_test_loss: 499.3114
+[INFO  13:04:33] VAE Replay epoch 6: VAE Replay_train_loss: 8970.4668 	 VAE Replay_test_loss: 560.7332
+[INFO  13:04:33] VAE Replay epoch 7: VAE Replay_train_loss: 9062.6279 	 VAE Replay_test_loss: 536.4312
+[INFO  13:04:33] VAE Replay epoch 8: VAE Replay_train_loss: 9820.0654 	 VAE Replay_test_loss: 514.9891
+[INFO  13:04:33] VAE Replay epoch 9: VAE Replay_train_loss: 9131.5293 	 VAE Replay_test_loss: 517.6680
+[INFO  13:04:33] Starting replay of task 1
+[INFO  13:04:33] Replay epoch 0: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.8750
+[INFO  13:04:34] Replay epoch 1: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.8750
+[INFO  13:04:34] Replay epoch 2: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.8750
+[INFO  13:04:34] Replay epoch 3: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.8750
+[INFO  13:04:34] Replay epoch 4: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.8750
+[INFO  13:04:34] Replay epoch 5: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.8750
+[INFO  13:04:34] Replay epoch 6: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.8750
+[INFO  13:04:34] Replay epoch 7: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.8750
+[INFO  13:04:34] Replay epoch 8: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.8750
+[INFO  13:04:34] Replay epoch 9: Replay_train_acc: 0.8750 	 Replay_test_acc: 0.8750
+[INFO  13:04:34] Update replay buffer for generative replay.
+[INFO  13:04:34] Starting training of task 4
+[INFO  13:04:36] epoch 0: train_acc: 0.4856 	 test_acc: 0.5242
+[INFO  13:04:39] epoch 1: train_acc: 0.6215 	 test_acc: 0.7341
+[INFO  13:04:42] epoch 2: train_acc: 0.8192 	 test_acc: 0.8781
+[INFO  13:04:44] epoch 3: train_acc: 0.8960 	 test_acc: 0.9164
+[INFO  13:04:47] epoch 4: train_acc: 0.9155 	 test_acc: 0.9265
+[INFO  13:04:49] epoch 5: train_acc: 0.9124 	 test_acc: 0.9194
+[INFO  13:04:52] epoch 6: train_acc: 0.8972 	 test_acc: 0.8958
+[INFO  13:04:54] epoch 7: train_acc: 0.8461 	 test_acc: 0.8510
+[INFO  13:04:56] epoch 8: train_acc: 0.7721 	 test_acc: 0.7633
+[INFO  13:04:59] epoch 9: train_acc: 0.6536 	 test_acc: 0.6224
+[INFO  13:05:01] Task accuracies: {
+    "task1": 0.5375886524822695,
+    "task2": 0.5244857982370226,
+    "task3": 0.4786552828175027,
+    "task4": 0.622356495468278,
+    "task5": 0.5083207261724659
+}
+[INFO  13:05:01] Mean task accuracy: 0.5343
+[INFO  13:05:01] Starting to fit generator to task 4
+[INFO  13:05:03] ====> VAE Epoch: 1 Average loss: -27626.0929
+[INFO  13:05:03] ====> VAE  Test set loss: -29573.7390
+[INFO  13:05:05] ====> VAE Epoch: 2 Average loss: -29894.2287
+[INFO  13:05:06] ====> VAE  Test set loss: -30996.6185
+[INFO  13:05:08] ====> VAE Epoch: 3 Average loss: -30775.0061
+[INFO  13:05:08] ====> VAE  Test set loss: -31601.1132
+[INFO  13:05:10] ====> VAE Epoch: 4 Average loss: -31309.3268
+[INFO  13:05:10] ====> VAE  Test set loss: -31958.6004
+[INFO  13:05:12] ====> VAE Epoch: 5 Average loss: -31687.4976
+[INFO  13:05:13] ====> VAE  Test set loss: -32335.9488
+[INFO  13:05:13] Starting replay on vae of task 1
+[INFO  13:05:13] VAE Replay epoch 0: VAE Replay_train_loss: 6683.7769 	 VAE Replay_test_loss: 418.8133
+[INFO  13:05:13] VAE Replay epoch 1: VAE Replay_train_loss: 6665.9116 	 VAE Replay_test_loss: 402.8902
+[INFO  13:05:13] VAE Replay epoch 2: VAE Replay_train_loss: 8089.6514 	 VAE Replay_test_loss: 499.5971
+[INFO  13:05:13] VAE Replay epoch 3: VAE Replay_train_loss: 7727.7080 	 VAE Replay_test_loss: 474.5962
+[INFO  13:05:13] VAE Replay epoch 4: VAE Replay_train_loss: 6496.6440 	 VAE Replay_test_loss: 412.3135
+[INFO  13:05:13] VAE Replay epoch 5: VAE Replay_train_loss: 7609.6611 	 VAE Replay_test_loss: 392.7022
+[INFO  13:05:13] VAE Replay epoch 6: VAE Replay_train_loss: 6655.4385 	 VAE Replay_test_loss: 390.3695
+[INFO  13:05:13] VAE Replay epoch 7: VAE Replay_train_loss: 6601.7402 	 VAE Replay_test_loss: 420.8141
+[INFO  13:05:13] VAE Replay epoch 8: VAE Replay_train_loss: 6721.1294 	 VAE Replay_test_loss: 410.7544
+[INFO  13:05:13] VAE Replay epoch 9: VAE Replay_train_loss: 5632.8101 	 VAE Replay_test_loss: 348.4089
+[INFO  13:05:13] Starting replay of task 1
+[INFO  13:05:13] Replay epoch 0: Replay_train_acc: 0.1250 	 Replay_test_acc: 0.3125
+[INFO  13:05:13] Replay epoch 1: Replay_train_acc: 0.1250 	 Replay_test_acc: 0.3125
+[INFO  13:05:13] Replay epoch 2: Replay_train_acc: 0.1250 	 Replay_test_acc: 0.3125
+[INFO  13:05:13] Replay epoch 3: Replay_train_acc: 0.1250 	 Replay_test_acc: 0.3125
+[INFO  13:05:13] Replay epoch 4: Replay_train_acc: 0.1250 	 Replay_test_acc: 0.3125
+[INFO  13:05:13] Replay epoch 5: Replay_train_acc: 0.1250 	 Replay_test_acc: 0.3125
+[INFO  13:05:13] Replay epoch 6: Replay_train_acc: 0.1250 	 Replay_test_acc: 0.3125
+[INFO  13:05:13] Replay epoch 7: Replay_train_acc: 0.1250 	 Replay_test_acc: 0.3125
+[INFO  13:05:13] Replay epoch 8: Replay_train_acc: 0.1250 	 Replay_test_acc: 0.3125
+[INFO  13:05:13] Replay epoch 9: Replay_train_acc: 0.1250 	 Replay_test_acc: 0.3125
+[INFO  13:05:13] Update replay buffer for generative replay.
+[INFO  13:05:13] Starting training of task 5
+[INFO  13:05:15] epoch 0: train_acc: 0.4877 	 test_acc: 0.5073
+[INFO  13:05:18] epoch 1: train_acc: 0.5014 	 test_acc: 0.5093
+[INFO  13:05:20] epoch 2: train_acc: 0.5032 	 test_acc: 0.5088
+[INFO  13:05:22] epoch 3: train_acc: 0.5033 	 test_acc: 0.5088
+[INFO  13:05:25] epoch 4: train_acc: 0.5032 	 test_acc: 0.5088
+[INFO  13:05:27] epoch 5: train_acc: 0.5032 	 test_acc: 0.5088
+[INFO  13:05:29] epoch 6: train_acc: 0.5031 	 test_acc: 0.5088
+[INFO  13:05:32] epoch 7: train_acc: 0.5030 	 test_acc: 0.5088
+[INFO  13:05:34] epoch 8: train_acc: 0.5029 	 test_acc: 0.5088
+[INFO  13:05:36] epoch 9: train_acc: 0.5034 	 test_acc: 0.5088
+[INFO  13:05:39] Task accuracies: {
+    "task1": 0.5366430260047281,
+    "task2": 0.49461312438785504,
+    "task3": 0.4759871931696905,
+    "task4": 0.5176233635448136,
+    "task5": 0.5088250126071608
+}
+[INFO  13:05:39] Mean task accuracy: 0.5067
+[INFO  13:05:39] Starting to fit generator to task 5
+[INFO  13:05:41] ====> VAE Epoch: 1 Average loss: -30328.2857
+[INFO  13:05:41] ====> VAE  Test set loss: -32566.6101
+[INFO  13:05:43] ====> VAE Epoch: 2 Average loss: -32040.8379
+[INFO  13:05:43] ====> VAE  Test set loss: -33329.2479
+[INFO  13:05:46] ====> VAE Epoch: 3 Average loss: -32625.4928
+[INFO  13:05:46] ====> VAE  Test set loss: -33596.1930
+[INFO  13:05:48] ====> VAE Epoch: 4 Average loss: -32983.5686
+[INFO  13:05:49] ====> VAE  Test set loss: -34105.9996
+[INFO  13:05:50] ====> VAE Epoch: 5 Average loss: -33300.9074
+[INFO  13:05:51] ====> VAE  Test set loss: -34210.6662
+[INFO  13:05:51] Starting replay on vae of task 1
+[INFO  13:05:51] VAE Replay epoch 0: VAE Replay_train_loss: 20630.6797 	 VAE Replay_test_loss: 777.0058
+[INFO  13:05:51] VAE Replay epoch 1: VAE Replay_train_loss: 21864.4316 	 VAE Replay_test_loss: 795.6994
+[INFO  13:05:51] VAE Replay epoch 2: VAE Replay_train_loss: 10892.4678 	 VAE Replay_test_loss: 708.3157
+[INFO  13:05:51] VAE Replay epoch 3: VAE Replay_train_loss: 11080.3066 	 VAE Replay_test_loss: 633.8788
+[INFO  13:05:51] VAE Replay epoch 4: VAE Replay_train_loss: 6346.5718 	 VAE Replay_test_loss: 564.0171
+[INFO  13:05:51] VAE Replay epoch 5: VAE Replay_train_loss: 5487.3853 	 VAE Replay_test_loss: 457.1365
+[INFO  13:05:51] VAE Replay epoch 6: VAE Replay_train_loss: 5788.6035 	 VAE Replay_test_loss: 372.3158
+[INFO  13:05:51] VAE Replay epoch 7: VAE Replay_train_loss: 6447.6392 	 VAE Replay_test_loss: 463.0538
+[INFO  13:05:51] VAE Replay epoch 8: VAE Replay_train_loss: 5423.0430 	 VAE Replay_test_loss: 465.1152
+[INFO  13:05:51] VAE Replay epoch 9: VAE Replay_train_loss: 5777.8237 	 VAE Replay_test_loss: 433.1494
+[INFO  13:05:51] Starting replay of task 1
+[INFO  13:05:51] Replay epoch 0: Replay_train_acc: 1.0000 	 Replay_test_acc: 1.0000
+[INFO  13:05:51] Replay epoch 1: Replay_train_acc: 1.0000 	 Replay_test_acc: 1.0000
+[INFO  13:05:51] Replay epoch 2: Replay_train_acc: 1.0000 	 Replay_test_acc: 1.0000
+[INFO  13:05:51] Replay epoch 3: Replay_train_acc: 1.0000 	 Replay_test_acc: 1.0000
+[INFO  13:05:51] Replay epoch 4: Replay_train_acc: 1.0000 	 Replay_test_acc: 1.0000
+[INFO  13:05:51] Replay epoch 5: Replay_train_acc: 1.0000 	 Replay_test_acc: 1.0000
+[INFO  13:05:51] Replay epoch 6: Replay_train_acc: 1.0000 	 Replay_test_acc: 1.0000
+[INFO  13:05:51] Replay epoch 7: Replay_train_acc: 1.0000 	 Replay_test_acc: 1.0000
+[INFO  13:05:51] Replay epoch 8: Replay_train_acc: 1.0000 	 Replay_test_acc: 1.0000
+[INFO  13:05:51] Replay epoch 9: Replay_train_acc: 1.0000 	 Replay_test_acc: 1.0000
+[INFO  13:05:51] Update replay buffer for generative replay.

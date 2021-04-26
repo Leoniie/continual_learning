@@ -1,0 +1,24 @@
+{
+    "dataset": {
+        "name": "split_mnist",
+        "kwargs":{
+            "batch_size": 100,
+            "shuffle_tasks": false
+        }
+    },
+    "criterion": "BCE",
+    "cl_method": "no_replay",
+    "dimensions": [784, 40, 40, 2],
+    "epochs": 1,
+    "learning_rate": 0.01,
+    "nonlinearity": "relu",
+    "n_replay": 1000,
+    "optimizer": "sgd",
+    "seed": 1,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 1e-3,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400
+}

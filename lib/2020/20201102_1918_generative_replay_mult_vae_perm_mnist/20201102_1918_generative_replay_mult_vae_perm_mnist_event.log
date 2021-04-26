@@ -1,0 +1,188 @@
+[INFO  19:18:32] Start training with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay_mult_vae",
+    "criterion": "cross_entropy",
+    "dimensions": [
+        784,
+        200,
+        200,
+        10
+    ],
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "nonlinearity": "relu",
+    "n_replay": 20,
+    "optimizer": "sgd",
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 100,
+    "vae_epochs": 10,
+    "vae_lr": 0.001,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 100,
+    "log_dir": "",
+    "task": "perm_mnist"
+}
+[INFO  19:18:32] Starting training of task 1
+[INFO  19:18:52] epoch 0: train_acc: 0.2890 	 test_acc: 0.4825
+[INFO  19:19:05] epoch 1: train_acc: 0.6005 	 test_acc: 0.6762
+[INFO  19:19:18] epoch 2: train_acc: 0.7139 	 test_acc: 0.7561
+[INFO  19:19:30] epoch 3: train_acc: 0.7862 	 test_acc: 0.8151
+[INFO  19:19:42] epoch 4: train_acc: 0.8270 	 test_acc: 0.8445
+[INFO  19:19:55] epoch 5: train_acc: 0.8488 	 test_acc: 0.8612
+[INFO  19:20:07] epoch 6: train_acc: 0.8623 	 test_acc: 0.8708
+[INFO  19:20:19] epoch 7: train_acc: 0.8720 	 test_acc: 0.8804
+[INFO  19:20:32] epoch 8: train_acc: 0.8788 	 test_acc: 0.8871
+[INFO  19:20:45] epoch 9: train_acc: 0.8847 	 test_acc: 0.8915
+[INFO  19:20:57] epoch 10: train_acc: 0.8891 	 test_acc: 0.8959
+[INFO  19:21:12] epoch 11: train_acc: 0.8923 	 test_acc: 0.8976
+[INFO  19:21:27] epoch 12: train_acc: 0.8947 	 test_acc: 0.9002
+[INFO  19:21:41] epoch 13: train_acc: 0.8975 	 test_acc: 0.9025
+[INFO  19:21:52] epoch 14: train_acc: 0.8996 	 test_acc: 0.9032
+[INFO  19:22:03] epoch 15: train_acc: 0.9020 	 test_acc: 0.9060
+[INFO  19:22:15] epoch 16: train_acc: 0.9036 	 test_acc: 0.9083
+[INFO  19:22:25] epoch 17: train_acc: 0.9059 	 test_acc: 0.9091
+[INFO  19:22:36] epoch 18: train_acc: 0.9071 	 test_acc: 0.9113
+[INFO  19:22:46] epoch 19: train_acc: 0.9085 	 test_acc: 0.9127
+[INFO  19:23:04] Task accuracies: {
+    "task1": 0.9127,
+    "task10": 0.096,
+    "task2": 0.108,
+    "task3": 0.0945,
+    "task4": 0.143,
+    "task5": 0.2172,
+    "task6": 0.158,
+    "task7": 0.1789,
+    "task8": 0.1781,
+    "task9": 0.1016
+}
+[INFO  19:23:04] Mean task accuracy: 0.9127
+[INFO  19:23:15] Starting training of task 2
+[INFO  19:23:32] epoch 0: train_acc: 0.4188 	 test_acc: 0.6352
+[INFO  19:23:44] epoch 1: train_acc: 0.7007 	 test_acc: 0.7610
+[INFO  19:23:56] epoch 2: train_acc: 0.7844 	 test_acc: 0.8107
+[INFO  19:24:08] epoch 3: train_acc: 0.8223 	 test_acc: 0.8373
+[INFO  19:24:21] epoch 4: train_acc: 0.8430 	 test_acc: 0.8543
+[INFO  19:24:34] epoch 5: train_acc: 0.8566 	 test_acc: 0.8663
+[INFO  19:24:45] epoch 6: train_acc: 0.8665 	 test_acc: 0.8747
+[INFO  19:24:57] epoch 7: train_acc: 0.8738 	 test_acc: 0.8819
+[INFO  19:25:08] epoch 8: train_acc: 0.8802 	 test_acc: 0.8859
+[INFO  19:25:21] epoch 9: train_acc: 0.8843 	 test_acc: 0.8893
+[INFO  19:25:32] epoch 10: train_acc: 0.8887 	 test_acc: 0.8928
+[INFO  19:25:44] epoch 11: train_acc: 0.8918 	 test_acc: 0.8956
+[INFO  19:25:56] epoch 12: train_acc: 0.8952 	 test_acc: 0.8983
+[INFO  19:26:08] epoch 13: train_acc: 0.8978 	 test_acc: 0.9010
+[INFO  19:26:20] epoch 14: train_acc: 0.9001 	 test_acc: 0.9030
+[INFO  19:26:32] epoch 15: train_acc: 0.9023 	 test_acc: 0.9043
+[INFO  19:26:44] epoch 16: train_acc: 0.9042 	 test_acc: 0.9069
+[INFO  19:26:56] epoch 17: train_acc: 0.9061 	 test_acc: 0.9083
+[INFO  19:27:08] epoch 18: train_acc: 0.9079 	 test_acc: 0.9100
+[INFO  19:27:20] epoch 19: train_acc: 0.9094 	 test_acc: 0.9108
+[INFO  19:27:40] Task accuracies: {
+    "task1": 0.5702,
+    "task10": 0.1083,
+    "task2": 0.9108,
+    "task3": 0.1138,
+    "task4": 0.1405,
+    "task5": 0.1576,
+    "task6": 0.1978,
+    "task7": 0.18,
+    "task8": 0.1943,
+    "task9": 0.1162
+}
+[INFO  19:27:40] Mean task accuracy: 0.7405
+[INFO  19:27:51] Starting training of task 3
+[INFO  19:28:03] epoch 0: train_acc: 0.4152 	 test_acc: 0.6442
+[INFO  19:28:15] epoch 1: train_acc: 0.7093 	 test_acc: 0.7710
+[INFO  19:28:27] epoch 2: train_acc: 0.7851 	 test_acc: 0.8148
+[INFO  19:28:39] epoch 3: train_acc: 0.8168 	 test_acc: 0.8363
+[INFO  19:28:51] epoch 4: train_acc: 0.8362 	 test_acc: 0.8509
+[INFO  19:29:03] epoch 5: train_acc: 0.8493 	 test_acc: 0.8626
+[INFO  19:29:15] epoch 6: train_acc: 0.8593 	 test_acc: 0.8706
+[INFO  19:29:28] epoch 7: train_acc: 0.8666 	 test_acc: 0.8777
+[INFO  19:29:40] epoch 8: train_acc: 0.8730 	 test_acc: 0.8828
+[INFO  19:29:53] epoch 9: train_acc: 0.8785 	 test_acc: 0.8873
+[INFO  19:30:05] epoch 10: train_acc: 0.8830 	 test_acc: 0.8916
+[INFO  19:30:17] epoch 11: train_acc: 0.8868 	 test_acc: 0.8948
+[INFO  19:30:29] epoch 12: train_acc: 0.8903 	 test_acc: 0.8978
+[INFO  19:30:40] epoch 13: train_acc: 0.8934 	 test_acc: 0.9009
+[INFO  19:30:51] epoch 14: train_acc: 0.8960 	 test_acc: 0.9028
+[INFO  19:31:03] epoch 15: train_acc: 0.8980 	 test_acc: 0.9057
+[INFO  19:31:14] epoch 16: train_acc: 0.9002 	 test_acc: 0.9070
+[INFO  19:31:26] epoch 17: train_acc: 0.9022 	 test_acc: 0.9087
+[INFO  19:31:37] epoch 18: train_acc: 0.9042 	 test_acc: 0.9102
+[INFO  19:31:49] epoch 19: train_acc: 0.9057 	 test_acc: 0.9121
+[INFO  19:32:09] Task accuracies: {
+    "task1": 0.5063,
+    "task10": 0.1262,
+    "task2": 0.5007,
+    "task3": 0.9121,
+    "task4": 0.1235,
+    "task5": 0.1456,
+    "task6": 0.1579,
+    "task7": 0.1725,
+    "task8": 0.1881,
+    "task9": 0.1062
+}
+[INFO  19:32:09] Mean task accuracy: 0.6397
+[INFO  19:32:20] Starting training of task 4
+[INFO  19:32:33] epoch 0: train_acc: 0.3680 	 test_acc: 0.5884
+[INFO  19:32:46] epoch 1: train_acc: 0.6622 	 test_acc: 0.7319
+[INFO  19:32:59] epoch 2: train_acc: 0.7527 	 test_acc: 0.7835
+[INFO  19:33:12] epoch 3: train_acc: 0.7958 	 test_acc: 0.8133
+[INFO  19:33:25] epoch 4: train_acc: 0.8202 	 test_acc: 0.8327
+[INFO  19:33:38] epoch 5: train_acc: 0.8359 	 test_acc: 0.8452
+[INFO  19:33:50] epoch 6: train_acc: 0.8483 	 test_acc: 0.8565
+[INFO  19:34:03] epoch 7: train_acc: 0.8570 	 test_acc: 0.8622
+[INFO  19:34:17] epoch 8: train_acc: 0.8641 	 test_acc: 0.8689
+[INFO  19:34:30] epoch 9: train_acc: 0.8700 	 test_acc: 0.8743
+[INFO  19:34:42] epoch 10: train_acc: 0.8747 	 test_acc: 0.8777
+[INFO  19:34:54] epoch 11: train_acc: 0.8785 	 test_acc: 0.8816
+[INFO  19:35:06] epoch 12: train_acc: 0.8823 	 test_acc: 0.8850
+[INFO  19:35:18] epoch 13: train_acc: 0.8849 	 test_acc: 0.8880
+[INFO  19:35:30] epoch 14: train_acc: 0.8882 	 test_acc: 0.8912
+[INFO  19:35:45] epoch 15: train_acc: 0.8906 	 test_acc: 0.8942
+[INFO  19:35:59] epoch 16: train_acc: 0.8931 	 test_acc: 0.8965
+[INFO  19:36:11] epoch 17: train_acc: 0.8953 	 test_acc: 0.8982
+[INFO  19:36:22] epoch 18: train_acc: 0.8974 	 test_acc: 0.8995
+[INFO  19:36:34] epoch 19: train_acc: 0.8993 	 test_acc: 0.9022
+[INFO  19:36:53] Task accuracies: {
+    "task1": 0.503,
+    "task10": 0.1241,
+    "task2": 0.4405,
+    "task3": 0.7429,
+    "task4": 0.9022,
+    "task5": 0.1518,
+    "task6": 0.1526,
+    "task7": 0.1737,
+    "task8": 0.1891,
+    "task9": 0.107
+}
+[INFO  19:36:53] Mean task accuracy: 0.6472
+[INFO  19:37:04] Starting training of task 5
+[INFO  19:37:16] epoch 0: train_acc: 0.4037 	 test_acc: 0.5891
+[INFO  19:37:28] epoch 1: train_acc: 0.6624 	 test_acc: 0.7299
+[INFO  19:37:39] epoch 2: train_acc: 0.7508 	 test_acc: 0.7843
+[INFO  19:37:50] epoch 3: train_acc: 0.7904 	 test_acc: 0.8115
+[INFO  19:38:03] epoch 4: train_acc: 0.8126 	 test_acc: 0.8301
+[INFO  19:38:15] epoch 5: train_acc: 0.8278 	 test_acc: 0.8428
+[INFO  19:38:27] epoch 6: train_acc: 0.8397 	 test_acc: 0.8519
+[INFO  19:38:39] epoch 7: train_acc: 0.8490 	 test_acc: 0.8592
+[INFO  19:38:50] epoch 8: train_acc: 0.8556 	 test_acc: 0.8645
+[INFO  19:39:02] epoch 9: train_acc: 0.8620 	 test_acc: 0.8702
+[INFO  19:39:14] epoch 10: train_acc: 0.8676 	 test_acc: 0.8747
+[INFO  19:39:25] epoch 11: train_acc: 0.8721 	 test_acc: 0.8777
+[INFO  19:39:37] epoch 12: train_acc: 0.8758 	 test_acc: 0.8806
+[INFO  19:39:48] epoch 13: train_acc: 0.8796 	 test_acc: 0.8843
+[INFO  19:40:00] epoch 14: train_acc: 0.8825 	 test_acc: 0.8861
+[INFO  19:40:12] epoch 15: train_acc: 0.8853 	 test_acc: 0.8887
+[INFO  19:40:23] epoch 16: train_acc: 0.8880 	 test_acc: 0.8912
+[INFO  19:40:37] epoch 17: train_acc: 0.8903 	 test_acc: 0.8930
+[INFO  19:40:50] epoch 18: train_acc: 0.8925 	 test_acc: 0.8951
