@@ -331,7 +331,7 @@ if __name__ == '__main__':
     
     #parameters = dict(learning_rate = [0.0001, 0.001, 0.005, 0.01], beta_1 = [-100, -10, -1, -0.1, -0.01, 0], beta_2 = [0,0.01, 0.1, 1,10,100], freeze = [False], n_bottleneck = [10, 100, 1000], n_replay = [1000], model = ["vib_model", "comparison_model"], optimizer = ["adam"])
 
-    parameters = dict(learning_rate = [0.0001], beta_1 = [-100], beta_2 = [0,0.01, 0.1, 1,10,100], freeze = [False], n_bottleneck = [10, 100, 1000], n_replay = [1000], model = ["vib_model", "comparison_model"], optimizer = ["adam"])
+    parameters = dict(learning_rate = [0.0001], beta_1 = [0], beta_2 = [0,0.01, 0.1, 1,10,100], freeze = [False], n_bottleneck = [10, 100, 1000], n_replay = [1000], model = ["vib_model", "comparison_model"], optimizer = ["adam"])
 
 
     # RUN THIS NEXT: Everything the same, except for more beta_2: [1, 10, 100]
