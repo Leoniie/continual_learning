@@ -92,7 +92,7 @@ def run_replay(cfg):
 
 
     # Load specified dataset
-    train_loaders, test_loaders = utils.create_dataloader(cfg["dataset"]["name"], **cfg["dataset"]["kwargs"])
+    train_loaders, test_loaders, permutations = utils.create_dataloader(cfg["dataset"]["name"], **cfg["dataset"]["kwargs"])
 
     # Initialize nonlinearity used as activation function
     nonlinearity = utils.create_nonlinearity(cfg['nonlinearity'])
