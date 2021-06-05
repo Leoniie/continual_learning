@@ -1,45 +1,4 @@
 
-# To do 
-
-- [ ] Identify interesting hyperparameter regimes „manually“, without doing an extensive search, for: beta_1, beta_2, size of bottleneck layer (currently 100), learning rate, (replay weight?), size of replay buffer n_replay (currently 1000)
-- [ ] do extensive hyperparater search over regimes that turn out to be interesting —> use Excel spreadsheet for overview over results
-- [ ] compare result to performance of comparison model, using the hyperparameters with most interesting results
-- [ ] Compare training results to baselines
-- [ ] Conduct systematic experiments. Goal: Finding those parameters for which the model performs well on the first task but the generated i
-- [ ] find a sweet spot for the relation between beta_1 and beta_2 
-- [ ] update config files
-
-
-# Done
-- [x] Do sanity checks by setting relevant parameters to 0 (replay weight, beta_1, beta_2, n_replay
-- [x] which hyperparameters make sense to track?
-- [x] implement comparison model
-  - [x] VAE
-  - [x] classifier
-- [x] adapt replay loss so that beta_2 is also taken into account
-- [x] add true/false as a hyperparamter
-- [x] Implement hyperparameter visualisation (still some technical issues) --> *doing*
-- [x] Merge run_vib and run_replay_vib 
-- [x] implement tracking of the VAE loss
-- [x] one script with which we go over beta_1, beta_2 and the learning rate
-- [x] implement function that reverses the permutations of perm mnsit so that the generated images can be checked by humans
-- [x] Implement a function that allows the experiment to continue even if the model crashes on one parameter configuration (try except) --> did not implement try except but simply if isnan
-mages are not sufficient to prevent catastrophic forgetting. Then look at the images.
-- [x] adapt loss function so that it trains the reconstruction decoder only on the first task. 
-- [x] Also: only one loss function 
-- [x] Change training of second task so that reconstruction decoder is not trained on second task.
-- [x] Try out what happens if we freeze the encoder during training of the second task
-
-
-
-
-
-# To do cleaning
-- [ ] Adapt functions, function descriptions
-- [ ] Delete functions that are not needed
-- [ ] As little redundancy as possible
-- [ ] Why does the replay buffer function use both the replay data and the generative data
-- [ ] Update config files
 # Notes on run_replay_vib.py
 Implementation of the vib model for more than one task (number of tasks to be learning can be changed with num_tasks in l. 115)). Model will be run only for one beta_1 and one beta_2, can be changed with the arguments --beta_1 and --beta_2. Need to make sure the dimensions of the encoder, classification decoder and reconstruction decoder match (same number of gaussian units, default is 100). 
 

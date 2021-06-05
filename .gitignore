@@ -1,4 +1,6 @@
 log/
+log_experiments/
+log_experiments2/
 .myenv/bin/activate
 .myenv/bin/activate.csh
 .myenv/bin/activate.fish
