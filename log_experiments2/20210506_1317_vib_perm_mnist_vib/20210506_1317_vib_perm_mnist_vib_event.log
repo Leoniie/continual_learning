@@ -1,0 +1,2988 @@
+[INFO  13:17:32] Training run_id 0 with learning_rate 0.0001, beta_1 -10,beta_2 0 and freeze False
+[INFO  13:17:38] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        10
+    ],
+    "dec_class_dimensions": [
+        10,
+        10
+    ],
+    "dec_rec_dimensions": [
+        10,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 10,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "vib_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  13:17:38] Starting training of task 1
+[INFO  13:17:52] epoch 0: train_acc: 0.1345 	 test_acc: 0.1953
+[INFO  13:18:07] epoch 1: train_acc: 0.2544 	 test_acc: 0.2922
+[INFO  13:18:22] epoch 2: train_acc: 0.3158 	 test_acc: 0.3689
+[INFO  13:18:36] epoch 3: train_acc: 0.4271 	 test_acc: 0.4884
+[INFO  13:18:51] epoch 4: train_acc: 0.5653 	 test_acc: 0.6337
+[INFO  13:19:06] epoch 5: train_acc: 0.6602 	 test_acc: 0.6914
+[INFO  13:19:21] epoch 6: train_acc: 0.6991 	 test_acc: 0.7257
+[INFO  13:19:35] epoch 7: train_acc: 0.7253 	 test_acc: 0.7409
+[INFO  13:19:50] epoch 8: train_acc: 0.7435 	 test_acc: 0.7603
+[INFO  13:20:04] epoch 9: train_acc: 0.7665 	 test_acc: 0.7836
+[INFO  13:20:07] Task accuracies: {
+    "task1": 0.7836,
+    "task2": 0.1434
+}
+[INFO  13:20:07] Mean task accuracy: 0.7836
+[INFO  13:20:07] Update replay buffer for generative replay.
+[INFO  13:20:10] Starting training of task 2
+[INFO  13:20:25] epoch 0: train_acc: 0.4090 	 test_acc: 0.7288
+[INFO  13:20:41] epoch 1: train_acc: 0.8044 	 test_acc: 0.8565
+[INFO  13:20:56] epoch 2: train_acc: 0.8732 	 test_acc: 0.8960
+[INFO  13:21:11] epoch 3: train_acc: 0.9010 	 test_acc: 0.9142
+[INFO  13:21:27] epoch 4: train_acc: 0.9161 	 test_acc: 0.9205
+[INFO  13:21:42] epoch 5: train_acc: 0.9251 	 test_acc: 0.9281
+[INFO  13:21:57] epoch 6: train_acc: 0.9320 	 test_acc: 0.9338
+[INFO  13:22:13] epoch 7: train_acc: 0.9368 	 test_acc: 0.9379
+[INFO  13:22:28] epoch 8: train_acc: 0.9413 	 test_acc: 0.9420
+[INFO  13:22:43] epoch 9: train_acc: 0.9449 	 test_acc: 0.9437
+[INFO  13:22:47] Task accuracies: {
+    "task1": 0.6666,
+    "task2": 0.9437
+}
+[INFO  13:22:47] Mean task accuracy: 0.8052
+[INFO  13:22:47] Training run_id 1 with learning_rate 0.0001, beta_1 -10,beta_2 0 and freeze False
+[INFO  13:22:47] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        10
+    ],
+    "dec_class_dimensions": [
+        10,
+        10
+    ],
+    "dec_rec_dimensions": [
+        10,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 10,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "comparison_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  13:22:47] Starting training of task 1
+[INFO  13:23:00] epoch 0: train_acc: 0.6619 	 test_acc: 0.8716
+[INFO  13:23:14] epoch 1: train_acc: 0.8843 	 test_acc: 0.9005
+[INFO  13:23:27] epoch 2: train_acc: 0.9073 	 test_acc: 0.9141
+[INFO  13:23:40] epoch 3: train_acc: 0.9218 	 test_acc: 0.9223
+[INFO  13:23:54] epoch 4: train_acc: 0.9314 	 test_acc: 0.9348
+[INFO  13:24:07] epoch 5: train_acc: 0.9394 	 test_acc: 0.9414
+[INFO  13:24:20] epoch 6: train_acc: 0.9449 	 test_acc: 0.9463
+[INFO  13:24:34] epoch 7: train_acc: 0.9501 	 test_acc: 0.9503
+[INFO  13:24:47] epoch 8: train_acc: 0.9547 	 test_acc: 0.9542
+[INFO  13:25:00] epoch 9: train_acc: 0.9584 	 test_acc: 0.9569
+[INFO  13:27:21] Task accuracies: {
+    "task1": 0.957,
+    "task2": 0.0865
+}
+[INFO  13:27:21] Mean task accuracy: 0.9570
+[INFO  13:27:21] Update replay buffer for generative replay.
+[INFO  13:27:23] Starting training of task 2
+[INFO  13:27:39] epoch 0: train_acc: 0.5416 	 test_acc: 0.7481
+[INFO  13:27:54] epoch 1: train_acc: 0.7742 	 test_acc: 0.8213
+[INFO  13:28:09] epoch 2: train_acc: 0.8248 	 test_acc: 0.8533
+[INFO  13:28:25] epoch 3: train_acc: 0.8526 	 test_acc: 0.8693
+[INFO  13:28:40] epoch 4: train_acc: 0.8711 	 test_acc: 0.8828
+[INFO  13:28:56] epoch 5: train_acc: 0.8834 	 test_acc: 0.8937
+[INFO  13:29:11] epoch 6: train_acc: 0.8933 	 test_acc: 0.9011
+[INFO  13:29:27] epoch 7: train_acc: 0.9014 	 test_acc: 0.9070
+[INFO  13:29:42] epoch 8: train_acc: 0.9082 	 test_acc: 0.9126
+[INFO  13:29:58] epoch 9: train_acc: 0.9146 	 test_acc: 0.9180
+[INFO  13:30:01] Task accuracies: {
+    "task1": 0.9573,
+    "task2": 0.918
+}
+[INFO  13:30:01] Mean task accuracy: 0.9376
+[INFO  13:30:01] Training run_id 2 with learning_rate 0.0001, beta_1 -10,beta_2 0 and freeze False
+[INFO  13:30:01] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        100
+    ],
+    "dec_class_dimensions": [
+        100,
+        10
+    ],
+    "dec_rec_dimensions": [
+        100,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 100,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "vib_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  13:30:01] Starting training of task 1
+[INFO  13:30:16] epoch 0: train_acc: 0.1429 	 test_acc: 0.2383
+[INFO  13:30:31] epoch 1: train_acc: 0.3870 	 test_acc: 0.5509
+[INFO  13:30:45] epoch 2: train_acc: 0.6608 	 test_acc: 0.7450
+[INFO  13:31:00] epoch 3: train_acc: 0.7742 	 test_acc: 0.8041
+[INFO  13:31:15] epoch 4: train_acc: 0.8062 	 test_acc: 0.8241
+[INFO  13:31:30] epoch 5: train_acc: 0.8292 	 test_acc: 0.8470
+[INFO  13:31:45] epoch 6: train_acc: 0.8500 	 test_acc: 0.8612
+[INFO  13:32:00] epoch 7: train_acc: 0.8638 	 test_acc: 0.8724
+[INFO  13:32:14] epoch 8: train_acc: 0.8701 	 test_acc: 0.8769
+[INFO  13:32:29] epoch 9: train_acc: 0.8751 	 test_acc: 0.8821
+[INFO  13:32:33] Task accuracies: {
+    "task1": 0.8819,
+    "task2": 0.1177
+}
+[INFO  13:32:33] Mean task accuracy: 0.8819
+[INFO  13:32:33] Update replay buffer for generative replay.
+[INFO  13:32:35] Starting training of task 2
+[INFO  13:32:50] epoch 0: train_acc: 0.4385 	 test_acc: 0.7574
+[INFO  13:33:06] epoch 1: train_acc: 0.8262 	 test_acc: 0.8672
+[INFO  13:33:21] epoch 2: train_acc: 0.8816 	 test_acc: 0.8957
+[INFO  13:33:36] epoch 3: train_acc: 0.9030 	 test_acc: 0.9111
+[INFO  13:33:52] epoch 4: train_acc: 0.9148 	 test_acc: 0.9199
+[INFO  13:34:07] epoch 5: train_acc: 0.9234 	 test_acc: 0.9250
+[INFO  13:34:23] epoch 6: train_acc: 0.9293 	 test_acc: 0.9313
+[INFO  13:34:38] epoch 7: train_acc: 0.9351 	 test_acc: 0.9355
+[INFO  13:34:54] epoch 8: train_acc: 0.9393 	 test_acc: 0.9382
+[INFO  13:35:09] epoch 9: train_acc: 0.9432 	 test_acc: 0.9422
+[INFO  13:35:12] Task accuracies: {
+    "task1": 0.6303,
+    "task2": 0.9425
+}
+[INFO  13:35:12] Mean task accuracy: 0.7864
+[INFO  13:35:12] Training run_id 3 with learning_rate 0.0001, beta_1 -10,beta_2 0 and freeze False
+[INFO  13:35:13] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        100
+    ],
+    "dec_class_dimensions": [
+        100,
+        10
+    ],
+    "dec_rec_dimensions": [
+        100,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 100,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "comparison_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  13:35:13] Starting training of task 1
+[INFO  13:35:26] epoch 0: train_acc: 0.7219 	 test_acc: 0.9007
+[INFO  13:35:40] epoch 1: train_acc: 0.9099 	 test_acc: 0.9219
+[INFO  13:35:53] epoch 2: train_acc: 0.9264 	 test_acc: 0.9310
+[INFO  13:36:07] epoch 3: train_acc: 0.9378 	 test_acc: 0.9409
+[INFO  13:36:20] epoch 4: train_acc: 0.9450 	 test_acc: 0.9468
+[INFO  13:36:33] epoch 5: train_acc: 0.9510 	 test_acc: 0.9519
+[INFO  13:36:46] epoch 6: train_acc: 0.9558 	 test_acc: 0.9565
+[INFO  13:37:00] epoch 7: train_acc: 0.9601 	 test_acc: 0.9574
+[INFO  13:37:13] epoch 8: train_acc: 0.9638 	 test_acc: 0.9605
+[INFO  13:37:26] epoch 9: train_acc: 0.9669 	 test_acc: 0.9625
+[INFO  13:39:48] Task accuracies: {
+    "task1": 0.9622,
+    "task2": 0.099
+}
+[INFO  13:39:48] Mean task accuracy: 0.9622
+[INFO  13:39:48] Update replay buffer for generative replay.
+[INFO  13:39:50] Starting training of task 2
+[INFO  13:40:06] epoch 0: train_acc: 0.6160 	 test_acc: 0.7909
+[INFO  13:40:21] epoch 1: train_acc: 0.8180 	 test_acc: 0.8479
+[INFO  13:40:37] epoch 2: train_acc: 0.8558 	 test_acc: 0.8734
+[INFO  13:40:52] epoch 3: train_acc: 0.8757 	 test_acc: 0.8893
+[INFO  13:41:08] epoch 4: train_acc: 0.8901 	 test_acc: 0.8972
+[INFO  13:41:23] epoch 5: train_acc: 0.9003 	 test_acc: 0.9067
+[INFO  13:41:39] epoch 6: train_acc: 0.9083 	 test_acc: 0.9139
+[INFO  13:41:54] epoch 7: train_acc: 0.9159 	 test_acc: 0.9193
+[INFO  13:42:09] epoch 8: train_acc: 0.9219 	 test_acc: 0.9241
+[INFO  13:42:25] epoch 9: train_acc: 0.9276 	 test_acc: 0.9284
+[INFO  13:42:28] Task accuracies: {
+    "task1": 0.9624,
+    "task2": 0.9285
+}
+[INFO  13:42:28] Mean task accuracy: 0.9455
+[INFO  13:42:28] Training run_id 4 with learning_rate 0.0001, beta_1 -10,beta_2 0 and freeze False
+[INFO  13:42:28] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        1000
+    ],
+    "dec_class_dimensions": [
+        1000,
+        10
+    ],
+    "dec_rec_dimensions": [
+        1000,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 1000,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "vib_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  13:42:28] Starting training of task 1
+[INFO  13:42:43] epoch 0: train_acc: 0.2272 	 test_acc: 0.5225
+[INFO  13:42:58] epoch 1: train_acc: 0.7023 	 test_acc: 0.7714
+[INFO  13:43:12] epoch 2: train_acc: 0.7945 	 test_acc: 0.8265
+[INFO  13:43:27] epoch 3: train_acc: 0.8416 	 test_acc: 0.8606
+[INFO  13:43:42] epoch 4: train_acc: 0.8627 	 test_acc: 0.8721
+[INFO  13:43:57] epoch 5: train_acc: 0.8734 	 test_acc: 0.8820
+[INFO  13:44:11] epoch 6: train_acc: 0.8803 	 test_acc: 0.8865
+[INFO  13:44:26] epoch 7: train_acc: 0.8849 	 test_acc: 0.8891
+[INFO  13:44:41] epoch 8: train_acc: 0.8866 	 test_acc: 0.8952
+[INFO  13:44:55] epoch 9: train_acc: 0.8905 	 test_acc: 0.8974
+[INFO  13:44:58] Task accuracies: {
+    "task1": 0.8966,
+    "task2": 0.0941
+}
+[INFO  13:44:58] Mean task accuracy: 0.8966
+[INFO  13:44:58] Update replay buffer for generative replay.
+[INFO  13:45:01] Starting training of task 2
+[INFO  13:45:17] epoch 0: train_acc: 0.5480 	 test_acc: 0.8443
+[INFO  13:45:33] epoch 1: train_acc: 0.8716 	 test_acc: 0.8955
+[INFO  13:45:49] epoch 2: train_acc: 0.9042 	 test_acc: 0.9160
+[INFO  13:46:05] epoch 3: train_acc: 0.9213 	 test_acc: 0.9269
+[INFO  13:46:21] epoch 4: train_acc: 0.9318 	 test_acc: 0.9380
+[INFO  13:46:37] epoch 5: train_acc: 0.9404 	 test_acc: 0.9423
+[INFO  13:46:53] epoch 6: train_acc: 0.9460 	 test_acc: 0.9469
+[INFO  13:47:09] epoch 7: train_acc: 0.9497 	 test_acc: 0.9500
+[INFO  13:47:25] epoch 8: train_acc: 0.9536 	 test_acc: 0.9524
+[INFO  13:47:41] epoch 9: train_acc: 0.9572 	 test_acc: 0.9542
+[INFO  13:47:44] Task accuracies: {
+    "task1": 0.4429,
+    "task2": 0.9543
+}
+[INFO  13:47:44] Mean task accuracy: 0.6986
+[INFO  13:47:44] Training run_id 5 with learning_rate 0.0001, beta_1 -10,beta_2 0 and freeze False
+[INFO  13:47:45] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        1000
+    ],
+    "dec_class_dimensions": [
+        1000,
+        10
+    ],
+    "dec_rec_dimensions": [
+        1000,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 1000,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "comparison_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  13:47:45] Starting training of task 1
+[INFO  13:47:59] epoch 0: train_acc: 0.7575 	 test_acc: 0.9056
+[INFO  13:48:13] epoch 1: train_acc: 0.9170 	 test_acc: 0.9323
+[INFO  13:48:27] epoch 2: train_acc: 0.9371 	 test_acc: 0.9438
+[INFO  13:48:40] epoch 3: train_acc: 0.9488 	 test_acc: 0.9504
+[INFO  13:48:54] epoch 4: train_acc: 0.9560 	 test_acc: 0.9570
+[INFO  13:49:08] epoch 5: train_acc: 0.9620 	 test_acc: 0.9611
+[INFO  13:49:22] epoch 6: train_acc: 0.9676 	 test_acc: 0.9643
+[INFO  13:49:36] epoch 7: train_acc: 0.9713 	 test_acc: 0.9673
+[INFO  13:49:50] epoch 8: train_acc: 0.9748 	 test_acc: 0.9719
+[INFO  13:50:04] epoch 9: train_acc: 0.9776 	 test_acc: 0.9703
+[INFO  13:52:30] Task accuracies: {
+    "task1": 0.9698,
+    "task2": 0.1234
+}
+[INFO  13:52:30] Mean task accuracy: 0.9698
+[INFO  13:52:30] Update replay buffer for generative replay.
+[INFO  13:52:33] Starting training of task 2
+[INFO  13:52:49] epoch 0: train_acc: 0.6916 	 test_acc: 0.8320
+[INFO  13:53:05] epoch 1: train_acc: 0.8518 	 test_acc: 0.8743
+[INFO  13:53:21] epoch 2: train_acc: 0.8816 	 test_acc: 0.8931
+[INFO  13:53:37] epoch 3: train_acc: 0.8990 	 test_acc: 0.9067
+[INFO  13:53:53] epoch 4: train_acc: 0.9100 	 test_acc: 0.9157
+[INFO  13:54:09] epoch 5: train_acc: 0.9179 	 test_acc: 0.9213
+[INFO  13:54:26] epoch 6: train_acc: 0.9263 	 test_acc: 0.9271
+[INFO  13:54:42] epoch 7: train_acc: 0.9320 	 test_acc: 0.9306
+[INFO  13:54:58] epoch 8: train_acc: 0.9365 	 test_acc: 0.9345
+[INFO  13:55:14] epoch 9: train_acc: 0.9408 	 test_acc: 0.9378
+[INFO  13:55:17] Task accuracies: {
+    "task1": 0.9669,
+    "task2": 0.9371
+}
+[INFO  13:55:17] Mean task accuracy: 0.9520
+[INFO  13:55:17] Training run_id 6 with learning_rate 0.0001, beta_1 -10,beta_2 0.001 and freeze False
+[INFO  13:55:18] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0.001,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        10
+    ],
+    "dec_class_dimensions": [
+        10,
+        10
+    ],
+    "dec_rec_dimensions": [
+        10,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 10,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "vib_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  13:55:18] Starting training of task 1
+[INFO  13:55:33] epoch 0: train_acc: 0.1090 	 test_acc: 0.1594
+[INFO  13:55:48] epoch 1: train_acc: 0.2402 	 test_acc: 0.3036
+[INFO  13:56:03] epoch 2: train_acc: 0.3252 	 test_acc: 0.3850
+[INFO  13:56:18] epoch 3: train_acc: 0.4341 	 test_acc: 0.5047
+[INFO  13:56:34] epoch 4: train_acc: 0.5660 	 test_acc: 0.6280
+[INFO  13:56:49] epoch 5: train_acc: 0.6620 	 test_acc: 0.7017
+[INFO  13:57:04] epoch 6: train_acc: 0.7223 	 test_acc: 0.7501
+[INFO  13:57:20] epoch 7: train_acc: 0.7654 	 test_acc: 0.7857
+[INFO  13:57:35] epoch 8: train_acc: 0.7927 	 test_acc: 0.8055
+[INFO  13:57:50] epoch 9: train_acc: 0.8071 	 test_acc: 0.8199
+[INFO  13:57:54] Task accuracies: {
+    "task1": 0.82,
+    "task2": 0.0827
+}
+[INFO  13:57:54] Mean task accuracy: 0.8200
+[INFO  13:57:54] Update replay buffer for generative replay.
+[INFO  13:57:56] Starting training of task 2
+[INFO  13:58:12] epoch 0: train_acc: 0.2796 	 test_acc: 0.5107
+[INFO  13:58:28] epoch 1: train_acc: 0.7014 	 test_acc: 0.8072
+[INFO  13:58:44] epoch 2: train_acc: 0.8315 	 test_acc: 0.8535
+[INFO  13:59:00] epoch 3: train_acc: 0.8684 	 test_acc: 0.8784
+[INFO  13:59:16] epoch 4: train_acc: 0.8881 	 test_acc: 0.8959
+[INFO  13:59:32] epoch 5: train_acc: 0.9008 	 test_acc: 0.9044
+[INFO  13:59:48] epoch 6: train_acc: 0.9101 	 test_acc: 0.9161
+[INFO  14:00:04] epoch 7: train_acc: 0.9178 	 test_acc: 0.9208
+[INFO  14:00:20] epoch 8: train_acc: 0.9238 	 test_acc: 0.9287
+[INFO  14:00:36] epoch 9: train_acc: 0.9294 	 test_acc: 0.9343
+[INFO  14:00:39] Task accuracies: {
+    "task1": 0.6543,
+    "task2": 0.934
+}
+[INFO  14:00:39] Mean task accuracy: 0.7941
+[INFO  14:00:39] Training run_id 7 with learning_rate 0.0001, beta_1 -10,beta_2 0.001 and freeze False
+[INFO  14:00:39] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0.001,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        10
+    ],
+    "dec_class_dimensions": [
+        10,
+        10
+    ],
+    "dec_rec_dimensions": [
+        10,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 10,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "comparison_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  14:00:39] Starting training of task 1
+[INFO  14:00:53] epoch 0: train_acc: 0.6523 	 test_acc: 0.8580
+[INFO  14:01:07] epoch 1: train_acc: 0.8829 	 test_acc: 0.9082
+[INFO  14:01:21] epoch 2: train_acc: 0.9153 	 test_acc: 0.9235
+[INFO  14:01:35] epoch 3: train_acc: 0.9283 	 test_acc: 0.9344
+[INFO  14:01:49] epoch 4: train_acc: 0.9381 	 test_acc: 0.9404
+[INFO  14:02:03] epoch 5: train_acc: 0.9460 	 test_acc: 0.9491
+[INFO  14:02:16] epoch 6: train_acc: 0.9521 	 test_acc: 0.9504
+[INFO  14:02:30] epoch 7: train_acc: 0.9560 	 test_acc: 0.9567
+[INFO  14:02:44] epoch 8: train_acc: 0.9604 	 test_acc: 0.9601
+[INFO  14:02:58] epoch 9: train_acc: 0.9635 	 test_acc: 0.9614
+[INFO  14:05:25] Task accuracies: {
+    "task1": 0.9624,
+    "task2": 0.1021
+}
+[INFO  14:05:25] Mean task accuracy: 0.9624
+[INFO  14:05:25] Update replay buffer for generative replay.
+[INFO  14:05:27] Starting training of task 2
+[INFO  14:05:42] epoch 0: train_acc: 0.5576 	 test_acc: 0.7357
+[INFO  14:05:58] epoch 1: train_acc: 0.7670 	 test_acc: 0.8110
+[INFO  14:06:14] epoch 2: train_acc: 0.8191 	 test_acc: 0.8441
+[INFO  14:06:30] epoch 3: train_acc: 0.8483 	 test_acc: 0.8655
+[INFO  14:06:46] epoch 4: train_acc: 0.8676 	 test_acc: 0.8795
+[INFO  14:07:02] epoch 5: train_acc: 0.8817 	 test_acc: 0.8919
+[INFO  14:07:18] epoch 6: train_acc: 0.8929 	 test_acc: 0.9016
+[INFO  14:07:33] epoch 7: train_acc: 0.9006 	 test_acc: 0.9085
+[INFO  14:07:49] epoch 8: train_acc: 0.9084 	 test_acc: 0.9143
+[INFO  14:08:05] epoch 9: train_acc: 0.9140 	 test_acc: 0.9184
+[INFO  14:08:09] Task accuracies: {
+    "task1": 0.9599,
+    "task2": 0.9195
+}
+[INFO  14:08:09] Mean task accuracy: 0.9397
+[INFO  14:08:09] Training run_id 8 with learning_rate 0.0001, beta_1 -10,beta_2 0.001 and freeze False
+[INFO  14:08:09] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0.001,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        100
+    ],
+    "dec_class_dimensions": [
+        100,
+        10
+    ],
+    "dec_rec_dimensions": [
+        100,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 100,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "vib_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  14:08:09] Starting training of task 1
+[INFO  14:08:24] epoch 0: train_acc: 0.1416 	 test_acc: 0.2181
+[INFO  14:08:39] epoch 1: train_acc: 0.3585 	 test_acc: 0.5404
+[INFO  14:08:55] epoch 2: train_acc: 0.6797 	 test_acc: 0.7454
+[INFO  14:09:10] epoch 3: train_acc: 0.7675 	 test_acc: 0.7902
+[INFO  14:09:25] epoch 4: train_acc: 0.7997 	 test_acc: 0.8180
+[INFO  14:09:41] epoch 5: train_acc: 0.8289 	 test_acc: 0.8493
+[INFO  14:09:56] epoch 6: train_acc: 0.8517 	 test_acc: 0.8637
+[INFO  14:10:12] epoch 7: train_acc: 0.8619 	 test_acc: 0.8745
+[INFO  14:10:27] epoch 8: train_acc: 0.8702 	 test_acc: 0.8787
+[INFO  14:10:42] epoch 9: train_acc: 0.8748 	 test_acc: 0.8873
+[INFO  14:10:46] Task accuracies: {
+    "task1": 0.8867,
+    "task2": 0.0835
+}
+[INFO  14:10:46] Mean task accuracy: 0.8867
+[INFO  14:10:46] Update replay buffer for generative replay.
+[INFO  14:10:48] Starting training of task 2
+[INFO  14:11:04] epoch 0: train_acc: 0.2909 	 test_acc: 0.5640
+[INFO  14:11:20] epoch 1: train_acc: 0.7269 	 test_acc: 0.8291
+[INFO  14:11:36] epoch 2: train_acc: 0.8474 	 test_acc: 0.8644
+[INFO  14:11:52] epoch 3: train_acc: 0.8728 	 test_acc: 0.8847
+[INFO  14:12:08] epoch 4: train_acc: 0.8907 	 test_acc: 0.8993
+[INFO  14:12:24] epoch 5: train_acc: 0.9021 	 test_acc: 0.9055
+[INFO  14:12:40] epoch 6: train_acc: 0.9105 	 test_acc: 0.9149
+[INFO  14:12:56] epoch 7: train_acc: 0.9173 	 test_acc: 0.9188
+[INFO  14:13:12] epoch 8: train_acc: 0.9220 	 test_acc: 0.9230
+[INFO  14:13:28] epoch 9: train_acc: 0.9274 	 test_acc: 0.9282
+[INFO  14:13:31] Task accuracies: {
+    "task1": 0.5653,
+    "task2": 0.9292
+}
+[INFO  14:13:31] Mean task accuracy: 0.7472
+[INFO  14:13:31] Training run_id 9 with learning_rate 0.0001, beta_1 -10,beta_2 0.001 and freeze False
+[INFO  14:13:32] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0.001,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        100
+    ],
+    "dec_class_dimensions": [
+        100,
+        10
+    ],
+    "dec_rec_dimensions": [
+        100,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 100,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "comparison_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  14:13:32] Starting training of task 1
+[INFO  14:13:46] epoch 0: train_acc: 0.7108 	 test_acc: 0.8934
+[INFO  14:13:59] epoch 1: train_acc: 0.9026 	 test_acc: 0.9159
+[INFO  14:14:13] epoch 2: train_acc: 0.9250 	 test_acc: 0.9333
+[INFO  14:14:27] epoch 3: train_acc: 0.9395 	 test_acc: 0.9434
+[INFO  14:14:41] epoch 4: train_acc: 0.9476 	 test_acc: 0.9512
+[INFO  14:14:55] epoch 5: train_acc: 0.9545 	 test_acc: 0.9542
+[INFO  14:15:09] epoch 6: train_acc: 0.9597 	 test_acc: 0.9574
+[INFO  14:15:23] epoch 7: train_acc: 0.9638 	 test_acc: 0.9625
+[INFO  14:15:37] epoch 8: train_acc: 0.9668 	 test_acc: 0.9660
+[INFO  14:15:51] epoch 9: train_acc: 0.9699 	 test_acc: 0.9661
+[INFO  14:18:14] Task accuracies: {
+    "task1": 0.965,
+    "task2": 0.0895
+}
+[INFO  14:18:14] Mean task accuracy: 0.9650
+[INFO  14:18:14] Update replay buffer for generative replay.
+[INFO  14:18:16] Starting training of task 2
+[INFO  14:18:31] epoch 0: train_acc: 0.6276 	 test_acc: 0.7944
+[INFO  14:18:47] epoch 1: train_acc: 0.8111 	 test_acc: 0.8389
+[INFO  14:19:03] epoch 2: train_acc: 0.8459 	 test_acc: 0.8645
+[INFO  14:19:18] epoch 3: train_acc: 0.8664 	 test_acc: 0.8782
+[INFO  14:19:34] epoch 4: train_acc: 0.8817 	 test_acc: 0.8906
+[INFO  14:19:49] epoch 5: train_acc: 0.8917 	 test_acc: 0.9000
+[INFO  14:20:05] epoch 6: train_acc: 0.9021 	 test_acc: 0.9073
+[INFO  14:20:20] epoch 7: train_acc: 0.9087 	 test_acc: 0.9129
+[INFO  14:20:36] epoch 8: train_acc: 0.9152 	 test_acc: 0.9167
+[INFO  14:20:52] epoch 9: train_acc: 0.9201 	 test_acc: 0.9226
+[INFO  14:20:55] Task accuracies: {
+    "task1": 0.9494,
+    "task2": 0.923
+}
+[INFO  14:20:55] Mean task accuracy: 0.9362
+[INFO  14:20:55] Training run_id 10 with learning_rate 0.0001, beta_1 -10,beta_2 0.001 and freeze False
+[INFO  14:20:55] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0.001,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        1000
+    ],
+    "dec_class_dimensions": [
+        1000,
+        10
+    ],
+    "dec_rec_dimensions": [
+        1000,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 1000,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "vib_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  14:20:55] Starting training of task 1
+[INFO  14:21:10] epoch 0: train_acc: 0.2326 	 test_acc: 0.4557
+[INFO  14:21:25] epoch 1: train_acc: 0.6716 	 test_acc: 0.7617
+[INFO  14:21:40] epoch 2: train_acc: 0.7865 	 test_acc: 0.8292
+[INFO  14:21:54] epoch 3: train_acc: 0.8389 	 test_acc: 0.8615
+[INFO  14:22:09] epoch 4: train_acc: 0.8614 	 test_acc: 0.8751
+[INFO  14:22:24] epoch 5: train_acc: 0.8733 	 test_acc: 0.8845
+[INFO  14:22:39] epoch 6: train_acc: 0.8808 	 test_acc: 0.8894
+[INFO  14:22:54] epoch 7: train_acc: 0.8849 	 test_acc: 0.8918
+[INFO  14:23:09] epoch 8: train_acc: 0.8876 	 test_acc: 0.8924
+[INFO  14:23:24] epoch 9: train_acc: 0.8913 	 test_acc: 0.8985
+[INFO  14:23:27] Task accuracies: {
+    "task1": 0.8985,
+    "task2": 0.1278
+}
+[INFO  14:23:27] Mean task accuracy: 0.8985
+[INFO  14:23:27] Update replay buffer for generative replay.
+[INFO  14:23:29] Starting training of task 2
+[INFO  14:23:45] epoch 0: train_acc: 0.4364 	 test_acc: 0.7101
+[INFO  14:24:00] epoch 1: train_acc: 0.7951 	 test_acc: 0.8544
+[INFO  14:24:16] epoch 2: train_acc: 0.8665 	 test_acc: 0.8891
+[INFO  14:24:32] epoch 3: train_acc: 0.8919 	 test_acc: 0.9044
+[INFO  14:24:47] epoch 4: train_acc: 0.9040 	 test_acc: 0.9123
+[INFO  14:25:03] epoch 5: train_acc: 0.9116 	 test_acc: 0.9206
+[INFO  14:25:17] epoch 6: train_acc: 0.9182 	 test_acc: 0.9228
+[INFO  14:25:33] epoch 7: train_acc: 0.9247 	 test_acc: 0.9285
+[INFO  14:25:48] epoch 8: train_acc: 0.9308 	 test_acc: 0.9340
+[INFO  14:26:04] epoch 9: train_acc: 0.9359 	 test_acc: 0.9389
+[INFO  14:26:07] Task accuracies: {
+    "task1": 0.5204,
+    "task2": 0.9402
+}
+[INFO  14:26:07] Mean task accuracy: 0.7303
+[INFO  14:26:07] Training run_id 11 with learning_rate 0.0001, beta_1 -10,beta_2 0.001 and freeze False
+[INFO  14:26:08] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0.001,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        1000
+    ],
+    "dec_class_dimensions": [
+        1000,
+        10
+    ],
+    "dec_rec_dimensions": [
+        1000,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 1000,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "comparison_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  14:26:08] Starting training of task 1
+[INFO  14:26:21] epoch 0: train_acc: 0.7571 	 test_acc: 0.9070
+[INFO  14:26:34] epoch 1: train_acc: 0.9171 	 test_acc: 0.9327
+[INFO  14:26:48] epoch 2: train_acc: 0.9383 	 test_acc: 0.9427
+[INFO  14:27:02] epoch 3: train_acc: 0.9492 	 test_acc: 0.9519
+[INFO  14:27:16] epoch 4: train_acc: 0.9568 	 test_acc: 0.9596
+[INFO  14:27:28] epoch 5: train_acc: 0.9628 	 test_acc: 0.9633
+[INFO  14:27:42] epoch 6: train_acc: 0.9676 	 test_acc: 0.9673
+[INFO  14:27:55] epoch 7: train_acc: 0.9712 	 test_acc: 0.9685
+[INFO  14:28:09] epoch 8: train_acc: 0.9739 	 test_acc: 0.9691
+[INFO  14:28:22] epoch 9: train_acc: 0.9768 	 test_acc: 0.9695
+[INFO  14:30:46] Task accuracies: {
+    "task1": 0.9715,
+    "task2": 0.0941
+}
+[INFO  14:30:46] Mean task accuracy: 0.9715
+[INFO  14:30:46] Update replay buffer for generative replay.
+[INFO  14:30:48] Starting training of task 2
+[INFO  14:31:04] epoch 0: train_acc: 0.6623 	 test_acc: 0.8255
+[INFO  14:31:19] epoch 1: train_acc: 0.8446 	 test_acc: 0.8667
+[INFO  14:31:35] epoch 2: train_acc: 0.8739 	 test_acc: 0.8865
+[INFO  14:31:51] epoch 3: train_acc: 0.8893 	 test_acc: 0.8974
+[INFO  14:32:06] epoch 4: train_acc: 0.9013 	 test_acc: 0.9072
+[INFO  14:32:22] epoch 5: train_acc: 0.9098 	 test_acc: 0.9129
+[INFO  14:32:38] epoch 6: train_acc: 0.9160 	 test_acc: 0.9187
+[INFO  14:32:53] epoch 7: train_acc: 0.9209 	 test_acc: 0.9252
+[INFO  14:33:08] epoch 8: train_acc: 0.9266 	 test_acc: 0.9278
+[INFO  14:33:24] epoch 9: train_acc: 0.9298 	 test_acc: 0.9301
+[INFO  14:33:27] Task accuracies: {
+    "task1": 0.945,
+    "task2": 0.9292
+}
+[INFO  14:33:27] Mean task accuracy: 0.9371
+[INFO  14:33:27] Training run_id 12 with learning_rate 0.0001, beta_1 -10,beta_2 0.01 and freeze False
+[INFO  14:33:28] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0.01,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        10
+    ],
+    "dec_class_dimensions": [
+        10,
+        10
+    ],
+    "dec_rec_dimensions": [
+        10,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 10,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "vib_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  14:33:28] Starting training of task 1
+[INFO  14:33:43] epoch 0: train_acc: 0.1117 	 test_acc: 0.1191
+[INFO  14:33:57] epoch 1: train_acc: 0.1258 	 test_acc: 0.2021
+[INFO  14:34:13] epoch 2: train_acc: 0.2474 	 test_acc: 0.3209
+[INFO  14:34:27] epoch 3: train_acc: 0.4229 	 test_acc: 0.5217
+[INFO  14:34:42] epoch 4: train_acc: 0.5729 	 test_acc: 0.6155
+[INFO  14:34:58] epoch 5: train_acc: 0.6180 	 test_acc: 0.6323
+[INFO  14:35:13] epoch 6: train_acc: 0.6659 	 test_acc: 0.7039
+[INFO  14:35:30] epoch 7: train_acc: 0.7244 	 test_acc: 0.7551
+[INFO  14:35:46] epoch 8: train_acc: 0.7667 	 test_acc: 0.7869
+[INFO  14:36:02] epoch 9: train_acc: 0.7953 	 test_acc: 0.8097
+[INFO  14:36:05] Task accuracies: {
+    "task1": 0.8095,
+    "task2": 0.1391
+}
+[INFO  14:36:05] Mean task accuracy: 0.8095
+[INFO  14:36:05] Update replay buffer for generative replay.
+[INFO  14:36:07] Starting training of task 2
+[INFO  14:36:24] epoch 0: train_acc: 0.3321 	 test_acc: 0.5695
+[INFO  14:36:40] epoch 1: train_acc: 0.6754 	 test_acc: 0.7238
+[INFO  14:36:57] epoch 2: train_acc: 0.7414 	 test_acc: 0.7555
+[INFO  14:37:13] epoch 3: train_acc: 0.7661 	 test_acc: 0.7797
+[INFO  14:37:29] epoch 4: train_acc: 0.7879 	 test_acc: 0.7940
+[INFO  14:37:46] epoch 5: train_acc: 0.8044 	 test_acc: 0.8079
+[INFO  14:38:02] epoch 6: train_acc: 0.8154 	 test_acc: 0.8181
+[INFO  14:38:19] epoch 7: train_acc: 0.8233 	 test_acc: 0.8264
+[INFO  14:38:35] epoch 8: train_acc: 0.8248 	 test_acc: 0.8226
+[INFO  14:38:51] epoch 9: train_acc: 0.8262 	 test_acc: 0.8261
+[INFO  14:38:55] Task accuracies: {
+    "task1": 0.5735,
+    "task2": 0.8237
+}
+[INFO  14:38:55] Mean task accuracy: 0.6986
+[INFO  14:38:55] Training run_id 13 with learning_rate 0.0001, beta_1 -10,beta_2 0.01 and freeze False
+[INFO  14:38:55] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0.01,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        10
+    ],
+    "dec_class_dimensions": [
+        10,
+        10
+    ],
+    "dec_rec_dimensions": [
+        10,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 10,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "comparison_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  14:38:55] Starting training of task 1
+[INFO  14:39:09] epoch 0: train_acc: 0.6320 	 test_acc: 0.8490
+[INFO  14:39:24] epoch 1: train_acc: 0.8785 	 test_acc: 0.9060
+[INFO  14:39:38] epoch 2: train_acc: 0.9157 	 test_acc: 0.9267
+[INFO  14:39:53] epoch 3: train_acc: 0.9326 	 test_acc: 0.9364
+[INFO  14:40:07] epoch 4: train_acc: 0.9418 	 test_acc: 0.9469
+[INFO  14:40:22] epoch 5: train_acc: 0.9489 	 test_acc: 0.9512
+[INFO  14:40:36] epoch 6: train_acc: 0.9556 	 test_acc: 0.9560
+[INFO  14:40:50] epoch 7: train_acc: 0.9606 	 test_acc: 0.9590
+[INFO  14:41:05] epoch 8: train_acc: 0.9648 	 test_acc: 0.9615
+[INFO  14:41:19] epoch 9: train_acc: 0.9679 	 test_acc: 0.9659
+[INFO  14:43:52] Task accuracies: {
+    "task1": 0.9654,
+    "task2": 0.087
+}
+[INFO  14:43:52] Mean task accuracy: 0.9654
+[INFO  14:43:52] Update replay buffer for generative replay.
+[INFO  14:43:54] Starting training of task 2
+[INFO  14:44:10] epoch 0: train_acc: 0.6043 	 test_acc: 0.7977
+[INFO  14:44:26] epoch 1: train_acc: 0.8232 	 test_acc: 0.8564
+[INFO  14:44:42] epoch 2: train_acc: 0.8579 	 test_acc: 0.8781
+[INFO  14:44:58] epoch 3: train_acc: 0.8790 	 test_acc: 0.8918
+[INFO  14:45:14] epoch 4: train_acc: 0.8920 	 test_acc: 0.9012
+[INFO  14:45:30] epoch 5: train_acc: 0.9009 	 test_acc: 0.9106
+[INFO  14:45:46] epoch 6: train_acc: 0.9087 	 test_acc: 0.9125
+[INFO  14:46:02] epoch 7: train_acc: 0.9141 	 test_acc: 0.9167
+[INFO  14:46:18] epoch 8: train_acc: 0.9196 	 test_acc: 0.9201
+[INFO  14:46:34] epoch 9: train_acc: 0.9222 	 test_acc: 0.9244
+[INFO  14:46:38] Task accuracies: {
+    "task1": 0.9542,
+    "task2": 0.9234
+}
+[INFO  14:46:38] Mean task accuracy: 0.9388
+[INFO  14:46:38] Training run_id 14 with learning_rate 0.0001, beta_1 -10,beta_2 0.01 and freeze False
+[INFO  14:46:38] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0.01,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        100
+    ],
+    "dec_class_dimensions": [
+        100,
+        10
+    ],
+    "dec_rec_dimensions": [
+        100,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 100,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "vib_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  14:46:38] Starting training of task 1
+[INFO  14:46:54] epoch 0: train_acc: 0.1417 	 test_acc: 0.2571
+[INFO  14:47:10] epoch 1: train_acc: 0.4209 	 test_acc: 0.6321
+[INFO  14:47:26] epoch 2: train_acc: 0.7005 	 test_acc: 0.7484
+[INFO  14:47:42] epoch 3: train_acc: 0.7615 	 test_acc: 0.7870
+[INFO  14:47:57] epoch 4: train_acc: 0.8040 	 test_acc: 0.8372
+[INFO  14:48:13] epoch 5: train_acc: 0.8407 	 test_acc: 0.8518
+[INFO  14:48:29] epoch 6: train_acc: 0.8546 	 test_acc: 0.8649
+[INFO  14:48:45] epoch 7: train_acc: 0.8644 	 test_acc: 0.8743
+[INFO  14:49:01] epoch 8: train_acc: 0.8695 	 test_acc: 0.8768
+[INFO  14:49:17] epoch 9: train_acc: 0.8736 	 test_acc: 0.8816
+[INFO  14:49:20] Task accuracies: {
+    "task1": 0.8825,
+    "task2": 0.1014
+}
+[INFO  14:49:20] Mean task accuracy: 0.8825
+[INFO  14:49:20] Update replay buffer for generative replay.
+[INFO  14:49:23] Starting training of task 2
+[INFO  14:49:39] epoch 0: train_acc: 0.1917 	 test_acc: 0.3939
+[INFO  14:49:55] epoch 1: train_acc: 0.5677 	 test_acc: 0.6851
+[INFO  14:50:11] epoch 2: train_acc: 0.7243 	 test_acc: 0.7619
+[INFO  14:50:27] epoch 3: train_acc: 0.7728 	 test_acc: 0.7995
+[INFO  14:50:42] epoch 4: train_acc: 0.7970 	 test_acc: 0.8170
+[INFO  14:50:58] epoch 5: train_acc: 0.8188 	 test_acc: 0.8369
+[INFO  14:51:13] epoch 6: train_acc: 0.8396 	 test_acc: 0.8463
+[INFO  14:51:29] epoch 7: train_acc: 0.8495 	 test_acc: 0.8633
+[INFO  14:51:44] epoch 8: train_acc: 0.8629 	 test_acc: 0.8745
+[INFO  14:51:59] epoch 9: train_acc: 0.8747 	 test_acc: 0.8833
+[INFO  14:52:02] Task accuracies: {
+    "task1": 0.5686,
+    "task2": 0.8829
+}
+[INFO  14:52:02] Mean task accuracy: 0.7257
+[INFO  14:52:02] Training run_id 15 with learning_rate 0.0001, beta_1 -10,beta_2 0.01 and freeze False
+[INFO  14:52:03] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0.01,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        100
+    ],
+    "dec_class_dimensions": [
+        100,
+        10
+    ],
+    "dec_rec_dimensions": [
+        100,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 100,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "comparison_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  14:52:03] Starting training of task 1
+[INFO  14:52:16] epoch 0: train_acc: 0.6871 	 test_acc: 0.8758
+[INFO  14:52:30] epoch 1: train_acc: 0.8930 	 test_acc: 0.9172
+[INFO  14:52:44] epoch 2: train_acc: 0.9186 	 test_acc: 0.9282
+[INFO  14:52:57] epoch 3: train_acc: 0.9320 	 test_acc: 0.9356
+[INFO  14:53:11] epoch 4: train_acc: 0.9406 	 test_acc: 0.9464
+[INFO  14:53:24] epoch 5: train_acc: 0.9479 	 test_acc: 0.9520
+[INFO  14:53:37] epoch 6: train_acc: 0.9544 	 test_acc: 0.9521
+[INFO  14:53:51] epoch 7: train_acc: 0.9582 	 test_acc: 0.9563
+[INFO  14:54:04] epoch 8: train_acc: 0.9615 	 test_acc: 0.9584
+[INFO  14:54:18] epoch 9: train_acc: 0.9644 	 test_acc: 0.9599
+[INFO  14:56:43] Task accuracies: {
+    "task1": 0.9603,
+    "task2": 0.1104
+}
+[INFO  14:56:43] Mean task accuracy: 0.9603
+[INFO  14:56:43] Update replay buffer for generative replay.
+[INFO  14:56:44] Starting training of task 2
+[INFO  14:57:00] epoch 0: train_acc: 0.6098 	 test_acc: 0.7902
+[INFO  14:57:16] epoch 1: train_acc: 0.8071 	 test_acc: 0.8449
+[INFO  14:57:32] epoch 2: train_acc: 0.8430 	 test_acc: 0.8651
+[INFO  14:57:48] epoch 3: train_acc: 0.8636 	 test_acc: 0.8787
+[INFO  14:58:04] epoch 4: train_acc: 0.8805 	 test_acc: 0.8907
+[INFO  14:58:20] epoch 5: train_acc: 0.8914 	 test_acc: 0.9029
+[INFO  14:58:36] epoch 6: train_acc: 0.8998 	 test_acc: 0.9064
+[INFO  14:58:51] epoch 7: train_acc: 0.9064 	 test_acc: 0.9112
+[INFO  14:59:07] epoch 8: train_acc: 0.9100 	 test_acc: 0.9123
+[INFO  14:59:22] epoch 9: train_acc: 0.9150 	 test_acc: 0.9162
+[INFO  14:59:25] Task accuracies: {
+    "task1": 0.9309,
+    "task2": 0.9156
+}
+[INFO  14:59:25] Mean task accuracy: 0.9232
+[INFO  14:59:25] Training run_id 16 with learning_rate 0.0001, beta_1 -10,beta_2 0.01 and freeze False
+[INFO  14:59:26] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0.01,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        1000
+    ],
+    "dec_class_dimensions": [
+        1000,
+        10
+    ],
+    "dec_rec_dimensions": [
+        1000,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 1000,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "vib_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  14:59:26] Starting training of task 1
+[INFO  14:59:40] epoch 0: train_acc: 0.1905 	 test_acc: 0.3464
+[INFO  14:59:56] epoch 1: train_acc: 0.6114 	 test_acc: 0.7607
+[INFO  15:00:11] epoch 2: train_acc: 0.7884 	 test_acc: 0.8173
+[INFO  15:00:25] epoch 3: train_acc: 0.8302 	 test_acc: 0.8557
+[INFO  15:00:40] epoch 4: train_acc: 0.8612 	 test_acc: 0.8768
+[INFO  15:00:55] epoch 5: train_acc: 0.8729 	 test_acc: 0.8864
+[INFO  15:01:10] epoch 6: train_acc: 0.8804 	 test_acc: 0.8898
+[INFO  15:01:24] epoch 7: train_acc: 0.8849 	 test_acc: 0.8958
+[INFO  15:01:39] epoch 8: train_acc: 0.8898 	 test_acc: 0.9004
+[INFO  15:01:55] epoch 9: train_acc: 0.8921 	 test_acc: 0.9006
+[INFO  15:01:58] Task accuracies: {
+    "task1": 0.9035,
+    "task2": 0.0718
+}
+[INFO  15:01:58] Mean task accuracy: 0.9035
+[INFO  15:01:58] Update replay buffer for generative replay.
+[INFO  15:02:00] Starting training of task 2
+[INFO  15:02:17] epoch 0: train_acc: 0.2594 	 test_acc: 0.5017
+[INFO  15:02:32] epoch 1: train_acc: 0.6398 	 test_acc: 0.7255
+[INFO  15:02:49] epoch 2: train_acc: 0.7489 	 test_acc: 0.7739
+[INFO  15:03:05] epoch 3: train_acc: 0.7872 	 test_acc: 0.8048
+[INFO  15:03:21] epoch 4: train_acc: 0.8102 	 test_acc: 0.8163
+[INFO  15:03:37] epoch 5: train_acc: 0.8296 	 test_acc: 0.8367
+[INFO  15:03:53] epoch 6: train_acc: 0.8459 	 test_acc: 0.8463
+[INFO  15:04:09] epoch 7: train_acc: 0.8563 	 test_acc: 0.8687
+[INFO  15:04:25] epoch 8: train_acc: 0.8697 	 test_acc: 0.8713
+[INFO  15:04:42] epoch 9: train_acc: 0.8796 	 test_acc: 0.8822
+[INFO  15:04:45] Task accuracies: {
+    "task1": 0.618,
+    "task2": 0.887
+}
+[INFO  15:04:45] Mean task accuracy: 0.7525
+[INFO  15:04:45] Training run_id 17 with learning_rate 0.0001, beta_1 -10,beta_2 0.01 and freeze False
+[INFO  15:04:46] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0.01,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        1000
+    ],
+    "dec_class_dimensions": [
+        1000,
+        10
+    ],
+    "dec_rec_dimensions": [
+        1000,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 1000,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "comparison_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  15:04:46] Starting training of task 1
+[INFO  15:05:00] epoch 0: train_acc: 0.7418 	 test_acc: 0.9019
+[INFO  15:05:15] epoch 1: train_acc: 0.9142 	 test_acc: 0.9279
+[INFO  15:05:29] epoch 2: train_acc: 0.9354 	 test_acc: 0.9426
+[INFO  15:05:44] epoch 3: train_acc: 0.9467 	 test_acc: 0.9423
+[INFO  15:05:58] epoch 4: train_acc: 0.9551 	 test_acc: 0.9574
+[INFO  15:06:13] epoch 5: train_acc: 0.9609 	 test_acc: 0.9586
+[INFO  15:06:27] epoch 6: train_acc: 0.9640 	 test_acc: 0.9626
+[INFO  15:06:42] epoch 7: train_acc: 0.9684 	 test_acc: 0.9627
+[INFO  15:06:57] epoch 8: train_acc: 0.9697 	 test_acc: 0.9655
+[INFO  15:07:11] epoch 9: train_acc: 0.9738 	 test_acc: 0.9675
+[INFO  15:09:45] Task accuracies: {
+    "task1": 0.9653,
+    "task2": 0.1078
+}
+[INFO  15:09:45] Mean task accuracy: 0.9653
+[INFO  15:09:45] Update replay buffer for generative replay.
+[INFO  15:09:48] Starting training of task 2
+[INFO  15:10:04] epoch 0: train_acc: 0.6012 	 test_acc: 0.7856
+[INFO  15:10:21] epoch 1: train_acc: 0.8128 	 test_acc: 0.8419
+[INFO  15:10:37] epoch 2: train_acc: 0.8532 	 test_acc: 0.8681
+[INFO  15:10:54] epoch 3: train_acc: 0.8738 	 test_acc: 0.8844
+[INFO  15:11:10] epoch 4: train_acc: 0.8865 	 test_acc: 0.8951
+[INFO  15:11:27] epoch 5: train_acc: 0.8943 	 test_acc: 0.8981
+[INFO  15:11:43] epoch 6: train_acc: 0.9012 	 test_acc: 0.8998
+[INFO  15:11:59] epoch 7: train_acc: 0.9059 	 test_acc: 0.9062
+[INFO  15:12:16] epoch 8: train_acc: 0.9093 	 test_acc: 0.9085
+[INFO  15:12:32] epoch 9: train_acc: 0.9131 	 test_acc: 0.9096
+[INFO  15:12:36] Task accuracies: {
+    "task1": 0.8662,
+    "task2": 0.9064
+}
+[INFO  15:12:36] Mean task accuracy: 0.8863
+[INFO  15:12:36] Training run_id 18 with learning_rate 0.0001, beta_1 -10,beta_2 0.1 and freeze False
+[INFO  15:12:36] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0.1,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        10
+    ],
+    "dec_class_dimensions": [
+        10,
+        10
+    ],
+    "dec_rec_dimensions": [
+        10,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 10,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "vib_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  15:12:36] Starting training of task 1
+[INFO  15:12:52] epoch 0: train_acc: 0.0918 	 test_acc: 0.1453
+[INFO  15:13:08] epoch 1: train_acc: 0.1930 	 test_acc: 0.2299
+[INFO  15:13:24] epoch 2: train_acc: 0.3613 	 test_acc: 0.4570
+[INFO  15:13:40] epoch 3: train_acc: 0.5274 	 test_acc: 0.5744
+[INFO  15:13:56] epoch 4: train_acc: 0.6093 	 test_acc: 0.6402
+[INFO  15:14:13] epoch 5: train_acc: 0.6803 	 test_acc: 0.7098
+[INFO  15:14:29] epoch 6: train_acc: 0.7205 	 test_acc: 0.7440
+[INFO  15:14:45] epoch 7: train_acc: 0.7506 	 test_acc: 0.7746
+[INFO  15:15:01] epoch 8: train_acc: 0.7771 	 test_acc: 0.7990
+[INFO  15:15:17] epoch 9: train_acc: 0.7982 	 test_acc: 0.8163
+[INFO  15:15:20] Task accuracies: {
+    "task1": 0.8156,
+    "task2": 0.1147
+}
+[INFO  15:15:20] Mean task accuracy: 0.8156
+[INFO  15:15:20] Update replay buffer for generative replay.
+[INFO  15:15:23] Starting training of task 2
+[INFO  15:15:39] epoch 0: train_acc: 0.1194 	 test_acc: 0.1279
+[INFO  15:15:56] epoch 1: train_acc: 0.1451 	 test_acc: 0.1768
+[INFO  15:16:12] epoch 2: train_acc: 0.1766 	 test_acc: 0.1816
+[INFO  15:16:29] epoch 3: train_acc: 0.1828 	 test_acc: 0.1859
+[INFO  15:16:45] epoch 4: train_acc: 0.1865 	 test_acc: 0.1898
+[INFO  15:17:01] epoch 5: train_acc: 0.1893 	 test_acc: 0.1994
+[INFO  15:17:18] epoch 6: train_acc: 0.1991 	 test_acc: 0.2052
+[INFO  15:17:34] epoch 7: train_acc: 0.2003 	 test_acc: 0.1975
+[INFO  15:17:50] epoch 8: train_acc: 0.1908 	 test_acc: 0.1872
+[INFO  15:18:07] epoch 9: train_acc: 0.1817 	 test_acc: 0.1782
+[INFO  15:18:10] Task accuracies: {
+    "task1": 0.2292,
+    "task2": 0.1796
+}
+[INFO  15:18:10] Mean task accuracy: 0.2044
+[INFO  15:18:10] Training run_id 19 with learning_rate 0.0001, beta_1 -10,beta_2 0.1 and freeze False
+[INFO  15:18:10] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0.1,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        10
+    ],
+    "dec_class_dimensions": [
+        10,
+        10
+    ],
+    "dec_rec_dimensions": [
+        10,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 10,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "comparison_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  15:18:10] Starting training of task 1
+[INFO  15:18:25] epoch 0: train_acc: 0.5180 	 test_acc: 0.7313
+[INFO  15:18:39] epoch 1: train_acc: 0.7783 	 test_acc: 0.8265
+[INFO  15:18:54] epoch 2: train_acc: 0.8393 	 test_acc: 0.8630
+[INFO  15:19:09] epoch 3: train_acc: 0.8673 	 test_acc: 0.8820
+[INFO  15:19:23] epoch 4: train_acc: 0.8904 	 test_acc: 0.8992
+[INFO  15:19:38] epoch 5: train_acc: 0.9028 	 test_acc: 0.9049
+[INFO  15:19:52] epoch 6: train_acc: 0.9131 	 test_acc: 0.9145
+[INFO  15:20:07] epoch 7: train_acc: 0.9194 	 test_acc: 0.9207
+[INFO  15:20:22] epoch 8: train_acc: 0.9246 	 test_acc: 0.9240
+[INFO  15:20:36] epoch 9: train_acc: 0.9297 	 test_acc: 0.9288
+[INFO  15:23:10] Task accuracies: {
+    "task1": 0.929,
+    "task2": 0.1094
+}
+[INFO  15:23:10] Mean task accuracy: 0.9290
+[INFO  15:23:10] Update replay buffer for generative replay.
+[INFO  15:23:12] Starting training of task 2
+[INFO  15:23:28] epoch 0: train_acc: 0.5429 	 test_acc: 0.7119
+[INFO  15:23:45] epoch 1: train_acc: 0.7406 	 test_acc: 0.7686
+[INFO  15:24:00] epoch 2: train_acc: 0.7794 	 test_acc: 0.8019
+[INFO  15:24:17] epoch 3: train_acc: 0.8014 	 test_acc: 0.8184
+[INFO  15:24:33] epoch 4: train_acc: 0.8157 	 test_acc: 0.8278
+[INFO  15:24:49] epoch 5: train_acc: 0.8257 	 test_acc: 0.8378
+[INFO  15:25:05] epoch 6: train_acc: 0.8335 	 test_acc: 0.8449
+[INFO  15:25:21] epoch 7: train_acc: 0.8394 	 test_acc: 0.8445
+[INFO  15:25:37] epoch 8: train_acc: 0.8423 	 test_acc: 0.8469
+[INFO  15:25:53] epoch 9: train_acc: 0.8470 	 test_acc: 0.8542
+[INFO  15:25:56] Task accuracies: {
+    "task1": 0.8544,
+    "task2": 0.8568
+}
+[INFO  15:25:56] Mean task accuracy: 0.8556
+[INFO  15:25:56] Training run_id 20 with learning_rate 0.0001, beta_1 -10,beta_2 0.1 and freeze False
+[INFO  15:25:57] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0.1,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        100
+    ],
+    "dec_class_dimensions": [
+        100,
+        10
+    ],
+    "dec_rec_dimensions": [
+        100,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 100,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "vib_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  15:25:57] Starting training of task 1
+[INFO  15:26:12] epoch 0: train_acc: 0.1364 	 test_acc: 0.1951
+[INFO  15:26:28] epoch 1: train_acc: 0.3755 	 test_acc: 0.5776
+[INFO  15:26:44] epoch 2: train_acc: 0.6861 	 test_acc: 0.7487
+[INFO  15:27:00] epoch 3: train_acc: 0.7607 	 test_acc: 0.7871
+[INFO  15:27:15] epoch 4: train_acc: 0.7899 	 test_acc: 0.8153
+[INFO  15:27:31] epoch 5: train_acc: 0.8182 	 test_acc: 0.8383
+[INFO  15:27:47] epoch 6: train_acc: 0.8405 	 test_acc: 0.8566
+[INFO  15:28:02] epoch 7: train_acc: 0.8532 	 test_acc: 0.8658
+[INFO  15:28:18] epoch 8: train_acc: 0.8630 	 test_acc: 0.8755
+[INFO  15:28:34] epoch 9: train_acc: 0.8679 	 test_acc: 0.8802
+[INFO  15:28:37] Task accuracies: {
+    "task1": 0.8801,
+    "task2": 0.0998
+}
+[INFO  15:28:37] Mean task accuracy: 0.8801
+[INFO  15:28:37] Update replay buffer for generative replay.
+[INFO  15:28:40] Starting training of task 2
+[INFO  15:28:56] epoch 0: train_acc: 0.1077 	 test_acc: 0.1496
+[INFO  15:29:12] epoch 1: train_acc: 0.1724 	 test_acc: 0.1875
+[INFO  15:29:28] epoch 2: train_acc: 0.2010 	 test_acc: 0.2269
+[INFO  15:29:44] epoch 3: train_acc: 0.2467 	 test_acc: 0.2602
+[INFO  15:30:00] epoch 4: train_acc: 0.2632 	 test_acc: 0.2642
+[INFO  15:30:16] epoch 5: train_acc: 0.2711 	 test_acc: 0.2772
+[INFO  15:30:32] epoch 6: train_acc: 0.2718 	 test_acc: 0.2746
+[INFO  15:30:48] epoch 7: train_acc: 0.2759 	 test_acc: 0.2756
+[INFO  15:31:04] epoch 8: train_acc: 0.2786 	 test_acc: 0.2800
+[INFO  15:31:20] epoch 9: train_acc: 0.2790 	 test_acc: 0.2901
+[INFO  15:31:23] Task accuracies: {
+    "task1": 0.4516,
+    "task2": 0.2822
+}
+[INFO  15:31:23] Mean task accuracy: 0.3669
+[INFO  15:31:23] Training run_id 21 with learning_rate 0.0001, beta_1 -10,beta_2 0.1 and freeze False
+[INFO  15:31:24] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0.1,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        100
+    ],
+    "dec_class_dimensions": [
+        100,
+        10
+    ],
+    "dec_rec_dimensions": [
+        100,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 100,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "comparison_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  15:31:24] Starting training of task 1
+[INFO  15:31:38] epoch 0: train_acc: 0.5700 	 test_acc: 0.7875
+[INFO  15:31:52] epoch 1: train_acc: 0.8165 	 test_acc: 0.8414
+[INFO  15:32:06] epoch 2: train_acc: 0.8528 	 test_acc: 0.8656
+[INFO  15:32:20] epoch 3: train_acc: 0.8715 	 test_acc: 0.8722
+[INFO  15:32:34] epoch 4: train_acc: 0.8795 	 test_acc: 0.8847
+[INFO  15:32:48] epoch 5: train_acc: 0.8901 	 test_acc: 0.8930
+[INFO  15:33:01] epoch 6: train_acc: 0.8953 	 test_acc: 0.8978
+[INFO  15:33:15] epoch 7: train_acc: 0.8977 	 test_acc: 0.8917
+[INFO  15:33:28] epoch 8: train_acc: 0.9006 	 test_acc: 0.8970
+[INFO  15:33:42] epoch 9: train_acc: 0.9026 	 test_acc: 0.9028
+[INFO  15:36:12] Task accuracies: {
+    "task1": 0.9014,
+    "task2": 0.0999
+}
+[INFO  15:36:12] Mean task accuracy: 0.9014
+[INFO  15:36:12] Update replay buffer for generative replay.
+[INFO  15:36:14] Starting training of task 2
+[INFO  15:36:29] epoch 0: train_acc: 0.5162 	 test_acc: 0.6830
+[INFO  15:36:44] epoch 1: train_acc: 0.7056 	 test_acc: 0.7405
+[INFO  15:37:00] epoch 2: train_acc: 0.7457 	 test_acc: 0.7747
+[INFO  15:37:15] epoch 3: train_acc: 0.7681 	 test_acc: 0.7942
+[INFO  15:37:30] epoch 4: train_acc: 0.7830 	 test_acc: 0.7974
+[INFO  15:37:45] epoch 5: train_acc: 0.7878 	 test_acc: 0.7956
+[INFO  15:38:00] epoch 6: train_acc: 0.7851 	 test_acc: 0.7788
+[INFO  15:38:16] epoch 7: train_acc: 0.7722 	 test_acc: 0.7727
+[INFO  15:38:32] epoch 8: train_acc: 0.7591 	 test_acc: 0.7545
+[INFO  15:38:47] epoch 9: train_acc: 0.7478 	 test_acc: 0.7472
+[INFO  15:38:50] Task accuracies: {
+    "task1": 0.7069,
+    "task2": 0.7415
+}
+[INFO  15:38:50] Mean task accuracy: 0.7242
+[INFO  15:38:50] Training run_id 22 with learning_rate 0.0001, beta_1 -10,beta_2 0.1 and freeze False
+[INFO  15:38:51] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0.1,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        1000
+    ],
+    "dec_class_dimensions": [
+        1000,
+        10
+    ],
+    "dec_rec_dimensions": [
+        1000,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 1000,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "vib_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  15:38:51] Starting training of task 1
+[INFO  15:39:06] epoch 0: train_acc: 0.1829 	 test_acc: 0.3374
+[INFO  15:39:22] epoch 1: train_acc: 0.5779 	 test_acc: 0.7268
+[INFO  15:39:37] epoch 2: train_acc: 0.7629 	 test_acc: 0.8008
+[INFO  15:39:52] epoch 3: train_acc: 0.8129 	 test_acc: 0.8387
+[INFO  15:40:08] epoch 4: train_acc: 0.8436 	 test_acc: 0.8628
+[INFO  15:40:23] epoch 5: train_acc: 0.8628 	 test_acc: 0.8711
+[INFO  15:40:39] epoch 6: train_acc: 0.8714 	 test_acc: 0.8831
+[INFO  15:40:54] epoch 7: train_acc: 0.8756 	 test_acc: 0.8893
+[INFO  15:41:09] epoch 8: train_acc: 0.8821 	 test_acc: 0.8900
+[INFO  15:41:25] epoch 9: train_acc: 0.8846 	 test_acc: 0.8928
+[INFO  15:41:28] Task accuracies: {
+    "task1": 0.8929,
+    "task2": 0.0647
+}
+[INFO  15:41:28] Mean task accuracy: 0.8929
+[INFO  15:41:28] Update replay buffer for generative replay.
+[INFO  15:41:30] Starting training of task 2
+[INFO  15:41:46] epoch 0: train_acc: 0.1437 	 test_acc: 0.2143
+[INFO  15:42:01] epoch 1: train_acc: 0.2225 	 test_acc: 0.2451
+[INFO  15:42:17] epoch 2: train_acc: 0.2815 	 test_acc: 0.2934
+[INFO  15:42:33] epoch 3: train_acc: 0.2917 	 test_acc: 0.2912
+[INFO  15:42:48] epoch 4: train_acc: 0.2798 	 test_acc: 0.2782
+[INFO  15:43:04] epoch 5: train_acc: 0.2745 	 test_acc: 0.2701
+[INFO  15:43:20] epoch 6: train_acc: 0.2635 	 test_acc: 0.2722
+[INFO  15:43:35] epoch 7: train_acc: 0.2576 	 test_acc: 0.2612
+[INFO  15:43:51] epoch 8: train_acc: 0.2572 	 test_acc: 0.2574
+[INFO  15:44:07] epoch 9: train_acc: 0.2538 	 test_acc: 0.2451
+[INFO  15:44:10] Task accuracies: {
+    "task1": 0.3758,
+    "task2": 0.2536
+}
+[INFO  15:44:10] Mean task accuracy: 0.3147
+[INFO  15:44:10] Training run_id 23 with learning_rate 0.0001, beta_1 -10,beta_2 0.1 and freeze False
+[INFO  15:44:10] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 0.1,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        1000
+    ],
+    "dec_class_dimensions": [
+        1000,
+        10
+    ],
+    "dec_rec_dimensions": [
+        1000,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 1000,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "comparison_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  15:44:10] Starting training of task 1
+[INFO  15:44:24] epoch 0: train_acc: 0.6041 	 test_acc: 0.8289
+[INFO  15:44:38] epoch 1: train_acc: 0.8465 	 test_acc: 0.8710
+[INFO  15:44:52] epoch 2: train_acc: 0.8752 	 test_acc: 0.8810
+[INFO  15:45:06] epoch 3: train_acc: 0.8882 	 test_acc: 0.8843
+[INFO  15:45:20] epoch 4: train_acc: 0.8935 	 test_acc: 0.8806
+[INFO  15:45:34] epoch 5: train_acc: 0.8973 	 test_acc: 0.8911
+[INFO  15:45:48] epoch 6: train_acc: 0.8996 	 test_acc: 0.8875
+[INFO  15:46:02] epoch 7: train_acc: 0.9039 	 test_acc: 0.9039
+[INFO  15:46:15] epoch 8: train_acc: 0.9053 	 test_acc: 0.8946
+[INFO  15:46:29] epoch 9: train_acc: 0.9062 	 test_acc: 0.8957
+[INFO  15:48:56] Task accuracies: {
+    "task1": 0.9006,
+    "task2": 0.0964
+}
+[INFO  15:48:56] Mean task accuracy: 0.9006
+[INFO  15:48:56] Update replay buffer for generative replay.
+[INFO  15:48:59] Starting training of task 2
+[INFO  15:49:15] epoch 0: train_acc: 0.5552 	 test_acc: 0.7160
+[INFO  15:49:31] epoch 1: train_acc: 0.7313 	 test_acc: 0.7666
+[INFO  15:49:46] epoch 2: train_acc: 0.7609 	 test_acc: 0.7825
+[INFO  15:50:02] epoch 3: train_acc: 0.7811 	 test_acc: 0.7871
+[INFO  15:50:18] epoch 4: train_acc: 0.7800 	 test_acc: 0.7863
+[INFO  15:50:33] epoch 5: train_acc: 0.7671 	 test_acc: 0.7579
+[INFO  15:50:49] epoch 6: train_acc: 0.7480 	 test_acc: 0.7421
+[INFO  15:51:05] epoch 7: train_acc: 0.7176 	 test_acc: 0.7088
+[INFO  15:51:21] epoch 8: train_acc: 0.6879 	 test_acc: 0.6808
+[INFO  15:51:36] epoch 9: train_acc: 0.6603 	 test_acc: 0.6569
+[INFO  15:51:39] Task accuracies: {
+    "task1": 0.6501,
+    "task2": 0.6658
+}
+[INFO  15:51:39] Mean task accuracy: 0.6579
+[INFO  15:51:39] Training run_id 24 with learning_rate 0.0001, beta_1 -10,beta_2 1 and freeze False
+[INFO  15:51:40] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 1,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        10
+    ],
+    "dec_class_dimensions": [
+        10,
+        10
+    ],
+    "dec_rec_dimensions": [
+        10,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 10,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "vib_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  15:51:40] Starting training of task 1
+[INFO  15:51:55] epoch 0: train_acc: 0.0981 	 test_acc: 0.1104
+[INFO  15:52:11] epoch 1: train_acc: 0.0866 	 test_acc: 0.1056
+[INFO  15:52:26] epoch 2: train_acc: 0.1905 	 test_acc: 0.2735
+[INFO  15:52:41] epoch 3: train_acc: 0.3666 	 test_acc: 0.4399
+[INFO  15:52:57] epoch 4: train_acc: 0.4967 	 test_acc: 0.5453
+[INFO  15:53:12] epoch 5: train_acc: 0.5773 	 test_acc: 0.6059
+[INFO  15:53:27] epoch 6: train_acc: 0.6369 	 test_acc: 0.6557
+[INFO  15:53:43] epoch 7: train_acc: 0.6800 	 test_acc: 0.6950
+[INFO  15:53:58] epoch 8: train_acc: 0.7143 	 test_acc: 0.7275
+[INFO  15:54:13] epoch 9: train_acc: 0.7407 	 test_acc: 0.7550
+[INFO  15:54:16] Task accuracies: {
+    "task1": 0.7533,
+    "task2": 0.1587
+}
+[INFO  15:54:16] Mean task accuracy: 0.7533
+[INFO  15:54:16] Update replay buffer for generative replay.
+[INFO  15:54:18] Starting training of task 2
+[INFO  15:54:34] epoch 0: train_acc: 0.1208 	 test_acc: 0.1172
+[INFO  15:54:50] epoch 1: train_acc: 0.1177 	 test_acc: 0.1204
+[INFO  15:55:05] epoch 2: train_acc: 0.1211 	 test_acc: 0.1168
+[INFO  15:55:21] epoch 3: train_acc: 0.1190 	 test_acc: 0.1170
+[INFO  15:55:36] epoch 4: train_acc: 0.1148 	 test_acc: 0.1140
+[INFO  15:55:52] epoch 5: train_acc: 0.1117 	 test_acc: 0.1112
+[INFO  15:56:07] epoch 6: train_acc: 0.1068 	 test_acc: 0.1038
+[INFO  15:56:23] epoch 7: train_acc: 0.1050 	 test_acc: 0.1002
+[INFO  15:56:39] epoch 8: train_acc: 0.1021 	 test_acc: 0.1014
+[INFO  15:56:54] epoch 9: train_acc: 0.1020 	 test_acc: 0.1011
+[INFO  15:56:57] Task accuracies: {
+    "task1": 0.101,
+    "task2": 0.101
+}
+[INFO  15:56:57] Mean task accuracy: 0.1010
+[INFO  15:56:57] Training run_id 25 with learning_rate 0.0001, beta_1 -10,beta_2 1 and freeze False
+[INFO  15:56:58] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 1,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        10
+    ],
+    "dec_class_dimensions": [
+        10,
+        10
+    ],
+    "dec_rec_dimensions": [
+        10,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 10,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "comparison_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  15:56:58] Starting training of task 1
+[INFO  15:57:12] epoch 0: train_acc: 0.1604 	 test_acc: 0.1831
+[INFO  15:57:25] epoch 1: train_acc: 0.1850 	 test_acc: 0.1879
+[INFO  15:57:39] epoch 2: train_acc: 0.1893 	 test_acc: 0.1940
+[INFO  15:57:53] epoch 3: train_acc: 0.1859 	 test_acc: 0.1892
+[INFO  15:58:07] epoch 4: train_acc: 0.1894 	 test_acc: 0.1912
+[INFO  15:58:21] epoch 5: train_acc: 0.1883 	 test_acc: 0.1877
+[INFO  15:58:35] epoch 6: train_acc: 0.1883 	 test_acc: 0.1901
+[INFO  15:58:49] epoch 7: train_acc: 0.1910 	 test_acc: 0.1805
+[INFO  15:59:03] epoch 8: train_acc: 0.1879 	 test_acc: 0.1894
+[INFO  15:59:17] epoch 9: train_acc: 0.1913 	 test_acc: 0.1867
+[INFO  16:01:44] Task accuracies: {
+    "task1": 0.1863,
+    "task2": 0.1089
+}
+[INFO  16:01:44] Mean task accuracy: 0.1863
+[INFO  16:01:44] Update replay buffer for generative replay.
+[INFO  16:01:46] Starting training of task 2
+[INFO  16:02:02] epoch 0: train_acc: 0.1378 	 test_acc: 0.1546
+[INFO  16:02:18] epoch 1: train_acc: 0.1485 	 test_acc: 0.1442
+[INFO  16:02:33] epoch 2: train_acc: 0.1376 	 test_acc: 0.1286
+[INFO  16:02:49] epoch 3: train_acc: 0.1303 	 test_acc: 0.1261
+[INFO  16:03:05] epoch 4: train_acc: 0.1234 	 test_acc: 0.1174
+[INFO  16:03:20] epoch 5: train_acc: 0.1167 	 test_acc: 0.1149
+[INFO  16:03:36] epoch 6: train_acc: 0.1095 	 test_acc: 0.1124
+[INFO  16:03:52] epoch 7: train_acc: 0.1109 	 test_acc: 0.1105
+[INFO  16:04:07] epoch 8: train_acc: 0.1108 	 test_acc: 0.1131
+[INFO  16:04:23] epoch 9: train_acc: 0.1113 	 test_acc: 0.1125
+[INFO  16:04:26] Task accuracies: {
+    "task1": 0.1153,
+    "task2": 0.1136
+}
+[INFO  16:04:26] Mean task accuracy: 0.1145
+[INFO  16:04:26] Training run_id 26 with learning_rate 0.0001, beta_1 -10,beta_2 1 and freeze False
+[INFO  16:04:27] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 1,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        100
+    ],
+    "dec_class_dimensions": [
+        100,
+        10
+    ],
+    "dec_rec_dimensions": [
+        100,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 100,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "vib_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  16:04:27] Starting training of task 1
+[INFO  16:04:42] epoch 0: train_acc: 0.1305 	 test_acc: 0.1726
+[INFO  16:04:57] epoch 1: train_acc: 0.3050 	 test_acc: 0.4410
+[INFO  16:05:13] epoch 2: train_acc: 0.5444 	 test_acc: 0.6391
+[INFO  16:05:28] epoch 3: train_acc: 0.6824 	 test_acc: 0.7206
+[INFO  16:05:43] epoch 4: train_acc: 0.7376 	 test_acc: 0.7656
+[INFO  16:05:59] epoch 5: train_acc: 0.7723 	 test_acc: 0.7993
+[INFO  16:06:14] epoch 6: train_acc: 0.8027 	 test_acc: 0.8217
+[INFO  16:06:30] epoch 7: train_acc: 0.8236 	 test_acc: 0.8383
+[INFO  16:06:45] epoch 8: train_acc: 0.8347 	 test_acc: 0.8485
+[INFO  16:07:00] epoch 9: train_acc: 0.8459 	 test_acc: 0.8593
+[INFO  16:07:04] Task accuracies: {
+    "task1": 0.857,
+    "task2": 0.1018
+}
+[INFO  16:07:04] Mean task accuracy: 0.8570
+[INFO  16:07:04] Update replay buffer for generative replay.
+[INFO  16:07:06] Starting training of task 2
+[INFO  16:07:21] epoch 0: train_acc: 0.1107 	 test_acc: 0.1214
+[INFO  16:07:37] epoch 1: train_acc: 0.1241 	 test_acc: 0.1252
+[INFO  16:07:53] epoch 2: train_acc: 0.1273 	 test_acc: 0.1286
+[INFO  16:08:09] epoch 3: train_acc: 0.1239 	 test_acc: 0.1155
+[INFO  16:08:24] epoch 4: train_acc: 0.1148 	 test_acc: 0.1126
+[INFO  16:08:40] epoch 5: train_acc: 0.1081 	 test_acc: 0.1057
+[INFO  16:08:56] epoch 6: train_acc: 0.1009 	 test_acc: 0.0986
+[INFO  16:09:11] epoch 7: train_acc: 0.0959 	 test_acc: 0.0934
+[INFO  16:09:27] epoch 8: train_acc: 0.0934 	 test_acc: 0.0911
+[INFO  16:09:43] epoch 9: train_acc: 0.0917 	 test_acc: 0.0911
+[INFO  16:09:46] Task accuracies: {
+    "task1": 0.092,
+    "task2": 0.0902
+}
+[INFO  16:09:46] Mean task accuracy: 0.0911
+[INFO  16:09:46] Training run_id 27 with learning_rate 0.0001, beta_1 -10,beta_2 1 and freeze False
+[INFO  16:09:46] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 1,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        100
+    ],
+    "dec_class_dimensions": [
+        100,
+        10
+    ],
+    "dec_rec_dimensions": [
+        100,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 100,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "comparison_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  16:09:46] Starting training of task 1
+[INFO  16:10:00] epoch 0: train_acc: 0.1499 	 test_acc: 0.1777
+[INFO  16:10:14] epoch 1: train_acc: 0.1835 	 test_acc: 0.1837
+[INFO  16:10:28] epoch 2: train_acc: 0.1822 	 test_acc: 0.1880
+[INFO  16:10:42] epoch 3: train_acc: 0.1821 	 test_acc: 0.1769
+[INFO  16:10:56] epoch 4: train_acc: 0.1835 	 test_acc: 0.1802
+[INFO  16:11:10] epoch 5: train_acc: 0.1844 	 test_acc: 0.1759
+[INFO  16:11:24] epoch 6: train_acc: 0.1817 	 test_acc: 0.1807
+[INFO  16:11:38] epoch 7: train_acc: 0.1815 	 test_acc: 0.1787
+[INFO  16:11:52] epoch 8: train_acc: 0.1825 	 test_acc: 0.1816
+[INFO  16:12:06] epoch 9: train_acc: 0.1827 	 test_acc: 0.1832
+[INFO  16:14:34] Task accuracies: {
+    "task1": 0.1753,
+    "task2": 0.1037
+}
+[INFO  16:14:34] Mean task accuracy: 0.1753
+[INFO  16:14:34] Update replay buffer for generative replay.
+[INFO  16:14:36] Starting training of task 2
+[INFO  16:14:52] epoch 0: train_acc: 0.1455 	 test_acc: 0.1474
+[INFO  16:15:08] epoch 1: train_acc: 0.1447 	 test_acc: 0.1341
+[INFO  16:15:24] epoch 2: train_acc: 0.1357 	 test_acc: 0.1295
+[INFO  16:15:39] epoch 3: train_acc: 0.1213 	 test_acc: 0.1217
+[INFO  16:15:55] epoch 4: train_acc: 0.1134 	 test_acc: 0.1108
+[INFO  16:16:11] epoch 5: train_acc: 0.1085 	 test_acc: 0.1063
+[INFO  16:16:26] epoch 6: train_acc: 0.1109 	 test_acc: 0.1125
+[INFO  16:16:42] epoch 7: train_acc: 0.1122 	 test_acc: 0.1115
+[INFO  16:16:58] epoch 8: train_acc: 0.1120 	 test_acc: 0.1125
+[INFO  16:17:14] epoch 9: train_acc: 0.1117 	 test_acc: 0.1129
+[INFO  16:17:17] Task accuracies: {
+    "task1": 0.1139,
+    "task2": 0.1109
+}
+[INFO  16:17:17] Mean task accuracy: 0.1124
+[INFO  16:17:17] Training run_id 28 with learning_rate 0.0001, beta_1 -10,beta_2 1 and freeze False
+[INFO  16:17:17] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 1,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        1000
+    ],
+    "dec_class_dimensions": [
+        1000,
+        10
+    ],
+    "dec_rec_dimensions": [
+        1000,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 1000,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "vib_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  16:17:17] Starting training of task 1
+[INFO  16:17:33] epoch 0: train_acc: 0.1476 	 test_acc: 0.2163
+[INFO  16:17:48] epoch 1: train_acc: 0.3628 	 test_acc: 0.5513
+[INFO  16:18:03] epoch 2: train_acc: 0.6648 	 test_acc: 0.7306
+[INFO  16:18:19] epoch 3: train_acc: 0.7488 	 test_acc: 0.7740
+[INFO  16:18:34] epoch 4: train_acc: 0.7775 	 test_acc: 0.7928
+[INFO  16:18:50] epoch 5: train_acc: 0.7939 	 test_acc: 0.8078
+[INFO  16:19:05] epoch 6: train_acc: 0.8092 	 test_acc: 0.8187
+[INFO  16:19:21] epoch 7: train_acc: 0.8184 	 test_acc: 0.8282
+[INFO  16:19:36] epoch 8: train_acc: 0.8289 	 test_acc: 0.8399
+[INFO  16:19:52] epoch 9: train_acc: 0.8380 	 test_acc: 0.8481
+[INFO  16:19:55] Task accuracies: {
+    "task1": 0.8505,
+    "task2": 0.1286
+}
+[INFO  16:19:55] Mean task accuracy: 0.8505
+[INFO  16:19:55] Update replay buffer for generative replay.
+[INFO  16:19:58] Starting training of task 2
+[INFO  16:20:14] epoch 0: train_acc: 0.1196 	 test_acc: 0.1290
+[INFO  16:20:30] epoch 1: train_acc: 0.1235 	 test_acc: 0.1258
+[INFO  16:20:45] epoch 2: train_acc: 0.1162 	 test_acc: 0.1123
+[INFO  16:21:01] epoch 3: train_acc: 0.1076 	 test_acc: 0.1011
+[INFO  16:21:17] epoch 4: train_acc: 0.1007 	 test_acc: 0.0969
+[INFO  16:21:33] epoch 5: train_acc: 0.0950 	 test_acc: 0.0935
+[INFO  16:21:48] epoch 6: train_acc: 0.0914 	 test_acc: 0.0911
+[INFO  16:22:04] epoch 7: train_acc: 0.0922 	 test_acc: 0.0915
+[INFO  16:22:20] epoch 8: train_acc: 0.0917 	 test_acc: 0.0926
+[INFO  16:22:35] epoch 9: train_acc: 0.0922 	 test_acc: 0.0892
+[INFO  16:22:39] Task accuracies: {
+    "task1": 0.0915,
+    "task2": 0.0896
+}
+[INFO  16:22:39] Mean task accuracy: 0.0905
+[INFO  16:22:39] Training run_id 29 with learning_rate 0.0001, beta_1 -10,beta_2 1 and freeze False
+[INFO  16:22:39] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 1,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        1000
+    ],
+    "dec_class_dimensions": [
+        1000,
+        10
+    ],
+    "dec_rec_dimensions": [
+        1000,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 1000,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "comparison_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  16:22:39] Starting training of task 1
+[INFO  16:22:53] epoch 0: train_acc: 0.1114 	 test_acc: 0.1378
+[INFO  16:23:07] epoch 1: train_acc: 0.1500 	 test_acc: 0.1612
+[INFO  16:23:21] epoch 2: train_acc: 0.1686 	 test_acc: 0.1700
+[INFO  16:23:35] epoch 3: train_acc: 0.1714 	 test_acc: 0.1682
+[INFO  16:23:49] epoch 4: train_acc: 0.1693 	 test_acc: 0.1737
+[INFO  16:24:03] epoch 5: train_acc: 0.1744 	 test_acc: 0.1714
+[INFO  16:24:17] epoch 6: train_acc: 0.1718 	 test_acc: 0.1699
+[INFO  16:24:31] epoch 7: train_acc: 0.1757 	 test_acc: 0.1768
+[INFO  16:24:45] epoch 8: train_acc: 0.1742 	 test_acc: 0.1744
+[INFO  16:24:59] epoch 9: train_acc: 0.1750 	 test_acc: 0.1757
+[INFO  16:27:27] Task accuracies: {
+    "task1": 0.1804,
+    "task2": 0.1033
+}
+[INFO  16:27:27] Mean task accuracy: 0.1804
+[INFO  16:27:27] Update replay buffer for generative replay.
+[INFO  16:27:29] Starting training of task 2
+[INFO  16:27:45] epoch 0: train_acc: 0.1360 	 test_acc: 0.1431
+[INFO  16:28:01] epoch 1: train_acc: 0.1376 	 test_acc: 0.1333
+[INFO  16:28:16] epoch 2: train_acc: 0.1282 	 test_acc: 0.1298
+[INFO  16:28:32] epoch 3: train_acc: 0.1174 	 test_acc: 0.1147
+[INFO  16:28:48] epoch 4: train_acc: 0.1122 	 test_acc: 0.1104
+[INFO  16:29:04] epoch 5: train_acc: 0.1097 	 test_acc: 0.1125
+[INFO  16:29:19] epoch 6: train_acc: 0.1093 	 test_acc: 0.1100
+[INFO  16:29:35] epoch 7: train_acc: 0.1108 	 test_acc: 0.1134
+[INFO  16:29:51] epoch 8: train_acc: 0.1101 	 test_acc: 0.1106
+[INFO  16:30:07] epoch 9: train_acc: 0.1087 	 test_acc: 0.1056
+[INFO  16:30:10] Task accuracies: {
+    "task1": 0.1099,
+    "task2": 0.1115
+}
+[INFO  16:30:10] Mean task accuracy: 0.1107
+[INFO  16:30:10] Training run_id 30 with learning_rate 0.0001, beta_1 -10,beta_2 10 and freeze False
+[INFO  16:30:10] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 10,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        10
+    ],
+    "dec_class_dimensions": [
+        10,
+        10
+    ],
+    "dec_rec_dimensions": [
+        10,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 10,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "vib_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  16:30:10] Starting training of task 1
+[INFO  16:30:26] epoch 0: train_acc: 0.1050 	 test_acc: 0.1092
+[INFO  16:30:41] epoch 1: train_acc: 0.1431 	 test_acc: 0.2015
+[INFO  16:30:57] epoch 2: train_acc: 0.2656 	 test_acc: 0.3145
+[INFO  16:31:12] epoch 3: train_acc: 0.3816 	 test_acc: 0.4404
+[INFO  16:31:27] epoch 4: train_acc: 0.4981 	 test_acc: 0.5495
+[INFO  16:31:43] epoch 5: train_acc: 0.5876 	 test_acc: 0.6254
+[INFO  16:31:58] epoch 6: train_acc: 0.6502 	 test_acc: 0.6716
+[INFO  16:32:14] epoch 7: train_acc: 0.6810 	 test_acc: 0.7048
+[INFO  16:32:29] epoch 8: train_acc: 0.7107 	 test_acc: 0.7334
+[INFO  16:32:44] epoch 9: train_acc: 0.7320 	 test_acc: 0.7484
+[INFO  16:32:48] Task accuracies: {
+    "task1": 0.7543,
+    "task2": 0.086
+}
+[INFO  16:32:48] Mean task accuracy: 0.7543
+[INFO  16:32:48] Update replay buffer for generative replay.
+[INFO  16:32:50] Starting training of task 2
+[INFO  16:33:06] epoch 0: train_acc: 0.1053 	 test_acc: 0.1037
+[INFO  16:33:21] epoch 1: train_acc: 0.1059 	 test_acc: 0.1066
+[INFO  16:33:37] epoch 2: train_acc: 0.1066 	 test_acc: 0.1061
+[INFO  16:33:52] epoch 3: train_acc: 0.1058 	 test_acc: 0.1092
+[INFO  16:34:08] epoch 4: train_acc: 0.1036 	 test_acc: 0.1132
+[INFO  16:34:24] epoch 5: train_acc: 0.1061 	 test_acc: 0.1031
+[INFO  16:34:39] epoch 6: train_acc: 0.1046 	 test_acc: 0.1043
+[INFO  16:34:55] epoch 7: train_acc: 0.1058 	 test_acc: 0.1037
+[INFO  16:35:11] epoch 8: train_acc: 0.1065 	 test_acc: 0.1035
+[INFO  16:35:26] epoch 9: train_acc: 0.1051 	 test_acc: 0.1024
+[INFO  16:35:30] Task accuracies: {
+    "task1": 0.1044,
+    "task2": 0.1018
+}
+[INFO  16:35:30] Mean task accuracy: 0.1031
+[INFO  16:35:30] Training run_id 31 with learning_rate 0.0001, beta_1 -10,beta_2 10 and freeze False
+[INFO  16:35:30] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 10,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        10
+    ],
+    "dec_class_dimensions": [
+        10,
+        10
+    ],
+    "dec_rec_dimensions": [
+        10,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 10,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "comparison_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  16:35:30] Starting training of task 1
+[INFO  16:35:44] epoch 0: train_acc: 0.1031 	 test_acc: 0.1070
+[INFO  16:35:58] epoch 1: train_acc: 0.1043 	 test_acc: 0.1046
+[INFO  16:36:12] epoch 2: train_acc: 0.1042 	 test_acc: 0.1039
+[INFO  16:36:26] epoch 3: train_acc: 0.1028 	 test_acc: 0.0990
+[INFO  16:36:40] epoch 4: train_acc: 0.1026 	 test_acc: 0.1006
+[INFO  16:36:54] epoch 5: train_acc: 0.1024 	 test_acc: 0.1082
+[INFO  16:37:08] epoch 6: train_acc: 0.1038 	 test_acc: 0.1068
+[INFO  16:37:22] epoch 7: train_acc: 0.1035 	 test_acc: 0.1004
+[INFO  16:37:36] epoch 8: train_acc: 0.1035 	 test_acc: 0.1085
+[INFO  16:37:50] epoch 9: train_acc: 0.1053 	 test_acc: 0.1093
+[INFO  16:40:17] Task accuracies: {
+    "task1": 0.1062,
+    "task2": 0.1073
+}
+[INFO  16:40:17] Mean task accuracy: 0.1062
+[INFO  16:40:17] Update replay buffer for generative replay.
+[INFO  16:40:20] Starting training of task 2
+[INFO  16:40:35] epoch 0: train_acc: 0.1057 	 test_acc: 0.1070
+[INFO  16:40:51] epoch 1: train_acc: 0.1081 	 test_acc: 0.1015
+[INFO  16:41:07] epoch 2: train_acc: 0.1085 	 test_acc: 0.1102
+[INFO  16:41:22] epoch 3: train_acc: 0.1110 	 test_acc: 0.1125
+[INFO  16:41:38] epoch 4: train_acc: 0.1121 	 test_acc: 0.1135
+[INFO  16:41:54] epoch 5: train_acc: 0.1124 	 test_acc: 0.1135
+[INFO  16:42:10] epoch 6: train_acc: 0.1124 	 test_acc: 0.1135
+[INFO  16:42:25] epoch 7: train_acc: 0.1124 	 test_acc: 0.1135
+[INFO  16:42:41] epoch 8: train_acc: 0.1124 	 test_acc: 0.1135
+[INFO  16:42:57] epoch 9: train_acc: 0.1124 	 test_acc: 0.1135
+[INFO  16:43:00] Task accuracies: {
+    "task1": 0.1135,
+    "task2": 0.1135
+}
+[INFO  16:43:00] Mean task accuracy: 0.1135
+[INFO  16:43:00] Training run_id 32 with learning_rate 0.0001, beta_1 -10,beta_2 10 and freeze False
+[INFO  16:43:00] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 10,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        100
+    ],
+    "dec_class_dimensions": [
+        100,
+        10
+    ],
+    "dec_rec_dimensions": [
+        100,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 100,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "vib_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  16:43:00] Starting training of task 1
+[INFO  16:43:16] epoch 0: train_acc: 0.1191 	 test_acc: 0.1658
+[INFO  16:43:31] epoch 1: train_acc: 0.2063 	 test_acc: 0.2385
+[INFO  16:43:47] epoch 2: train_acc: 0.2761 	 test_acc: 0.3284
+[INFO  16:44:02] epoch 3: train_acc: 0.3660 	 test_acc: 0.4317
+[INFO  16:44:17] epoch 4: train_acc: 0.4928 	 test_acc: 0.5585
+[INFO  16:44:33] epoch 5: train_acc: 0.5812 	 test_acc: 0.6201
+[INFO  16:44:48] epoch 6: train_acc: 0.6305 	 test_acc: 0.6670
+[INFO  16:45:04] epoch 7: train_acc: 0.6616 	 test_acc: 0.6812
+[INFO  16:45:19] epoch 8: train_acc: 0.6829 	 test_acc: 0.7010
+[INFO  16:45:34] epoch 9: train_acc: 0.6944 	 test_acc: 0.7061
+[INFO  16:45:38] Task accuracies: {
+    "task1": 0.7066,
+    "task2": 0.1283
+}
+[INFO  16:45:38] Mean task accuracy: 0.7066
+[INFO  16:45:38] Update replay buffer for generative replay.
+[INFO  16:45:40] Starting training of task 2
+[INFO  16:45:55] epoch 0: train_acc: 0.1079 	 test_acc: 0.1091
+[INFO  16:46:11] epoch 1: train_acc: 0.1065 	 test_acc: 0.1053
+[INFO  16:46:27] epoch 2: train_acc: 0.1032 	 test_acc: 0.1040
+[INFO  16:46:42] epoch 3: train_acc: 0.1020 	 test_acc: 0.1016
+[INFO  16:46:58] epoch 4: train_acc: 0.0994 	 test_acc: 0.0980
+[INFO  16:47:14] epoch 5: train_acc: 0.0995 	 test_acc: 0.0938
+[INFO  16:47:29] epoch 6: train_acc: 0.0982 	 test_acc: 0.0940
+[INFO  16:47:45] epoch 7: train_acc: 0.0947 	 test_acc: 0.0920
+[INFO  16:48:01] epoch 8: train_acc: 0.0920 	 test_acc: 0.0921
+[INFO  16:48:16] epoch 9: train_acc: 0.0908 	 test_acc: 0.0892
+[INFO  16:48:19] Task accuracies: {
+    "task1": 0.0897,
+    "task2": 0.0902
+}
+[INFO  16:48:19] Mean task accuracy: 0.0899
+[INFO  16:48:19] Training run_id 33 with learning_rate 0.0001, beta_1 -10,beta_2 10 and freeze False
+[INFO  16:48:20] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 10,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        100
+    ],
+    "dec_class_dimensions": [
+        100,
+        10
+    ],
+    "dec_rec_dimensions": [
+        100,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 100,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "comparison_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  16:48:20] Starting training of task 1
+[INFO  16:48:34] epoch 0: train_acc: 0.1016 	 test_acc: 0.1043
+[INFO  16:48:48] epoch 1: train_acc: 0.1037 	 test_acc: 0.1082
+[INFO  16:49:02] epoch 2: train_acc: 0.1032 	 test_acc: 0.1022
+[INFO  16:49:16] epoch 3: train_acc: 0.1021 	 test_acc: 0.1045
+[INFO  16:49:30] epoch 4: train_acc: 0.1027 	 test_acc: 0.0987
+[INFO  16:49:44] epoch 5: train_acc: 0.1040 	 test_acc: 0.1069
+[INFO  16:49:58] epoch 6: train_acc: 0.1057 	 test_acc: 0.1062
+[INFO  16:50:12] epoch 7: train_acc: 0.1029 	 test_acc: 0.1048
+[INFO  16:50:26] epoch 8: train_acc: 0.1041 	 test_acc: 0.1053
+[INFO  16:50:40] epoch 9: train_acc: 0.1042 	 test_acc: 0.1053
+[INFO  16:53:08] Task accuracies: {
+    "task1": 0.1044,
+    "task2": 0.1094
+}
+[INFO  16:53:08] Mean task accuracy: 0.1044
+[INFO  16:53:08] Update replay buffer for generative replay.
+[INFO  16:53:10] Starting training of task 2
+[INFO  16:53:26] epoch 0: train_acc: 0.1063 	 test_acc: 0.1088
+[INFO  16:53:41] epoch 1: train_acc: 0.1065 	 test_acc: 0.1057
+[INFO  16:53:57] epoch 2: train_acc: 0.1090 	 test_acc: 0.1098
+[INFO  16:54:13] epoch 3: train_acc: 0.1120 	 test_acc: 0.1130
+[INFO  16:54:28] epoch 4: train_acc: 0.1123 	 test_acc: 0.1135
+[INFO  16:54:44] epoch 5: train_acc: 0.1124 	 test_acc: 0.1135
+[INFO  16:55:00] epoch 6: train_acc: 0.1124 	 test_acc: 0.1135
+[INFO  16:55:15] epoch 7: train_acc: 0.1124 	 test_acc: 0.1135
+[INFO  16:55:31] epoch 8: train_acc: 0.1124 	 test_acc: 0.1135
+[INFO  16:55:47] epoch 9: train_acc: 0.1124 	 test_acc: 0.1135
+[INFO  16:55:50] Task accuracies: {
+    "task1": 0.1135,
+    "task2": 0.1135
+}
+[INFO  16:55:50] Mean task accuracy: 0.1135
+[INFO  16:55:50] Training run_id 34 with learning_rate 0.0001, beta_1 -10,beta_2 10 and freeze False
+[INFO  16:55:50] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 10,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        1000
+    ],
+    "dec_class_dimensions": [
+        1000,
+        10
+    ],
+    "dec_rec_dimensions": [
+        1000,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 1000,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "vib_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  16:55:50] Starting training of task 1
+[INFO  16:56:06] epoch 0: train_acc: 0.1221 	 test_acc: 0.1544
+[INFO  16:56:21] epoch 1: train_acc: 0.2105 	 test_acc: 0.2502
+[INFO  16:56:37] epoch 2: train_acc: 0.2742 	 test_acc: 0.3161
+[INFO  16:56:52] epoch 3: train_acc: 0.3374 	 test_acc: 0.3746
+[INFO  16:57:08] epoch 4: train_acc: 0.4105 	 test_acc: 0.4581
+[INFO  16:57:23] epoch 5: train_acc: 0.4912 	 test_acc: 0.5449
+[INFO  16:57:39] epoch 6: train_acc: 0.5711 	 test_acc: 0.5977
+[INFO  16:57:54] epoch 7: train_acc: 0.6151 	 test_acc: 0.6270
+[INFO  16:58:10] epoch 8: train_acc: 0.6436 	 test_acc: 0.6633
+[INFO  16:58:25] epoch 9: train_acc: 0.6638 	 test_acc: 0.6798
+[INFO  16:58:28] Task accuracies: {
+    "task1": 0.6789,
+    "task2": 0.1077
+}
+[INFO  16:58:28] Mean task accuracy: 0.6789
+[INFO  16:58:28] Update replay buffer for generative replay.
+[INFO  16:58:30] Starting training of task 2
+[INFO  16:58:46] epoch 0: train_acc: 0.1084 	 test_acc: 0.1047
+[INFO  16:59:02] epoch 1: train_acc: 0.1043 	 test_acc: 0.1043
+[INFO  16:59:18] epoch 2: train_acc: 0.0998 	 test_acc: 0.0983
+[INFO  16:59:33] epoch 3: train_acc: 0.0991 	 test_acc: 0.0990
+[INFO  16:59:49] epoch 4: train_acc: 0.0995 	 test_acc: 0.0959
+[INFO  17:00:05] epoch 5: train_acc: 0.0962 	 test_acc: 0.0986
+[INFO  17:00:20] epoch 6: train_acc: 0.0985 	 test_acc: 0.1007
+[INFO  17:00:36] epoch 7: train_acc: 0.0963 	 test_acc: 0.0977
+[INFO  17:00:52] epoch 8: train_acc: 0.0957 	 test_acc: 0.0969
+[INFO  17:01:07] epoch 9: train_acc: 0.0951 	 test_acc: 0.0979
+[INFO  17:01:11] Task accuracies: {
+    "task1": 0.0969,
+    "task2": 0.095
+}
+[INFO  17:01:11] Mean task accuracy: 0.0959
+[INFO  17:01:11] Training run_id 35 with learning_rate 0.0001, beta_1 -10,beta_2 10 and freeze False
+[INFO  17:01:11] Start experiment with parametrization:
+{
+    "dataset": {
+        "name": "perm_mnist",
+        "kwargs": {
+            "batch_size": 100,
+            "num_tasks": 10
+        }
+    },
+    "cl_method": "generative_replay",
+    "criterion": "cross_entropy",
+    "beta_1": -10,
+    "beta_2": 10,
+    "enc_dimensions": [
+        784,
+        200,
+        200,
+        1000
+    ],
+    "dec_class_dimensions": [
+        1000,
+        10
+    ],
+    "dec_rec_dimensions": [
+        1000,
+        200,
+        200,
+        784
+    ],
+    "n_bottleneck": 1000,
+    "epochs": 10,
+    "freeze": false,
+    "learning_rate": 0.0001,
+    "nonlinearity": "relu",
+    "mult_mlp": false,
+    "n_replay": 1000,
+    "optimizer": "adam",
+    "replay_weight": 0.999,
+    "seed": null,
+    "test_samples": 1,
+    "vae_batch_size": 128,
+    "vae_epochs": 10,
+    "vae_lr": 0.005,
+    "vae_n_gaussian": 100,
+    "vae_n_hidden": 400,
+    "model": "comparison_model",
+    "log_dir": "",
+    "task": "perm_mnist_vib"
+}
+[INFO  17:01:11] Starting training of task 1
+[INFO  17:01:25] epoch 0: train_acc: 0.1011 	 test_acc: 0.0949
+[INFO  17:01:39] epoch 1: train_acc: 0.1000 	 test_acc: 0.0984
+[INFO  17:01:53] epoch 2: train_acc: 0.1014 	 test_acc: 0.1029
+[INFO  17:02:07] epoch 3: train_acc: 0.1025 	 test_acc: 0.1015
+[INFO  17:02:21] epoch 4: train_acc: 0.0999 	 test_acc: 0.1026
+[INFO  17:02:35] epoch 5: train_acc: 0.1002 	 test_acc: 0.1020
+[INFO  17:02:49] epoch 6: train_acc: 0.1037 	 test_acc: 0.1011
+[INFO  17:03:03] epoch 7: train_acc: 0.1039 	 test_acc: 0.1009
+[INFO  17:03:17] epoch 8: train_acc: 0.1017 	 test_acc: 0.1022
+[INFO  17:03:31] epoch 9: train_acc: 0.1013 	 test_acc: 0.0997
+[INFO  17:05:59] Task accuracies: {
+    "task1": 0.0985,
+    "task2": 0.1028
+}
+[INFO  17:05:59] Mean task accuracy: 0.0985
+[INFO  17:05:59] Update replay buffer for generative replay.
+[INFO  17:06:02] Starting training of task 2
+[INFO  17:06:18] epoch 0: train_acc: 0.1033 	 test_acc: 0.1085
+[INFO  17:06:34] epoch 1: train_acc: 0.1034 	 test_acc: 0.1097
+[INFO  17:06:50] epoch 2: train_acc: 0.1054 	 test_acc: 0.1104
+[INFO  17:07:05] epoch 3: train_acc: 0.1105 	 test_acc: 0.1125
+[INFO  17:07:21] epoch 4: train_acc: 0.1109 	 test_acc: 0.1129
+[INFO  17:07:37] epoch 5: train_acc: 0.1122 	 test_acc: 0.1134
+[INFO  17:07:52] epoch 6: train_acc: 0.1123 	 test_acc: 0.1143
+[INFO  17:08:08] epoch 7: train_acc: 0.1124 	 test_acc: 0.1131
+[INFO  17:08:24] epoch 8: train_acc: 0.1120 	 test_acc: 0.1135
+[INFO  17:08:40] epoch 9: train_acc: 0.1118 	 test_acc: 0.1126
+[INFO  17:08:43] Task accuracies: {
+    "task1": 0.1118,
+    "task2": 0.1133
+}
+[INFO  17:08:43] Mean task accuracy: 0.1126
